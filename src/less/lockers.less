@@ -1,0 +1,490 @@
+.lockers{
+    width:100%;
+    height:auto;
+    box-sizing: border-box;
+    .pageLockers{
+        box-sizing: border-box;
+        .firstParallax{
+            height:100vh;
+            box-sizing: border-box;
+            position: relative;
+            background-color: black;
+            .wallpaper{
+                position: absolute;
+                height: 100%;
+                width:100%;
+                box-sizing: border-box;
+                background: url('../assets/lockers.webp');
+                background-position: center;
+                box-sizing: border-box;
+                opacity: .4;
+                background-attachment: fixed;
+                z-index: 1;
+                .opacity{ 
+                    width:100%;
+                    height:100%;
+                    background-color: black;
+                    opacity: 0.5;
+                }
+            }
+            .wallpaper.Silla{
+                background: url('https://png.pngtree.com/background/20230602/original/pngtree-modern-corporate-business-office-room-with-chairs-and-tables-picture-image_2859568.jpg');
+            }
+            .wallpaper.Archivos{
+                background: url('https://www.shiojigyo.com/study/siryousitsu/img/pic_about.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+
+                .opacity{
+                    opacity: .3;
+                }
+            }
+            .wallpaper.Mesas{
+                background: url('https://www.escoming.com/wp-content/uploads/Mesas-de-juntas-Quattro_oscura-gerencial-conexion-10-puestos-tv-mueble-auxiliar-2.jpg');
+                background-attachment: fixed;
+                background-size: cover;
+                .opacity{
+                    opacity: .1;
+                }
+            
+            }
+            .containerParallax{
+                z-index: 2;
+                position:relative;
+                display: flex;
+                align-items: center;
+                height:100%;
+                box-sizing: border-box;
+                .boxOne{
+                    width:45%;
+                    margin-left:5%;
+                    h3{
+                        font-size: 16px;
+                        color:@colorVar;
+                        letter-spacing: 2px;
+                    }
+                    h1{
+                        margin:10px 0px;
+                        font-size: 52px;
+                        color: white;
+                        font-weight: 400;
+                    }
+                    .txt{
+                        font-size: 16px;
+                        color: @default;
+                    }
+                    button{
+                        margin:30px 0px;
+                        padding:10px 40px;
+                        border-radius: 20px;
+                        background-color: @colorVar;
+                        border:1px solid @colorVar;
+                        transition: .3s;
+                        cursor: pointer;
+                        span{
+                            color: @default;
+                            font-size: 14px;
+                        }
+                    }
+                    button:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .twoParallax{
+            .containerTwo{
+                width:90%;
+                margin:50px auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                .large{
+                    width:49%;
+                    height:100vh;
+                    border:1px solid @seccionBg;
+                    box-sizing: border-box;
+                    background-color: white;
+                    border-radius: 10px;
+                    position: relative;
+                    box-sizing: border-box;
+                    transition: .3s;
+                    border-radius: 10px;
+
+                    .wallpaperLarge{
+                        position: absolute;
+                        width:100%;
+                        height:100%;
+                        z-index:1;
+                        background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-26.jpg?v=1721875050');
+                        box-sizing: border-box;
+                        background-position: center center;
+                        border-radius: 10px;
+                        z-index:1;
+                        .opacity{
+                            background-color: black;
+                            position:absolute;
+                            width:100%;
+                            border-radius: 10px;
+                            
+                            height:100%;
+                            opacity: .7;
+                            z-index:1;
+                        }
+                        .boxData{
+                            z-index: 2;
+                            position:relative;
+                        }
+                    }
+                    .wallpaperLarge.Silla.Singapur{
+                        background: url('./../assets/sillas/presidencial/singapur/singapur.webp');
+                        background-position: right;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    .wallpaperLarge.Archivo.Doble{
+                        background: url('https://modularescosta.co/docs/producto/ori_1431559316_rodantes1.webp');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        .opacity{
+                            background-color: black;
+                            position:absolute;
+                            width:100%;
+                            border-radius: 10px;
+                            
+                            height:100%;
+                            opacity: .7;
+                        }
+
+                    
+                    }
+                    .wallpaperLarge.Locker.T3x9{
+                        background: url('https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp');
+                        background-position: right;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        box-sizing: border-box;     
+                    }
+                    // MESA
+                    .wallpaperLarge.MesaJuntas{
+                        background: url('https://modularescosta.co/docs/producto/galeria/ori_344419693_mesa-de-reuniones-E-3.webp');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+                    .boxData{
+                        z-index:2;
+                        position: relative;
+                        padding:50px 30px;
+                        box-sizing: border-box;
+                        .title{
+                            width:70%;
+                            h2{
+                                font-size: 42px;
+                                font-weight: 400;
+                                margin:10px 0px;
+                                color: @colorVar;
+                            }
+                            strong{
+                                color: #666;
+                            }
+                            span{
+                                font-size: 16px;
+                                color: @textColor;
+                            }
+                        }
+                    }
+                    .boxData.Opacity{
+                        .title{
+                            h2{
+                                color: white;
+                            }
+                            strong{
+                                color:white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+                .large:hover{
+                    transform: scale(1.03);
+                }
+                .divideLarge{
+                    width:49%;
+                    height:100vh;
+                    .BoxDivide{
+                        height:49%;
+                        display: flexbox;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        border:1px solid @seccionBg;
+                        background-color: @seccionBg;
+                        background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-27_540x.jpg?v=1721875050');
+                        padding:50px 30px;
+                        box-sizing: border-box;
+                        transition: .3s;
+                        position:relative;
+                        z-index:1;
+                        .opacity{
+                            position:absolute;
+                            left:0;
+                            right: 0;
+                            top:0;
+                            bottom:0;
+                            border-radius: 10px;
+                            margin:0px;
+                            background-color: black;
+                            opacity: .7;
+                            z-index: 1;
+                        }
+                        .title{
+                            margin-top:20px;
+                            width:70%;
+                            position:relative;
+                            z-index: 2;
+                            h2{
+                                margin:5px 0px;
+                                font-size: 26px;
+                                color: @colorVar;
+                                font-weight: 400;
+                            }
+                            span{
+                                color: #666;
+                                font-size: 14px;
+                            }
+                            button{
+                                margin-top:10px;
+                                padding:10px 20px;
+                                border-radius: 20px;
+                                background-color: @colorVar;
+                                border:1px solid @colorVar;
+                                cursor: pointer;
+                                transition: .3s;
+                                span{
+                                    font-size: 12px;
+                                    color: white;
+                                    transition: .3s;
+                                }
+                            }
+                            button:hover{
+                                transform: scale(1.1);
+                                background-color: @default;
+                                span{
+                                    color: @colorVar;
+                                }
+                            }
+                        }
+                    }
+                    .Silla.Lujo{
+                        background: url('./../assets/sillas/presidencial/monacoLujo/lujo.webp');
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        background-size: contain;
+                        
+                    }
+                    .Silla.Play{
+                        background: url('./../assets/sillas/presidencial/play/play.webp');
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        background-size: contain;
+                    }
+
+                    // ARCHIVO
+                    .Archivo.Triple{
+                        background: url('https://modularescosta.co/docs/producto/ori_946988619_archivo-rodante2.webp');
+                   
+                        .title{
+                            z-index: 6;
+                            h2{
+                                color: white;
+                            }
+                            strong{
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+                    .Archivo.Sencillo{
+                        background: url('https://modularescosta.co/docs/producto/ori_1314918529_archivo-rodante1.webp');
+                   
+                        .title{
+                            z-index: 6;
+                            h2{
+                                color: white;
+                            }
+                            strong{
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+
+                    // LOCKER
+                    .Locker.T2x4{
+                        background: url('https://modularescosta.co/docs/producto/ori_1551881596_2x4-celosia-gris-1.webp');
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        background-size: contain;
+                    }
+                    .Locker.T2x8{
+                        background: url('https://modularescosta.co/docs/producto/ori_1204237595_2X8.webp');
+                        background-repeat: no-repeat;
+                        background-position: right;
+                        background-size: contain;
+                    }
+
+                    // MESAS
+                    .MesaJuntas3{
+                        background: url('https://modularescosta.co/docs/producto/ori_67545277_mesa_de_reuniones-10.webp');
+                   
+                        .title{
+                            z-index: 6;
+                            h2{
+                                color: white;
+                            }
+                            strong{
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+                    .MesaJuntas4{
+                        background: url('https://modularescosta.co/docs/producto/galeria/ori_988459254_mesa-de-reuniones-C-2.webp');
+                        .title{
+                            z-index: 6;
+                            h2{
+                                color: white;
+                            }
+                            strong{
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+                    .Bottom{
+                        margin-top:2%;
+                    }
+                    .BoxDivide:hover{
+                        transform: scale(1.03);
+                    }
+                }
+            }
+        }
+        .otherCasilleros{
+            background-color: white;
+            margin:30px 0px;
+            .containerOther{
+                width:90%;
+                margin:auto;
+                padding:80px 0px;
+                .titleLockers{
+                    h1{
+                        font-weight: 400;
+                        color: @bgDark;
+                        margin:5px 0px;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: @bgDark;
+                    }
+                }
+                .lockers{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top:50px;
+                
+                    .locker{
+                        width:23%;
+                        padding:30px;
+                        box-sizing: border-box;
+                        background-color: @default;
+                        border-radius: 5px;
+                        transition: .3s;
+                        cursor: pointer;
+                        position: relative;
+                        box-sizing: border-box;
+                        border:1px solid #f2f2f2;
+                        .opacityDiv{ 
+                            position: absolute;
+                            display: none;
+                            width:100%;
+                            height: 100%;
+                            background-color: @bgDark;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            opacity: .2;
+                        }
+                        img{
+                            width:100%;
+                            height:100%;
+                            object-fit: contain;
+                            border-radius: 5px;
+                            width:100%;
+                            height:200px;
+                        }
+
+                        .desc{
+                            margin-top:20px;
+                            h3{
+                                font-weight: 100;
+                                color: @colorVar;
+                            }
+                            span{
+                                font-size: 12px;
+                                color: @textColor;
+                            }
+                        }
+                        
+                    }
+                    .locker:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .invitationToAction{
+            padding:100px 0px;
+            .bigText{
+                width:70%;
+                margin:auto;
+                text-align: center;
+                h1{
+                    font-weight: 400;
+                    color: @colorVar;
+                    font-size: 42px;
+                    margin-bottom: 10px;
+                }
+                h3{
+                    font-size: 20px;
+                    color: @textColor;
+                    font-weight: 400;
+                }
+                button{
+                    margin-top:30px;
+                    border-radius: 10px;
+                    padding:10px 40px;
+                    border-radius: 20px;
+                    background-color: @colorVar;
+                    border:1px solid @colorVar;
+                    cursor: pointer;
+                    span{
+                        font-size: 14px;
+                        color: @default;
+
+                    }
+                }
+            }
+        }
+    }
+}

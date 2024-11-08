@@ -1,0 +1,1162 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.fotter {
+  width: 100%;
+  margin-top: 40px;
+  background-color: #343A40;
+  box-sizing: border-box;
+  padding: 100px 0px;
+  padding-bottom: 50px;
+}
+.fotter .smallMessage {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+.fotter .smallMessage span {
+  color: #fff;
+  font-size: 12px;
+}
+.fotter .fotterContainer {
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.fotter .fotterContainer .business {
+  width: 40%;
+}
+.fotter .fotterContainer .business .logo {
+  margin-bottom: 20px;
+}
+.fotter .fotterContainer .business .descAndNetwork {
+  width: 80%;
+}
+.fotter .fotterContainer .business .descAndNetwork span {
+  font-size: 12px;
+  color: #75818F;
+}
+.fotter .fotterContainer .business .descAndNetwork .social {
+  margin-top: 40px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fotter .fotterContainer .boxNav {
+  width: 25%;
+}
+.fotter .fotterContainer .boxNav .title {
+  margin-bottom: 20px;
+}
+.fotter .fotterContainer .boxNav .title h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul li {
+  display: flex;
+  margin: 10px 0px;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul li span {
+  font-size: 13px;
+  color: #75818F;
+}
+.navigation {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+.navigation .containerNav {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation .containerNav .logo {
+  width: 10%;
+}
+.navigation .containerNav .logo img {
+  width: 100%;
+}
+.navigation .containerNav .navigationOptions nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+.navigation .containerNav .navigationOptions nav ul li div {
+  padding: 10px 20px;
+}
+.navigation .containerNav .navigationOptions nav ul li div span {
+  font-size: 14px;
+  color: #666;
+}
+.navigation.Active {
+  background-color: white;
+}
+.modulares {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px;
+}
+.modulares .home .parallaxOne {
+  border: 1px solid #ebebed;
+  background: url('https://www.template.themesdesign.in/larix/react/static/media/home-bg-2.80fcd1a22fef02b1ea49.jpg');
+  height: 100vh;
+  box-sizing: border-box;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.modulares .home .parallaxOne .containerParallax {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen h3 {
+  color: #046290;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption {
+  margin-top: 20px;
+  width: 50%;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 10px 0px;
+  padding: 0px;
+  color: #343A40;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption span {
+  font-size: 14px;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 1px solid #046290;
+  background-color: #046290;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption button span {
+  color: #fff;
+}
+.modulares .home .ourServices {
+  width: 100%;
+  padding: 50px 0px;
+}
+.modulares .home .ourServices .bigTitleOurServices {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.modulares .home .ourServices .bigTitleOurServices .containerBigServices {
+  width: 100%;
+  text-align: center;
+}
+.modulares .home .ourServices .bigTitleOurServices .containerBigServices h1 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 10px 0px;
+  color: #525456;
+}
+.modulares .home .ourServices .bigTitleOurServices .containerBigServices span {
+  color: #6c757d;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios {
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio {
+  width: 20%;
+  border: 1px solid #e8e7e7;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio {
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .wallpaper {
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  height: 300px;
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title {
+  z-index: 4;
+  padding: 40px 30px;
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title h3 {
+  color: #3864F3;
+  font-weight: 100;
+  font-size: 26px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title span {
+  font-size: 16px;
+  font-weight: 100;
+  color: #666;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio:hover {
+  transform: scale(1.02);
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio.Big {
+  width: 58%;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio.Big .containerServicio .wallpaper img {
+  object-fit: contain;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService {
+  width: 100%;
+  padding: 40px 0px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .wallpaper {
+  width: 40%;
+  text-align: center;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .wallpaper img {
+  width: 90%;
+  margin: auto;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .wallpaper button {
+  width: 60%;
+  margin: 20px auto;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc {
+  width: 50%;
+  text-align: left;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc {
+  width: 80%;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc .tag {
+  padding: 8px 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #ebebed;
+  background-color: transparent;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc .tag span {
+  font-size: 12px;
+  color: #ebebed;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc h1 {
+  font-size: 52px;
+  font-weight: 300;
+  color: #525456;
+  margin: 5px 0px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc h3 {
+  font-weight: 100;
+  font-size: 18px;
+  color: #6c757d;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc h3 strong {
+  font-weight: 500;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc .go {
+  margin-top: 30px;
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .containerService .service .desc .containerDesc .go span {
+  color: #fff;
+  font-size: 12px;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .Reverse .service {
+  flex-direction: row-reverse;
+}
+.modulares .home .ourServices .containerParallax .serviceOption .Reverse .service .desc {
+  margin: auto;
+}
+.modulares .home .ourExperience {
+  background-color: #ebebed;
+  padding: 100px 0px;
+}
+.modulares .home .ourExperience .containerExperience {
+  width: 90%;
+  margin: auto;
+}
+.modulares .home .ourExperience .containerExperience .bigText {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.modulares .home .ourExperience .containerExperience .bigText h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 10px 0px;
+  color: #343A40;
+}
+.modulares .home .ourExperience .containerExperience .bigText h3 {
+  font-size: 18px;
+  font-weight: 100;
+  color: #6c757d;
+}
+.modulares .home .ourExperience .containerExperience .containerBoxExperience {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-top: 100px;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.modulares .home .ourExperience .containerExperience .containerBoxExperience .box h1 {
+  font-weight: 400;
+  font-size: 28px;
+  margin: 10px 0px;
+}
+.modulares .home .ourExperience .containerExperience .containerBoxExperience .box h3 {
+  font-weight: 100;
+  font-size: 18px;
+  color: #6c757d;
+}
+.modulares .home .ourProvider .containerOurClients .bigTitle {
+  padding: 100px 0px;
+  text-align: center;
+  background-color: #046290;
+}
+.modulares .home .ourProvider .containerOurClients .bigTitle h1 {
+  font-weight: 400;
+  font-size: 52px;
+  color: #fff;
+  width: 50%;
+  margin: auto;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts {
+  width: 90%;
+  margin: 50px auto;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .containerSome {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .containerSome .product {
+  width: 20%;
+  height: 200px;
+  cursor: pointer;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.3s;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .containerSome .product img {
+  width: 100%;
+  border: none;
+  height: 100%;
+  object-fit: contain;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .containerSome .product:hover {
+  border: 2px solid #046290;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .seeMore {
+  text-align: center;
+  padding: 80px 0px;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .seeMore button {
+  background-color: #046290;
+  border-radius: 20px;
+  border: 1px solid #046290;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.modulares .home .ourProvider .containerOurClients .someProducts .seeMore button span {
+  color: white;
+}
+.otherCasilleros {
+  background-color: white;
+  margin: 30px 0px;
+}
+.otherCasilleros .containerOther {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
+}
+.otherCasilleros .containerOther .titleLockers h1 {
+  font-weight: 400;
+  color: #343A40;
+  margin: 5px 0px;
+}
+.otherCasilleros .containerOther .titleLockers span {
+  font-size: 16px;
+  color: #343A40;
+}
+.otherCasilleros .containerOther .lockers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.otherCasilleros .containerOther .lockers .locker {
+  width: 23%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+}
+.otherCasilleros .containerOther .lockers .locker .opacityDiv {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #343A40;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+.otherCasilleros .containerOther .lockers .locker img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+}
+.otherCasilleros .containerOther .lockers .locker .desc {
+  margin-top: 20px;
+}
+.otherCasilleros .containerOther .lockers .locker .desc h3 {
+  font-weight: 100;
+  color: #046290;
+}
+.otherCasilleros .containerOther .lockers .locker .desc span {
+  font-size: 12px;
+  color: #6c757d;
+}
+.otherCasilleros .containerOther .lockers .locker:hover {
+  transform: scale(1.1);
+}
+.product {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.product .containerProduct {
+  box-sizing: border-box;
+  width: 95%;
+  margin: auto;
+}
+.product .containerProduct .navUl h1 {
+  font-weight: 400;
+  color: #6c757d;
+}
+.product .containerProduct .containerProductsCar {
+  margin-top: 30px;
+  height: 70vh;
+}
+.product .containerProduct .containerProductsCar .containerCars {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding: 40px 0px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper img {
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+}
+.product .containerProduct .containerProductsCar .containerCars .car {
+  width: 45%;
+  box-sizing: border-box;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar {
+  padding: 0px 10px;
+  box-sizing: border-box;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 10px 0px;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h1 {
+  font-weight: 100;
+  font-size: 52px;
+  color: #343A40;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h3 {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 30px;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h3 span {
+  font-size: 18px;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc {
+  margin-top: 30px;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc strong {
+  font-style: italic;
+  color: #343A40;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc span {
+  font-size: 16px;
+  color: #6c757d;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc button {
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: none;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc button span {
+  font-size: 12px;
+  color: green;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction button {
+  width: 45%;
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction button .icon {
+  margin-right: 10px;
+  color: white;
+  font-size: 18px;
+  vertical-align: middle;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction button span {
+  color: white;
+  vertical-align: middle;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction .action {
+  border: 1px solid #25D366;
+  background-color: #25D366;
+}
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .buttonAction .others {
+  border: 1px solid #3864F3;
+  background-color: #3864F3;
+}
+.product .containerProduct .otherCasilleros {
+  background-color: white;
+  margin: 30px 0px;
+}
+.product .containerProduct .otherCasilleros .containerOther {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
+}
+.product .containerProduct .otherCasilleros .containerOther .titleLockers h1 {
+  font-weight: 400;
+  color: #343A40;
+  margin: 5px 0px;
+}
+.product .containerProduct .otherCasilleros .containerOther .titleLockers span {
+  font-size: 16px;
+  color: #343A40;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker {
+  width: 23%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker .opacityDiv {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #343A40;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker .desc {
+  margin-top: 20px;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker .desc h3 {
+  font-weight: 100;
+  color: #046290;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker .desc span {
+  font-size: 12px;
+  color: #6c757d;
+}
+.product .containerProduct .otherCasilleros .containerOther .lockers .locker:hover {
+  transform: scale(1.1);
+}
+.lockers {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+.lockers .pageLockers {
+  box-sizing: border-box;
+}
+.lockers .pageLockers .firstParallax {
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: black;
+}
+.lockers .pageLockers .firstParallax .wallpaper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('../assets/lockers.webp');
+  background-position: center;
+  box-sizing: border-box;
+  opacity: 0.4;
+  background-attachment: fixed;
+  z-index: 1;
+}
+.lockers .pageLockers .firstParallax .wallpaper .opacity {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.lockers .pageLockers .firstParallax .wallpaper.Silla {
+  background: url('https://png.pngtree.com/background/20230602/original/pngtree-modern-corporate-business-office-room-with-chairs-and-tables-picture-image_2859568.jpg');
+}
+.lockers .pageLockers .firstParallax .wallpaper.Archivos {
+  background: url('https://www.shiojigyo.com/study/siryousitsu/img/pic_about.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.lockers .pageLockers .firstParallax .wallpaper.Archivos .opacity {
+  opacity: 0.3;
+}
+.lockers .pageLockers .firstParallax .wallpaper.Mesas {
+  background: url('https://www.escoming.com/wp-content/uploads/Mesas-de-juntas-Quattro_oscura-gerencial-conexion-10-puestos-tv-mueble-auxiliar-2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+.lockers .pageLockers .firstParallax .wallpaper.Mesas .opacity {
+  opacity: 0.1;
+}
+.lockers .pageLockers .firstParallax .containerParallax {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne {
+  width: 45%;
+  margin-left: 5%;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne h3 {
+  font-size: 16px;
+  color: #046290;
+  letter-spacing: 2px;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne h1 {
+  margin: 10px 0px;
+  font-size: 52px;
+  color: white;
+  font-weight: 400;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne .txt {
+  font-size: 16px;
+  color: #fff;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne button {
+  margin: 30px 0px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne button span {
+  color: #fff;
+  font-size: 14px;
+}
+.lockers .pageLockers .firstParallax .containerParallax .boxOne button:hover {
+  transform: scale(1.1);
+}
+.lockers .pageLockers .twoParallax .containerTwo {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large {
+  width: 49%;
+  height: 100vh;
+  border: 1px solid #F2F2F2;
+  background-color: white;
+  position: relative;
+  box-sizing: border-box;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-26.jpg?v=1721875050');
+  box-sizing: border-box;
+  background-position: center center;
+  border-radius: 10px;
+  z-index: 1;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge .opacity {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  opacity: 0.7;
+  z-index: 1;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge .boxData {
+  z-index: 2;
+  position: relative;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Silla.Singapur {
+  background: url('../assets/sillas/presidencial/singapur/singapur.webp');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Archivo.Doble {
+  background: url('https://modularescosta.co/docs/producto/ori_1431559316_rodantes1.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Archivo.Doble .opacity {
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+  opacity: 0.7;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Locker.T3x9 {
+  background: url('https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.MesaJuntas {
+  background: url('https://modularescosta.co/docs/producto/galeria/ori_344419693_mesa-de-reuniones-E-3.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData {
+  z-index: 2;
+  position: relative;
+  padding: 50px 30px;
+  box-sizing: border-box;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData .title {
+  width: 70%;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData .title h2 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 10px 0px;
+  color: #046290;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData .title strong {
+  color: #666;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData .title span {
+  font-size: 16px;
+  color: #6c757d;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData.Opacity .title h2 {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData.Opacity .title strong {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large .boxData.Opacity .title span {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .large:hover {
+  transform: scale(1.03);
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge {
+  width: 49%;
+  height: 100vh;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide {
+  height: 49%;
+  display: flexbox;
+  border-radius: 10px;
+  border: 1px solid #F2F2F2;
+  background-color: #F2F2F2;
+  background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-27_540x.jpg?v=1721875050');
+  padding: 50px 30px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  position: relative;
+  z-index: 1;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .opacity {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 10px;
+  margin: 0px;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 1;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title {
+  margin-top: 20px;
+  width: 70%;
+  position: relative;
+  z-index: 2;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title h2 {
+  margin: 5px 0px;
+  font-size: 26px;
+  color: #046290;
+  font-weight: 400;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title span {
+  color: #666;
+  font-size: 14px;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title button span {
+  font-size: 12px;
+  color: white;
+  transition: 0.3s;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title button:hover {
+  transform: scale(1.1);
+  background-color: #fff;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide .title button:hover span {
+  color: #046290;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Silla.Lujo {
+  background: url('../assets/sillas/presidencial/monacoLujo/lujo.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Silla.Play {
+  background: url('../assets/sillas/presidencial/play/play.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Triple {
+  background: url('https://modularescosta.co/docs/producto/ori_946988619_archivo-rodante2.webp');
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Triple .title {
+  z-index: 6;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Triple .title h2 {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Triple .title strong {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Triple .title span {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Sencillo {
+  background: url('https://modularescosta.co/docs/producto/ori_1314918529_archivo-rodante1.webp');
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Sencillo .title {
+  z-index: 6;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Sencillo .title h2 {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Sencillo .title strong {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Archivo.Sencillo .title span {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Locker.T2x4 {
+  background: url('https://modularescosta.co/docs/producto/ori_1551881596_2x4-celosia-gris-1.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Locker.T2x8 {
+  background: url('https://modularescosta.co/docs/producto/ori_1204237595_2X8.webp');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas3 {
+  background: url('https://modularescosta.co/docs/producto/ori_67545277_mesa_de_reuniones-10.webp');
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas3 .title {
+  z-index: 6;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas3 .title h2 {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas3 .title strong {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas3 .title span {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas4 {
+  background: url('https://modularescosta.co/docs/producto/galeria/ori_988459254_mesa-de-reuniones-C-2.webp');
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas4 .title {
+  z-index: 6;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas4 .title h2 {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas4 .title strong {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .MesaJuntas4 .title span {
+  color: white;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .Bottom {
+  margin-top: 2%;
+}
+.lockers .pageLockers .twoParallax .containerTwo .divideLarge .BoxDivide:hover {
+  transform: scale(1.03);
+}
+.lockers .pageLockers .otherCasilleros {
+  background-color: white;
+  margin: 30px 0px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther {
+  width: 90%;
+  margin: auto;
+  padding: 80px 0px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .titleLockers h1 {
+  font-weight: 400;
+  color: #343A40;
+  margin: 5px 0px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .titleLockers span {
+  font-size: 16px;
+  color: #343A40;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker {
+  width: 23%;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid #f2f2f2;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker .opacityDiv {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #343A40;
+  box-sizing: border-box;
+  border-radius: 5px;
+  opacity: 0.2;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker .desc {
+  margin-top: 20px;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker .desc h3 {
+  font-weight: 100;
+  color: #046290;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker .desc span {
+  font-size: 12px;
+  color: #6c757d;
+}
+.lockers .pageLockers .otherCasilleros .containerOther .lockers .locker:hover {
+  transform: scale(1.1);
+}
+.lockers .pageLockers .invitationToAction {
+  padding: 100px 0px;
+}
+.lockers .pageLockers .invitationToAction .bigText {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.lockers .pageLockers .invitationToAction .bigText h1 {
+  font-weight: 400;
+  color: #046290;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+.lockers .pageLockers .invitationToAction .bigText h3 {
+  font-size: 20px;
+  color: #6c757d;
+  font-weight: 400;
+}
+.lockers .pageLockers .invitationToAction .bigText button {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  cursor: pointer;
+}
+.lockers .pageLockers .invitationToAction .bigText button span {
+  font-size: 14px;
+  color: #fff;
+}
+.mesas .OneParallax {
+  height: 100vh;
+}
+.mesas .OneParallax .containerParallax {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mesas .OneParallax .containerParallax .bigDesc {
+  width: 40%;
+}
+.mesas .OneParallax .containerParallax .bigDesc h1 {
+  font-size: 62px;
+  font-weight: 400;
+  margin: 10px 0px;
+}
+.mesas .OneParallax .containerParallax .bigDesc h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.mesas .OneParallax .containerParallax .bigDesc button {
+  margin-top: 30px;
+  width: 40%;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid #3864F3;
+  padding: 10px 0px;
+}
+.mesas .OneParallax .containerParallax .bigDesc button span {
+  font-size: 14px;
+  color: #3864F3;
+}
+.mesas .OneParallax .containerParallax .wallpaperDiv {
+  width: 60%;
+  text-align: center;
+}
+.mesas .OneParallax .containerParallax .wallpaperDiv img {
+  width: 70%;
+}

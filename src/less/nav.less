@@ -1,0 +1,42 @@
+.navigation{
+    margin:0px;
+    padding:0px;
+    background-color: white;
+    position:fixed;
+    width:100%;
+    z-index:3;
+    .containerNav{
+        width:90%;
+        margin:auto;
+        padding:20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            width:10%;
+            img{
+                width:100%;
+            }
+        }
+        .navigationOptions{
+            nav{
+                ul{
+                    li{
+                        display: inline-block;
+                        cursor: pointer;
+                        div{
+                            padding:10px 20px;
+                            span{
+                                font-size: 14px;
+                                color: #666;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navigation.Active{
+    background-color: white;
+}
