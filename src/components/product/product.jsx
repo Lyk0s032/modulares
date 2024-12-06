@@ -3,6 +3,8 @@ import { BsWhatsapp } from 'react-icons/bs';
 import * as actions from './..//store/actions/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import Loading from '../loading';
+import NotFound from '../notFound';
 export default function Product(){
     const dispatch = useDispatch();
     const product = useSelector(store => store.product);
@@ -16,14 +18,14 @@ export default function Product(){
         }
     }, [producto])
     return (
+        !product || loading ?
+            <Loading />
+        :
+        product == 404 || product == 'request' ?
+            <NotFound />
+        :
         <div className='product'>
-            {console.log(product)}
-            {
-                !product || loading?
-                <div className="containerPro">
-                    <h1>Cargando</h1>
-                </div>
-                :
+
             <div className='containerProduct'>
                 <div className='containerProductsCar'>
                     <div className='containerCars'>
@@ -96,7 +98,6 @@ export default function Product(){
                     </div>
                 </div>
             </div>
-            }
         </div>
     )
 }

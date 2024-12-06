@@ -25,7 +25,7 @@ export default function OfertaValor(){
                                         colectivo, priorizando la funcionalidad, el confort y el diseño personalizado
                                     
                                         Ofrecemos  soluciones integrales que facilitan el orden y el almacenamiento eficiente, adaptadas 
-                                        a las necesidades espeficicas de cada cliente.
+                                        a las necesidades especificas de cada cliente.
                         </h1>
                     </div>
                 </div>

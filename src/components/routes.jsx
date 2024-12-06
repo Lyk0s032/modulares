@@ -5,13 +5,14 @@ import Sillas from './sillas/siilas';
 import Mesas from './mesas/mesas';
 import Lockers from './lockers/lockers';
 import Home from './home';
-import { Route, Routes, useNavigate} from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate} from 'react-router-dom';
 import Nav from './nav';
 import OfertaValor from './oferta';
 import BtnWhatsApp from './btnWhatsApp';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './store/actions/actions';
 import Loading from './loading';
+import Fotter from './fotter';
 
 
 export default function RoutesComponent(){
@@ -19,9 +20,15 @@ export default function RoutesComponent(){
     const categories = useSelector(store => store.categories);
     const load = useSelector(store => store.loadingCategories);
     const dispatch = useDispatch();
+
+    const { pathname } = useLocation();
+    
     useEffect(() => {
-        dispatch(actions.axiosGetCategories(true));
-    }, [])
+        if(!categories){
+            dispatch(actions.axiosGetCategories(true));
+        }
+        window.scrollTo(0,0);
+    }, [pathname])
 
     return (
         load || !categories ?
@@ -41,6 +48,8 @@ export default function RoutesComponent(){
 
                     <Route path='/product/:producto/*' element={<Product />} />
                 </Routes>
+                <Fotter categories={categories} />
+                        
             </div>
     )
 }

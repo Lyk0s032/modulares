@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Fotter(){
+export default function Fotter(props){
+    const categories = props.categories;
     return (
         <div className="fotter">
             <div className="fotterContainer">
@@ -10,7 +11,9 @@ export default function Fotter(){
                     </div>
                     <div className='descAndNetwork'>
                         <span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut totam maiores delectus? Porro, soluta tenetur nihil ducimus iusto facere quae libero consectetur blanditiis sapiente quas, dolore, omnis voluptates totam.
+                            En Costa, diseñamos y fabricamos mobiliario especializado para oficina, áreas de trabajo colectivo,
+                            priorizando la funcionalidad, el confort y el diseño personalizado. Ofrecemos soluciones integrales que facilitan el orden
+                            y el almacenamiento eficiente, adaptadas a las necesidades especificas de cada cliente.
                         </span>
 
 
@@ -23,21 +26,17 @@ export default function Fotter(){
                     <div className='containerNav'>
                         <nav>
                             <ul>
-                                <li>
-                                    <span>Diseño de oficina</span>
-                                </li>
-                                <li>
-                                    <span>Sillas</span>
-                                </li>
-                                <li>
-                                    <span>Mesas de juntas</span>
-                                </li>
-                                <li>
-                                    <span>Lockers y Casilleros</span>
-                                </li>
-                                <li>
-                                    <span>Archivo rodante</span>
-                                </li>
+                                {
+                                    categories && categories.length ?
+                                        categories.map((category, i) => {
+                                            return (
+                                                <li key={i+1}>
+                                                    <span>{category.title}</span>
+                                                </li>
+                                            )
+                                        })
+                                    :null
+                                }
                             </ul>
                         </nav>
                     </div>
@@ -50,19 +49,10 @@ export default function Fotter(){
                         <nav>
                             <ul>
                                 <li>
-                                    <span> de oficina</span>
+                                    <span>Facebook</span>
                                 </li>
                                 <li>
-                                    <span>Sillas</span>
-                                </li>
-                                <li>
-                                    <span>Mesas de juntas</span>
-                                </li>
-                                <li>
-                                    <span>Lockers y Casilleros</span>
-                                </li>
-                                <li>
-                                    <span>Archivo rodante</span>
+                                    <span>X</span>
                                 </li>
                             </ul>
                         </nav>

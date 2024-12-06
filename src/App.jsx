@@ -21,7 +21,6 @@ function App() {
           <Route path='/*' element={<RoutesComponent />} />
           <Route path='/panel/*' element={<PanelAdmin />} />
         </Routes>
-        <Fotter />
       </Router>
     </div>
   )

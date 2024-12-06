@@ -956,5 +956,25 @@
             font-weight: 100;
             font-size: 18px;
         }
+        button{
+            margin-top: 30px;
+            padding:8px 20px;
+            background-color: @colorVar;
+            border:1px solid @colorVar;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s;
+            span{
+                color: white;
+                font-size: 14px;
+                transition: .3s;
+            }
+        }
+        button:hover{
+            background-color: white;
+            span{
+                color: @colorVar;
+            }
+        }
     }
 }

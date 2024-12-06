@@ -499,6 +499,7 @@ body {
   text-align: right;
   font-size: 12px;
   transition: 0.3s;
+  background-color: transparent;
 }
 .navigation .containerNav .navigationOptions nav ul li input:focus {
   border: 2px solid #046290;
@@ -1382,6 +1383,26 @@ body {
   color: #046290;
   font-weight: 100;
   font-size: 18px;
+}
+.loading .containerLoading button {
+  margin-top: 30px;
+  padding: 8px 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.loading .containerLoading button span {
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.loading .containerLoading button:hover {
+  background-color: white;
+}
+.loading .containerLoading button:hover span {
+  color: #046290;
 }
 .product {
   padding-top: 100px;

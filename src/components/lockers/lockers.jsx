@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import * as actions from './../store/actions/actions';
+import Loading from '../loading';
+import NotFound from '../notFound';
 
 export default function Lockers(){
     const navigate = useNavigate();
@@ -18,18 +20,13 @@ export default function Lockers(){
         dispatch(actions.axiosGetCategory(true, cid))
     }, [cid])
     return (
+        !category || loading ?
+            <Loading />
+        :
+        category == 404 || category == 'request' ?
+            <NotFound />
+        :
         <div className="lockers">
-            {
-                category && loading ?
-                    <div className="pageLockers">
-                        <h1>Cargando...</h1>
-                    </div>
-                : 
-                category == 'request' || category == 404 || !category ?
-                    <div className="pageLockers">
-                        <h1>No found...</h1>
-                    </div>
-                :
             <div className="pageLockers">
                 <div className='firstParallax'>
                     <div className='wallpaper' style={{
@@ -155,7 +152,6 @@ export default function Lockers(){
                     </div>
                 </div>
             </div>
-            }
         </div>
     )
 }

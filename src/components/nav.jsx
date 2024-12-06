@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { IoReorderThreeSharp } from 'react-icons/io5';
 import { MdReorder } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function Nav(){
     const navigate = useNavigate();
@@ -14,8 +14,12 @@ export default function Nav(){
     })
 
 
+    const { pathname } = useLocation();
+
+
     return (
         <div className='navigation' id="navigation">
+            {console.log(pathname)}
             <div className='containerNav'>
                 <div className='logo' onClick={() => navigate('/')}>
                     <img src="https://metalicascosta.com.co/assets/img/logo_metalicas_costa.png" alt="" />
@@ -42,15 +46,19 @@ export default function Nav(){
                                     <span>Inicio</span>
                                 </div>
                             </li>
-                            <li onClick={() => {
-                                document.querySelector("#services").scrollIntoView({
-                                    behavior:'smooth'
-                                })
-                            }}>
-                                <div>
-                                    <span>Categorías</span>
-                                </div>
-                            </li>
+                            {
+                                pathname == '/' ?
+                                <li onClick={() => {
+                                    document.querySelector("#services").scrollIntoView({
+                                        behavior:'smooth'
+                                    })
+                                }}>
+                                    <div>
+                                        <span>Categorías</span>
+                                    </div>
+                                </li>
+                                :null
+                            }
                             <li onClick={() => {
                                 navigate('/our');
                                 openNav()
