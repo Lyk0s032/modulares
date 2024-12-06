@@ -1,0 +1,401 @@
+.panel{
+    box-sizing: border-box; 
+    .containerPanel{
+        .sign{
+            width:100%;
+            height:100vh;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            .containerSign{
+                width:90%;
+                margin:auto;
+                .topTitle{
+                    width:100%;
+                    text-align: center;
+                    padding:10px 0px;
+                    h1{
+                        font-weight: 100;
+                        color: @btnButton;
+                    }
+                }
+                .containerForm{
+                    width:40%;
+                    margin:auto;
+                    .input{
+                        width:100%;
+                        margin-bottom: 20px;
+                        label{
+                            color: @bgDark;
+                            font-size: 12px;
+
+                        }
+                        input{
+                            margin-top:10px;
+                            width:100%;
+                            border-radius: 20px;
+                            border:1px solid #ccc;
+                            padding:10px;
+                            box-sizing: border-box;
+                            outline: 0px;
+                            font-size: 12px;
+                        }
+                        input:focus{
+                            border:1px solid @btnButton;
+                        }
+                        button{
+                            width:100%;
+                            background-color: #ccc;
+                            border:1px solid #ccc;
+                            padding:10px;
+                            box-sizing: border-box;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            span{
+                                color: @btnButton;
+                            }
+                        }
+                        button.Active{
+                            background-color: @btnButton;
+                            border:1px solid @btnButton;
+                            span{
+                                color: white;
+                            }
+                        }
+                    }
+                    .mistake{
+                        width:50%;
+                        margin:auto;
+                        text-align: center;
+                        span{
+                            color: red;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .div{
+            .principal{
+                .welcomen{
+                    width:90%;
+                    margin:auto;
+                    padding:50px 0px;
+
+                    .containerWelcomen{
+                        .back{
+                            background-color: transparent;
+                            border:none;
+                            padding:10px;
+                            box-sizing: border-box;
+                            display: flex;
+                            align-items: center;
+                            .icon{
+                                font-size: 18px;
+                                color: @btnButton;
+                            }
+                            span{
+                                color: @btnButton;
+                                margin-left:10px;
+                            }
+                        }
+                        .pseudo{
+                            font-size: 14px;
+                            color: #666;
+                        }
+                        .topMessage{
+                            width:100%;
+                            h1{
+                                font-weight: 100;
+                                color: @btnButton;
+                                margin:5px 0px;
+                            }
+                            span{
+                                font-size: 16px;
+                                color: #666;
+                                font-weight: 100;
+                            }
+                        }
+                        .categories{
+                            margin-top:50px;
+                            width:100%;
+                            .topTitle{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                h1{
+                                    font-size: 20px;
+                                    font-weight: 100;
+                                    color: @bgDark;
+                                    
+                                }
+                                button{
+                                    background-color: transparent;
+                                    border:1px solid @btnButton;
+                                    cursor: pointer;
+                                    padding:8px 15px;
+                                    border-radius: 20px;
+                                    transition: .3s;
+                                    span{
+                                        font-size: 12px;
+                                        color: @btnButton;
+
+                                    }
+                                }
+                                button:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                            .containerCategories{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                margin-top:30px;
+                                .category{
+                                    width:30%;
+                                    margin-bottom: 50px;
+                                    .wallpaperCat{
+                                        width:100%;
+                                        height:150px;
+                                        img{
+                                            width:100%;
+                                            height:100%;
+                                            object-fit: contain;
+                                            border-radius: 10px;
+                                        }
+                                    }
+                                    .data{
+                                        padding:10px;
+                                        box-sizing: border-box;
+                                        h3{
+                                            font-weight: 100;
+                                            color: @btnButton;
+                                        }
+                                    }
+                                    .options{
+                                        width:100%;
+                                        text-align: right;
+                                        button{
+                                            background-color: transparent;
+                                            border:1px solid #666;
+                                            cursor: pointer;
+                                            padding:5px 10px;
+                                            box-sizing: border-box;
+                                            border-radius: 20px;
+                                            span{
+                                                font-size: 12px;
+                                                color: #666;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .modal{
+            position: fixed;
+            background-color: rgba(0,0,0,0.111);
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            .hidden{
+                width:100%;
+                height:100%;
+                position:absolute;
+                z-index:3;
+            }
+            .containerModal{
+                padding:10px;
+                box-sizing: border-box;
+                border-radius: 10px;
+
+                background-color: white;
+                width:90%;
+                margin:auto;
+                position:relative;
+                z-index:4;
+                height:90vh;
+                margin-top:5vh;
+                border:1px solid #ccc;
+                .top{
+                    height:10%;
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+
+                    h3{
+                        font-size: 22px;
+                        font-weight: 100;
+                        color: @btnButton;
+                        
+                    }
+                }
+
+                .editar{
+                    width:100%;
+                    height:90%;
+                    overflow-y: auto;
+                    .form{
+                        width:90%;
+                        margin:auto;
+                        margin-top:20px;
+
+                        .horizontalDiv{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 20px;
+                            align-items: center;
+                            .inputDiv{
+                                width:45%;
+                                label{
+                                    font-size: 12px;
+                                    color: #666;
+                                }
+                                input{
+                                    margin-top:10px;
+                                    border-radius: 20px;
+                                    border:1px solid #ccc;
+                                    padding:10px;
+                                    box-sizing: border-box;
+                                    font-size: 12px;
+                                    width: 100%;
+                                }
+                            }
+                            .visualizarWallpaper{
+                                width:45%;
+                                border:1px solid #ccc;
+                                height:150px;
+                                box-sizing: border-box;
+                                img{
+                                    width:100%;
+                                    height:100%;
+                                    object-fit: cover;
+                                }
+                            }
+                            .visualizarWallpaper.Product{
+                                height:250px;
+                                width:30%;
+                            }
+                        }
+                        .inputDiv{
+                            width:100%;
+                            margin-bottom: 10px;
+
+                            label{
+                                font-size: 12px;
+                                color: #666;
+                            }
+                            input{
+                                margin-top:10px;
+
+                                width:100%;
+                                border-radius: 20px;
+                                border:1px solid #ccc;
+                                padding:10px;
+                                box-sizing: border-box;
+                                outline:0px;
+                            }
+                            textarea{
+                                width:100%;
+                                resize: none;
+                                outline: 0px;
+                                border:1px solid #ccc;
+                                border-radius: 10px;
+                                margin-top:5px;
+                                font-size: 12px;
+                                padding:0px;
+                                box-sizing: border-box;
+                            }
+                            button{
+                                background-color: @btnButton;
+                                border:1px solid @btnButton;
+                                cursor: pointer;
+                                padding:10px 20px;
+                                border-radius: 20px;
+                                width:30%;
+                                span{
+                                    color: white;
+                                    font-size: 14px;
+
+                                }
+                            }
+                        }
+                    }
+                    .divide{
+                        display: flex;
+                        justify-content: space-between;
+                        .left{
+                            width:45%;
+                            .imagenes{
+                                width:100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                .imagen{
+                                    width:150px;
+                                    height:210px;
+                                    text-align: right;
+                                    .del{
+                                        padding:5px 10px;
+                                        box-sizing: border-box;
+                                        border-radius: 20px;
+                                        background-color:@btnButton;
+                                        cursor: pointer;
+                                        span{
+                                            color: white;
+                                        }
+                                    }
+                                    img{
+                                        width:100%;
+                                        height:200px;
+                                    }
+                                    .delete{
+                                        width:100%;
+                                        height:200px;
+                                        background-color: transparent;
+                                        cursor: default;
+                                        border:none;
+                                        h1{
+                                            font-weight: 100;
+                                            color: red;
+                                            font-size: 42px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .right{
+                            width:40%;
+                            .upload{
+                                width:100%;
+                                .wallpaper{
+                                    margin:auto;
+                                    width:150px;
+                                    height:200px;
+                                    img{
+                                        width:100%;
+                                        height:100%;
+                                        object-fit: cover;
+                                        border:1px solid #ccc;
+                                    }
+                                }
+                                .form{
+                                    width:60%;
+                                    margin:auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

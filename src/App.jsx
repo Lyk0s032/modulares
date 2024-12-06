@@ -11,21 +11,15 @@ import Product from './components/product/product'
 import Mesas from './components/mesas/mesas'
 import Sillas from './components/sillas/siilas'
 import Archivo from './components/archivos/archivos'
+import PanelAdmin from './components/panel/panel'
+import RoutesComponent from './components/routes'
 function App() {
   return (
     <div className="modulares">
       <Router>
-        <Nav />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/services/lockers/*' element={<Lockers />} />
-          <Route path='/services/mesas/*' element={<Mesas />} />
-          <Route path='/services/sillas/*' element={<Sillas />} />
-          <Route path='/services/archivo/*' element={<Archivo />} />
-
-
-          <Route path='/product/:producto/*' element={<Product />} />
-
+          <Route path='/*' element={<RoutesComponent />} />
+          <Route path='/panel/*' element={<PanelAdmin />} />
         </Routes>
         <Fotter />
       </Router>

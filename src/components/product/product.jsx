@@ -1,24 +1,41 @@
 import React, { useEffect } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
-
+import * as actions from './..//store/actions/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 export default function Product(){
+    const dispatch = useDispatch();
+    const product = useSelector(store => store.product);
+    const loading = useSelector(store => store.loadingProduct);
+    const { producto } = useParams();
+    const navigate = useNavigate();
     useEffect(() => {
         window.scrollTo(0,0)
-    }, [])
+        if(!product || product && product.id != producto){
+            dispatch(actions.axiosGetProduct(true, producto))
+        }
+    }, [producto])
     return (
         <div className='product'>
+            {console.log(product)}
+            {
+                !product || loading?
+                <div className="containerPro">
+                    <h1>Cargando</h1>
+                </div>
+                :
             <div className='containerProduct'>
                 <div className='containerProductsCar'>
                     <div className='containerCars'>
 
                         <div className='wallpaper'>
-                                <img src="https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp" alt="" />
+                                <img src={product.photo} alt="" />
                             </div>
                         <div className="car">
                             <div className="containerCar">
                                 <div className="header">
-                                    <h1>Lockers Metalico 3x9</h1>
-                                    <h3>3x9 - <span>REF</span></h3>
+                                    <h1>{product.name}</h1>
+                                    <h3>{product.referencia} <span>REF</span></h3>
                                 </div>
                                 <div className='desc'>
                                     <button>
@@ -26,7 +43,7 @@ export default function Product(){
                                     </button><br />
                                     <strong>Descripción</strong><br /><br />
                                     <span>
-                                        Locker de 1.67 X .90 X .30 con 9 servicios (3X9), altura aproximada por servicio 0.52 cm, fabricados en lamina CR cal. 23, soportes o patas en c/14, puertas con refuerzo, manija en lamina tipo zeta , ventilacion punzonada con diseño a cuadros o celosía, gancho ropero y porta candado.
+                                        {product.description}
                                     </span>
                                     
                                 </div>
@@ -55,42 +72,31 @@ export default function Product(){
                             <span>Visita nuestra linea de Lockers </span>
                         </div>
                         <div className='lockers'>
-                            <div className="locker">
-                                <div className="opacityDiv"></div>
-                                <img src="https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp" alt="" />
-                                <div className="desc">
-                                    <h3>Silla Armagedon</h3>
-                                    <span>REF - 4520 </span>
-                                </div>
-                            </div>
-                            <div className="locker">
-                                <div className="opacityDiv"></div>
-                                <img src="https://modularescosta.co/docs/producto/ori_1551881596_2x4-celosia-gris-1.webp" alt="" />
-                                <div className="desc">
-                                    <h3>Silla Armagedon</h3>
-                                    <span>REF - 4520 </span>
-                                </div>
-                            </div>
-                            <div className="locker">
-                                <div className="opacityDiv"></div>
-                                <img src="https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp" alt="" />
-                                <div className="desc">
-                                    <h3>Silla Armagedon</h3>
-                                    <span>REF - 4520 </span>
-                                </div>
-                            </div>
-                            <div className="locker">
-                                <div className="opacityDiv"></div>
-                                <img src="https://modularescosta.co/docs/producto/ori_1551881596_2x4-celosia-gris-1.webp" alt="" />
-                                <div className="desc">
-                                    <h3>Silla Armagedon</h3>
-                                    <span>REF - 4520 </span>
-                                </div>
-                            </div>
+                            {
+                                product.category && product.category.products && product.category.products.length ?
+                                    product.category.products.map((pr, i) => {
+                                        return (
+                                            pr.id != product.id ?
+                                                <div className="locker" onClick={() => navigate(`/product/${pr.id}`)}>
+                                                    <div className="opacityDiv"></div>
+                                                    <img src={pr.photo} alt="" />
+                                                    <div className="desc">
+                                                        <h3>{pr.name}</h3>
+                                                        <span>{pr.referencia} </span>
+                                                    </div>
+                                                </div>
+                                            :null
+                                        )
+                                    })
+                                :null
+                            }
+                            
+                
                         </div>
                     </div>
                 </div>
             </div>
+            }
         </div>
     )
 }

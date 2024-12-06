@@ -27,28 +27,6 @@
                     opacity: 0.5;
                 }
             }
-            .wallpaper.Silla{
-                background: url('https://png.pngtree.com/background/20230602/original/pngtree-modern-corporate-business-office-room-with-chairs-and-tables-picture-image_2859568.jpg');
-            }
-            .wallpaper.Archivos{
-                background: url('https://www.shiojigyo.com/study/siryousitsu/img/pic_about.jpg');
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-attachment: fixed;
-
-                .opacity{
-                    opacity: .3;
-                }
-            }
-            .wallpaper.Mesas{
-                background: url('https://www.escoming.com/wp-content/uploads/Mesas-de-juntas-Quattro_oscura-gerencial-conexion-10-puestos-tv-mueble-auxiliar-2.jpg');
-                background-attachment: fixed;
-                background-size: cover;
-                .opacity{
-                    opacity: .1;
-                }
-            
-            }
             .containerParallax{
                 z-index: 2;
                 position:relative;
@@ -119,11 +97,12 @@
                         z-index:1;
                         background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-26.jpg?v=1721875050');
                         box-sizing: border-box;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                         background-position: center center;
                         border-radius: 10px;
                         z-index:1;
                         .opacity{
-                            background-color: black;
                             position:absolute;
                             width:100%;
                             border-radius: 10px;
@@ -137,41 +116,6 @@
                             position:relative;
                         }
                     }
-                    .wallpaperLarge.Silla.Singapur{
-                        background: url('./../assets/sillas/presidencial/singapur/singapur.webp');
-                        background-position: right;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                    }
-                    .wallpaperLarge.Archivo.Doble{
-                        background: url('https://modularescosta.co/docs/producto/ori_1431559316_rodantes1.webp');
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        .opacity{
-                            background-color: black;
-                            position:absolute;
-                            width:100%;
-                            border-radius: 10px;
-                            
-                            height:100%;
-                            opacity: .7;
-                        }
-
-                    
-                    }
-                    .wallpaperLarge.Locker.T3x9{
-                        background: url('https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp');
-                        background-position: right;
-                        background-repeat: no-repeat;
-                        background-size: contain;
-                        box-sizing: border-box;     
-                    }
-                    // MESA
-                    .wallpaperLarge.MesaJuntas{
-                        background: url('https://modularescosta.co/docs/producto/galeria/ori_344419693_mesa-de-reuniones-E-3.webp');
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                    }
                     .boxData{
                         z-index:2;
                         position: relative;
@@ -183,7 +127,7 @@
                                 font-size: 42px;
                                 font-weight: 400;
                                 margin:10px 0px;
-                                color: @colorVar;
+                                color: @btnButton;
                             }
                             strong{
                                 color: #666;
@@ -197,7 +141,7 @@
                     .boxData.Opacity{
                         .title{
                             h2{
-                                color: white;
+                                color: @btnButton;
                             }
                             strong{
                                 color:white;
@@ -403,7 +347,7 @@
                     align-items: center;
                     justify-content: space-between;
                     margin-top:50px;
-                
+                    flex-wrap: wrap;
                     .locker{
                         width:23%;
                         padding:30px;
@@ -414,7 +358,7 @@
                         cursor: pointer;
                         position: relative;
                         box-sizing: border-box;
-                        border:1px solid #f2f2f2;
+                        margin-bottom: 30px;
                         .opacityDiv{ 
                             position: absolute;
                             display: none;
@@ -482,6 +426,76 @@
                         font-size: 14px;
                         color: @default;
 
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:900px){
+    .lockers{
+        .pageLockers{
+            .firstParallax{
+                .containerParallax{
+                    .boxOne{
+                        width:80%;
+                        h1{
+                            font-size: 52px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .lockers{
+        .pageLockers{
+            .firstParallax{
+                .containerParallax{
+                    .boxOne{
+                        width:90%;
+                        h1{
+                            font-size: 32px;
+                        }
+                    }
+                }
+            }
+            .twoParallax{
+                .containerTwo{
+                    flex-wrap: wrap;
+                    .large{
+                        width:100%;
+                        height: 50vh;
+                        margin-bottom: 10px;
+                    }
+                    .divideLarge{
+                        box-sizing: border-box;
+                        width:100%;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .otherCasilleros{
+                box-sizing:border-box;
+
+                .containerOther{
+                    .lockers{
+                        flex-wrap: wrap;
+
+                        .locker{
+                            width:100%;
+                            border:none;
+                        }
+                    }
+                }
+            }
+            .invitationToAction{
+                .bigText{
+                    h1{
+                        font-size: 32px;
                     }
                 }
             }

@@ -7,6 +7,384 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.panel {
+  box-sizing: border-box;
+}
+.panel .containerPanel .sign {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.panel .containerPanel .sign .containerSign {
+  width: 90%;
+  margin: auto;
+}
+.panel .containerPanel .sign .containerSign .topTitle {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+}
+.panel .containerPanel .sign .containerSign .topTitle h1 {
+  font-weight: 100;
+  color: #3864F3;
+}
+.panel .containerPanel .sign .containerSign .containerForm {
+  width: 40%;
+  margin: auto;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input label {
+  color: #343A40;
+  font-size: 12px;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input input {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: 0px;
+  font-size: 12px;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input input:focus {
+  border: 1px solid #3864F3;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input button {
+  width: 100%;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input button span {
+  color: #3864F3;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input button.Active {
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+}
+.panel .containerPanel .sign .containerSign .containerForm .input button.Active span {
+  color: white;
+}
+.panel .containerPanel .sign .containerSign .containerForm .mistake {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+.panel .containerPanel .sign .containerSign .containerForm .mistake span {
+  color: red;
+  font-size: 12px;
+}
+.panel .containerPanel .div .principal .welcomen {
+  width: 90%;
+  margin: auto;
+  padding: 50px 0px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .back {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .back .icon {
+  font-size: 18px;
+  color: #3864F3;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .back span {
+  color: #3864F3;
+  margin-left: 10px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .pseudo {
+  font-size: 14px;
+  color: #666;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .topMessage {
+  width: 100%;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .topMessage h1 {
+  font-weight: 100;
+  color: #3864F3;
+  margin: 5px 0px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .topMessage span {
+  font-size: 16px;
+  color: #666;
+  font-weight: 100;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories {
+  margin-top: 50px;
+  width: 100%;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .topTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .topTitle h1 {
+  font-size: 20px;
+  font-weight: 100;
+  color: #343A40;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .topTitle button {
+  background-color: transparent;
+  border: 1px solid #3864F3;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .topTitle button span {
+  font-size: 12px;
+  color: #3864F3;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .topTitle button:hover {
+  transform: scale(1.1);
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category {
+  width: 30%;
+  margin-bottom: 50px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .wallpaperCat {
+  width: 100%;
+  height: 150px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .wallpaperCat img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .data {
+  padding: 10px;
+  box-sizing: border-box;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .data h3 {
+  font-weight: 100;
+  color: #3864F3;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .options {
+  width: 100%;
+  text-align: right;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .options button {
+  background-color: transparent;
+  border: 1px solid #666;
+  cursor: pointer;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .categories .containerCategories .category .options button span {
+  font-size: 12px;
+  color: #666;
+}
+.panel .containerPanel .modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.111);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.panel .containerPanel .modal .hidden {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.panel .containerPanel .modal .containerModal {
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  z-index: 4;
+  height: 90vh;
+  margin-top: 5vh;
+  border: 1px solid #ccc;
+}
+.panel .containerPanel .modal .containerModal .top {
+  height: 10%;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+.panel .containerPanel .modal .containerModal .top h3 {
+  font-size: 22px;
+  font-weight: 100;
+  color: #3864F3;
+}
+.panel .containerPanel .modal .containerModal .editar {
+  width: 100%;
+  height: 90%;
+  overflow-y: auto;
+}
+.panel .containerPanel .modal .containerModal .editar .form {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .inputDiv {
+  width: 45%;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .inputDiv label {
+  font-size: 12px;
+  color: #666;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .inputDiv input {
+  margin-top: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 100%;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .visualizarWallpaper {
+  width: 45%;
+  border: 1px solid #ccc;
+  height: 150px;
+  box-sizing: border-box;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .visualizarWallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.panel .containerPanel .modal .containerModal .editar .form .horizontalDiv .visualizarWallpaper.Product {
+  height: 250px;
+  width: 30%;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv label {
+  font-size: 12px;
+  color: #666;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv input {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: 0px;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv textarea {
+  width: 100%;
+  resize: none;
+  outline: 0px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv button {
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: 30%;
+}
+.panel .containerPanel .modal .containerModal .editar .form .inputDiv button span {
+  color: white;
+  font-size: 14px;
+}
+.panel .containerPanel .modal .containerModal .editar .divide {
+  display: flex;
+  justify-content: space-between;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left {
+  width: 45%;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen {
+  width: 150px;
+  height: 210px;
+  text-align: right;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen .del {
+  padding: 5px 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #3864F3;
+  cursor: pointer;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen .del span {
+  color: white;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen img {
+  width: 100%;
+  height: 200px;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen .delete {
+  width: 100%;
+  height: 200px;
+  background-color: transparent;
+  cursor: default;
+  border: none;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .left .imagenes .imagen .delete h1 {
+  font-weight: 100;
+  color: red;
+  font-size: 42px;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .right {
+  width: 40%;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .right .upload {
+  width: 100%;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .right .upload .wallpaper {
+  margin: auto;
+  width: 150px;
+  height: 200px;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .right .upload .wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+.panel .containerPanel .modal .containerModal .editar .divide .right .upload .form {
+  width: 60%;
+  margin: auto;
+}
 .fotter {
   width: 100%;
   margin-top: 40px;
@@ -72,13 +450,26 @@ body {
   font-size: 13px;
   color: #75818F;
 }
+@media screen and (max-width: 800px) {
+  .fotter .fotterContainer .business {
+    width: 100%;
+    text-align: center;
+  }
+  .fotter .fotterContainer .business .descAndNetwork {
+    margin: auto;
+  }
+  .fotter .fotterContainer .boxNav {
+    display: none;
+  }
+}
 .navigation {
   margin: 0px;
   padding: 0px;
-  background-color: white;
+  background-color: transparent;
   position: fixed;
   width: 100%;
   z-index: 3;
+  transition: 0.3s;
 }
 .navigation .containerNav {
   width: 90%;
@@ -98,6 +489,21 @@ body {
   display: inline-block;
   cursor: pointer;
 }
+.navigation .containerNav .navigationOptions nav ul li input {
+  width: 100%;
+  outline: 0px;
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: right;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.navigation .containerNav .navigationOptions nav ul li input:focus {
+  border: 2px solid #046290;
+  color: #046290;
+}
 .navigation .containerNav .navigationOptions nav ul li div {
   padding: 10px 20px;
 }
@@ -105,13 +511,67 @@ body {
   font-size: 14px;
   color: #666;
 }
-.navigation.Active {
+.navigation .containerNav .div {
+  display: none;
+}
+.navigation .containerNav .div button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: none;
+}
+.navigation .containerNav .div button .icon {
+  font-size: 24px;
+  color: #046290;
+}
+.navigationActive {
   background-color: white;
+}
+@media screen and (max-width: 700px) {
+  .navigation .containerNav {
+    width: 100%;
+  }
+  .navigation .containerNav .logo {
+    width: 30%;
+  }
+  .navigation .containerNav .navigationOptions {
+    position: fixed;
+    transform: translateX(-100%);
+    transition: 0.3s;
+    width: 70%;
+    left: 0;
+    background-color: white;
+    bottom: 0;
+    top: 0;
+  }
+  .navigation .containerNav .navigationOptions nav ul li {
+    padding: 15px 20px;
+    display: block;
+  }
+  .navigation .containerNav .navigationsOptionsActive {
+    transform: translateX(0%);
+  }
+  .navigation .containerNav .div {
+    display: block;
+    width: 20%;
+    box-sizing: border-box;
+    margin-right: 40px;
+    text-align: right;
+  }
+  .navigation .containerNav .div button {
+    margin-left: auto;
+    display: block;
+  }
 }
 .modulares {
   width: 100%;
   box-sizing: border-box;
   padding: 0px;
+}
+.modulares .home {
+  box-sizing: border-box;
 }
 .modulares .home .parallaxOne {
   border: 1px solid #ebebed;
@@ -192,13 +652,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio {
   width: 20%;
-  border: 1px solid #e8e7e7;
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  margin-bottom: 30px;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio {
   box-sizing: border-box;
@@ -217,18 +678,18 @@ body {
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .wallpaper img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title {
   z-index: 4;
-  padding: 40px 30px;
+  padding: 20px 10px;
   box-sizing: border-box;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title h3 {
-  color: #3864F3;
+  color: #525456;
   font-weight: 100;
-  font-size: 26px;
+  font-size: 20px;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title span {
   font-size: 16px;
@@ -242,7 +703,7 @@ body {
   width: 58%;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio.Big .containerServicio .wallpaper img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .containerService {
   width: 100%;
@@ -417,6 +878,135 @@ body {
 .modulares .home .ourProvider .containerOurClients .someProducts .seeMore button span {
   color: white;
 }
+.modulares .home .form {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.modulares .home .form .containerForm {
+  width: 60%;
+  margin: auto;
+}
+.modulares .home .form .containerForm .top {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+.modulares .home .form .containerForm .top h1 {
+  font-weight: 100;
+  color: #046290;
+  margin-bottom: 10px;
+}
+.modulares .home .form .containerForm .top span {
+  font-size: 14px;
+  color: #343A40;
+}
+.modulares .home .form .containerForm .formData {
+  width: 70%;
+  margin: 30px auto;
+}
+.modulares .home .form .containerForm .formData .inputDiv {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.modulares .home .form .containerForm .formData .inputDiv label {
+  font-size: 12px;
+  color: #343A40;
+}
+.modulares .home .form .containerForm .formData .inputDiv input {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+}
+.modulares .home .form .containerForm .formData .inputDiv button {
+  padding: 10px 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.modulares .home .form .containerForm .formData .inputDiv button span {
+  font-size: 14px;
+  color: white;
+}
+.modulares .home .form .containerForm .formData span {
+  text-align: center;
+  font-size: 12px;
+  color: #343A40;
+}
+@media screen and (max-width: 900px) {
+  .modulares .home {
+    box-sizing: border-box;
+  }
+  .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption {
+    width: 90%;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio {
+    width: 25%;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title h3 {
+    font-size: 16px;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio.Big {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .modulares .home {
+    box-sizing: border-box;
+  }
+  .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption {
+    width: 100%;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios {
+    width: 100%;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio {
+    width: 100%;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .wallpaper {
+    height: 150px;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .wallpaper img {
+    border-radius: 4px;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio .containerServicio .title h3 {
+    font-size: 22px;
+    color: #046290;
+  }
+  .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios .horizontal .servicio.Big {
+    width: 100%;
+  }
+  .modulares .home .ourExperience .containerExperience {
+    width: 100%;
+  }
+  .modulares .home .ourExperience .containerExperience .containerBoxExperience {
+    width: 100%;
+    display: block;
+  }
+  .modulares .home .ourExperience .containerExperience .containerBoxExperience .box {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+  }
+  .modulares .home .form .containerForm {
+    width: 90%;
+  }
+  .modulares .home .form .containerForm .formData {
+    width: 100%;
+  }
+  .modulares .home .form .containerForm .formData .inputDiv input {
+    width: 100%;
+  }
+}
 .otherCasilleros {
   background-color: white;
   margin: 30px 0px;
@@ -482,6 +1072,316 @@ body {
 }
 .otherCasilleros .containerOther .lockers .locker:hover {
   transform: scale(1.1);
+}
+.oferta {
+  width: 100%;
+  box-sizing: border-box;
+}
+.oferta .containerOferta {
+  width: 100%;
+}
+.oferta .containerOferta .parallaxOne {
+  background: url('https://superprops-next.vercel.app/_next/static/image/src/common/assets/image/agency/agency-banner.5ae16e62dfcaa23093836196a46ef132.png');
+  background-position: center center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.oferta .containerOferta .parallaxOne .containerOne {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div {
+  width: 50%;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div strong {
+  color: #3864F3;
+  font-weight: 100;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div h3 {
+  margin: 10px 0px;
+  font-size: 42px;
+  font-weight: 100;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div span {
+  font-size: 16px;
+  color: #666;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div button {
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid #3864F3;
+  background-color: #3864F3;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.oferta .containerOferta .parallaxOne .containerOne .div button span {
+  color: white;
+  font-size: 12px;
+}
+.oferta .containerOferta .bigText {
+  margin-top: 20px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url('https://www.template.themesdesign.in/larix/react/static/media/home-bg-2.80fcd1a22fef02b1ea49.jpg');
+  box-sizing: border-box;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.oferta .containerOferta .bigText .containerBigText {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.oferta .containerOferta .bigText .containerBigText strong {
+  color: #046290;
+}
+.oferta .containerOferta .bigText .containerBigText h1 {
+  font-size: 26px;
+  font-weight: 100;
+  margin: 10px 0px;
+  padding: 0px;
+  color: #343A40;
+}
+.oferta .containerOferta .BgTwo {
+  margin-top: 0px;
+  background-color: white;
+  background-image: none;
+}
+.oferta .containerOferta .BgTwo .containerBigText strong {
+  color: #343A40;
+}
+.oferta .containerOferta .BgTwo .containerBigText h1 {
+  font-size: 30px;
+  color: #046290;
+}
+.oferta .containerOferta .two {
+  padding: 100px 0px;
+  border-top: 1px solid #ccc;
+  width: 90%;
+  margin: auto;
+}
+.oferta .containerOferta .two .containerTwo {
+  height: 100%;
+}
+.oferta .containerOferta .two .containerTwo .title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.oferta .containerOferta .two .containerTwo .title h1 {
+  font-weight: 100;
+  color: #046290;
+}
+.oferta .containerOferta .two .containerTwo .title span {
+  color: #343A40;
+  font-weight: 100;
+  font-size: 14px;
+}
+.oferta .containerOferta .two .containerTwo .divide {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.oferta .containerOferta .two .containerTwo .divide .left {
+  width: 45%;
+  height: 100vh;
+  padding: 2px;
+  background: url('https://img.freepik.com/premium-photo/desk-with-chair-computer-it-room-with-wooden-wall-flooring-open-ceiling_961147-42003.jpg');
+  border-radius: 10px;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+.oferta .containerOferta .two .containerTwo .divide .right {
+  width: 55%;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container strong {
+  color: #3864F3;
+  font-size: 16px;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container h3 {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 20px 0px;
+  padding: 0px;
+  color: #343A40;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja {
+  width: 80%;
+  margin: 50px 0px;
+  margin-left: auto;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .icon {
+  width: 10%;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .icon img {
+  width: 100%;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .text {
+  width: 80%;
+}
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .text span {
+  font-size: 14px;
+  color: #343A40;
+}
+.oferta .containerOferta .two .containerTwo .Reverse {
+  flex-direction: row-reverse;
+}
+.oferta .containerOferta .two .containerTwo .Reverse .left {
+  background: url('https://www.energymagazine.com.au/wp-content/uploads/2024/01/shutterstock_12158713.jpg');
+  border-radius: 10px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.oferta .containerOferta .two .containerTwo .Reverse .right .container .ventaja {
+  margin-right: 20%;
+}
+.oferta .containerOferta .finish {
+  width: 100%;
+  margin: auto;
+  height: 80vh;
+  display: flex;
+  background-color: #046290;
+  align-items: center;
+}
+.oferta .containerOferta .finish .containerFinish {
+  width: 100%;
+  text-align: center;
+}
+.oferta .containerOferta .finish .containerFinish strong {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.oferta .containerOferta .finish .containerFinish h3 {
+  font-weight: 100;
+  margin-top: 30px;
+  font-size: 44px;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  .oferta .containerOferta .parallaxOne .containerOne .div {
+    width: 90%;
+  }
+  .oferta .containerOferta .parallaxOne .containerOne .div h3 {
+    font-size: 26px;
+  }
+  .oferta .containerOferta .bigText {
+    box-sizing: border-box;
+    height: auto;
+    padding: 60px 0px;
+  }
+  .oferta .containerOferta .bigText .containerBigText {
+    width: 80%;
+  }
+  .oferta .containerOferta .bigText .containerBigText h1 {
+    font-size: 16px;
+  }
+  .oferta .containerOferta .two .containerTwo .title {
+    padding-bottom: 20px;
+  }
+  .oferta .containerOferta .two .containerTwo .title h1 {
+    font-size: 26px;
+  }
+  .oferta .containerOferta .two .containerTwo .divide {
+    width: 100%;
+    display: block;
+  }
+  .oferta .containerOferta .two .containerTwo .divide .left {
+    width: 100%;
+    height: 100px;
+  }
+  .oferta .containerOferta .two .containerTwo .divide .right {
+    width: 100%;
+  }
+  .oferta .containerOferta .two .containerTwo .Reverse .left {
+    background-position: top;
+  }
+  .oferta .containerOferta .two .containerTwo .Reverse .right {
+    width: 100%;
+  }
+  .oferta .containerOferta .two .containerTwo .Reverse .right .container .ventaja {
+    margin-left: 20%;
+    margin-bottom: 20px;
+  }
+  .oferta .containerOferta .finish .containerFinish h3 {
+    font-size: 34px;
+  }
+}
+.btnWhatsApp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 50px;
+  z-index: 5;
+}
+.btnWhatsApp button {
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-around;
+  border: none;
+  background-color: #008000;
+  border: 2px solid #008000;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btnWhatsApp button .icon {
+  font-size: 32px;
+  color: white;
+}
+.btnWhatsApp button:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+.btnWhatsApp button:hover .icon {
+  color: #008000;
+}
+@media screen and (max-width: 700px) {
+  .btnWhatsApp {
+    margin: 20px;
+  }
+}
+.loading {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.loading .containerLoading {
+  width: 50%;
+  text-align: center;
+}
+.loading .containerLoading img {
+  width: 30%;
+}
+.loading .containerLoading h1 {
+  color: #046290;
+  font-weight: 100;
+  font-size: 18px;
 }
 .product {
   padding-top: 100px;
@@ -620,11 +1520,13 @@ body {
 .product .containerProduct .otherCasilleros .containerOther .lockers {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .product .containerProduct .otherCasilleros .containerOther .lockers .locker {
   width: 23%;
+  margin: 0px auto;
   padding: 30px;
   background-color: #fff;
   border-radius: 5px;
@@ -632,7 +1534,7 @@ body {
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
-  border: 1px solid #f2f2f2;
+  margin-bottom: 20px;
 }
 .product .containerProduct .otherCasilleros .containerOther .lockers .locker .opacityDiv {
   position: absolute;
@@ -665,6 +1567,44 @@ body {
 .product .containerProduct .otherCasilleros .containerOther .lockers .locker:hover {
   transform: scale(1.1);
 }
+@media screen and (max-width: 800px) {
+  .product {
+    padding-top: 40px;
+  }
+  .product .containerProduct {
+    width: 100%;
+  }
+  .product .containerProduct .containerProductsCar {
+    height: 100vh;
+    margin-top: 0px;
+  }
+  .product .containerProduct .containerProductsCar .containerCars {
+    flex-wrap: wrap;
+  }
+  .product .containerProduct .containerProductsCar .containerCars .wallpaper {
+    width: 100%;
+    height: 50%;
+  }
+  .product .containerProduct .containerProductsCar .containerCars .wallpaper img {
+    width: 100%;
+  }
+  .product .containerProduct .containerProductsCar .containerCars .car {
+    width: 90%;
+    margin: auto;
+  }
+  .product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h1 {
+    font-size: 28px;
+  }
+  .product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h3 {
+    font-size: 24px;
+  }
+  .product .containerProduct .otherCasilleros .containerOther .lockers {
+    flex-wrap: wrap;
+  }
+  .product .containerProduct .otherCasilleros .containerOther .lockers .locker {
+    width: 100%;
+  }
+}
 .lockers {
   width: 100%;
   height: auto;
@@ -695,26 +1635,6 @@ body {
   height: 100%;
   background-color: black;
   opacity: 0.5;
-}
-.lockers .pageLockers .firstParallax .wallpaper.Silla {
-  background: url('https://png.pngtree.com/background/20230602/original/pngtree-modern-corporate-business-office-room-with-chairs-and-tables-picture-image_2859568.jpg');
-}
-.lockers .pageLockers .firstParallax .wallpaper.Archivos {
-  background: url('https://www.shiojigyo.com/study/siryousitsu/img/pic_about.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.lockers .pageLockers .firstParallax .wallpaper.Archivos .opacity {
-  opacity: 0.3;
-}
-.lockers .pageLockers .firstParallax .wallpaper.Mesas {
-  background: url('https://www.escoming.com/wp-content/uploads/Mesas-de-juntas-Quattro_oscura-gerencial-conexion-10-puestos-tv-mueble-auxiliar-2.jpg');
-  background-attachment: fixed;
-  background-size: cover;
-}
-.lockers .pageLockers .firstParallax .wallpaper.Mesas .opacity {
-  opacity: 0.1;
 }
 .lockers .pageLockers .firstParallax .containerParallax {
   z-index: 2;
@@ -782,12 +1702,13 @@ body {
   height: 100%;
   background: url('https://wpbingo-darion.myshopify.com/cdn/shop/files/banner-26.jpg?v=1721875050');
   box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   border-radius: 10px;
   z-index: 1;
 }
 .lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge .opacity {
-  background-color: black;
   position: absolute;
   width: 100%;
   border-radius: 10px;
@@ -798,37 +1719,6 @@ body {
 .lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge .boxData {
   z-index: 2;
   position: relative;
-}
-.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Silla.Singapur {
-  background: url('../assets/sillas/presidencial/singapur/singapur.webp');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Archivo.Doble {
-  background: url('https://modularescosta.co/docs/producto/ori_1431559316_rodantes1.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Archivo.Doble .opacity {
-  background-color: black;
-  position: absolute;
-  width: 100%;
-  border-radius: 10px;
-  height: 100%;
-  opacity: 0.7;
-}
-.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.Locker.T3x9 {
-  background: url('https://modularescosta.co/docs/producto/ori_1988147203_3x9-celosia-manija-gris.webp');
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: contain;
-  box-sizing: border-box;
-}
-.lockers .pageLockers .twoParallax .containerTwo .large .wallpaperLarge.MesaJuntas {
-  background: url('https://modularescosta.co/docs/producto/galeria/ori_344419693_mesa-de-reuniones-E-3.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .lockers .pageLockers .twoParallax .containerTwo .large .boxData {
   z-index: 2;
@@ -843,7 +1733,7 @@ body {
   font-size: 42px;
   font-weight: 400;
   margin: 10px 0px;
-  color: #046290;
+  color: #3864F3;
 }
 .lockers .pageLockers .twoParallax .containerTwo .large .boxData .title strong {
   color: #666;
@@ -853,7 +1743,7 @@ body {
   color: #6c757d;
 }
 .lockers .pageLockers .twoParallax .containerTwo .large .boxData.Opacity .title h2 {
-  color: white;
+  color: #3864F3;
 }
 .lockers .pageLockers .twoParallax .containerTwo .large .boxData.Opacity .title strong {
   color: white;
@@ -1043,6 +1933,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 50px;
+  flex-wrap: wrap;
 }
 .lockers .pageLockers .otherCasilleros .containerOther .lockers .locker {
   width: 23%;
@@ -1053,7 +1944,7 @@ body {
   cursor: pointer;
   position: relative;
   box-sizing: border-box;
-  border: 1px solid #f2f2f2;
+  margin-bottom: 30px;
 }
 .lockers .pageLockers .otherCasilleros .containerOther .lockers .locker .opacityDiv {
   position: absolute;
@@ -1117,6 +2008,48 @@ body {
 .lockers .pageLockers .invitationToAction .bigText button span {
   font-size: 14px;
   color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne {
+    width: 80%;
+  }
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne h1 {
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne {
+    width: 90%;
+  }
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne h1 {
+    font-size: 32px;
+  }
+  .lockers .pageLockers .twoParallax .containerTwo {
+    flex-wrap: wrap;
+  }
+  .lockers .pageLockers .twoParallax .containerTwo .large {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 10px;
+  }
+  .lockers .pageLockers .twoParallax .containerTwo .divideLarge {
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .lockers .pageLockers .otherCasilleros {
+    box-sizing: border-box;
+  }
+  .lockers .pageLockers .otherCasilleros .containerOther .lockers {
+    flex-wrap: wrap;
+  }
+  .lockers .pageLockers .otherCasilleros .containerOther .lockers .locker {
+    width: 100%;
+    border: none;
+  }
+  .lockers .pageLockers .invitationToAction .bigText h1 {
+    font-size: 32px;
+  }
 }
 .mesas .OneParallax {
   height: 100vh;

@@ -4,7 +4,7 @@
     padding:0px;
 
     .home{
-
+        box-sizing: border-box;
         .parallaxOne{
             border:1px solid @bgBlue;
             background: url('https://www.template.themesdesign.in/larix/react/static/media/home-bg-2.80fcd1a22fef02b1ea49.jpg');
@@ -92,12 +92,13 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+                            flex-wrap: wrap;
                             .servicio{
                                 width:20%;
-                                border:1px solid #e8e7e7;
                                 border-radius: 10px;
                                 cursor: pointer;
                                 transition: .3s;
+                                margin-bottom: 30px;
                                 .containerServicio{ 
                                     box-sizing: border-box;
                                     position: relative;
@@ -113,18 +114,18 @@
                                         img{
                                             width:100%;
                                             height: 100%;
-                                            object-fit: contain;
+                                            object-fit: cover;
                                             border-radius: 10px;
                                         }
                                     }
                                     .title{
                                         z-index:4;
-                                        padding:40px 30px;
+                                        padding:20px 10px;
                                         box-sizing: border-box;
                                         h3{
-                                            color:@btnButton;
+                                            color:@titleBig;
                                             font-weight: 100;
-                                            font-size: 26px;
+                                            font-size: 20px;
                                         }
                                         span{
                                             font-size: 16px;
@@ -142,7 +143,7 @@
                                 .containerServicio{
                                     .wallpaper{
                                         img{
-                                            object-fit: contain;
+                                            object-fit: cover;
                                         }
                                     }
                                 }
@@ -345,6 +346,185 @@
                 }
             }
         }
+        .form{
+            width:100%;
+            height:100vh;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            .containerForm{
+
+                width:60%;
+                margin:auto;
+                .top{
+                    width:100%;
+                    text-align: center;
+                    padding:20px 0px;
+                    box-sizing: border-box;
+                    h1{
+                        font-weight: 100;
+                        color: @colorVar;
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: @bgDark;
+
+                    }
+                }
+                .formData{
+                    width:70%;
+                    margin:30px auto;
+                    .inputDiv{
+                        width:100%;
+                        margin-bottom: 30px;
+                        label{
+                            font-size: 12px;
+                            color: @bgDark;
+                        }
+                        input{
+                            margin-top:10px;
+                            width:100%;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                            border:1px solid #ccc;
+                            padding:10px 10px;
+                        }
+                        button{
+                            padding:10px 20px;
+                            background-color: @colorVar;
+                            border:1px solid @colorVar;
+                            border-radius: 5px;
+                            width:100%;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            span{
+                                font-size: 14px;
+                                color: white;
+                            }
+                        }
+                    }
+                    span{
+                        text-align: center;
+                        font-size: 12px;
+                        color: @bgDark;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:900px){
+        .home{
+            box-sizing: border-box;
+            .parallaxOne{
+                .containerParallax{
+                    .boxWelcomen{
+                        .caption{
+                            width:90%;
+                        }
+                    }
+                }
+            }
+            .ourServices{
+                .containerParallax{
+                    .serviceOption{
+                        .contenedorDeServicios{
+                            .horizontal{
+                                .servicio{
+                                    width:25%;
+                                    .containerServicio{
+                                        .title{
+                                            h3{
+                                                font-size: 16px;
+                                            }
+                                        }
+                                    }
+                                }
+                                .servicio.Big{
+                                    width:50%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px){
+        .home{
+            box-sizing: border-box;
+            .parallaxOne{
+                .containerParallax{
+                    .boxWelcomen{
+                        .caption{
+                            width:100%;
+                        }
+                    }
+                }
+            }
+            .ourServices{
+                .containerParallax{
+                    .serviceOption{
+                        .contenedorDeServicios{
+                            width:100%;
+                            .horizontal{
+                                .servicio{
+                                    width:100%;
+                                    .containerServicio{
+                                        .wallpaper{
+                                            height:150px;
+                                            img{
+                                                border-radius: 4px;
+
+                                            }
+                                        }
+                                        .title{
+                                            h3{
+                                                font-size: 22px;
+                                                color: @colorVar;
+                                            }
+                                        }
+                                    }
+                                }
+                                .servicio.Big{
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ourExperience{
+                .containerExperience{
+                    width:100%;
+
+                    .containerBoxExperience{
+                        width:100%;
+                        display: block;
+                        .box{
+                            width:100%;
+                            text-align: center;
+                            padding:30px 0px;
+                        }
+                    }
+                }
+            }
+            .form{
+                .containerForm{
+                    width:90%;
+                    .formData{
+                        width:100%;
+                        .inputDiv{
+                            input{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -418,6 +598,363 @@
             .locker:hover{
                 transform: scale(1.1);
             }
+        }
+    }
+}
+
+
+.oferta{
+    width:100%;
+    box-sizing: border-box;
+    .containerOferta{
+        width:100%;
+        .parallaxOne{
+            height:100vh;
+            background: url('https://superprops-next.vercel.app/_next/static/image/src/common/assets/image/agency/agency-banner.5ae16e62dfcaa23093836196a46ef132.png');
+            background-position: center center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            .containerOne{
+                display: flex;
+                align-items: center;
+                width:90%;
+                margin:auto;
+                height:100%;
+
+                .div{
+                    width:50%;
+                    strong{
+                        color: @btnButton;
+                        font-weight: 100;
+                    }
+                    h3{
+                        margin:10px 0px;
+                        font-size: 42px;
+                        font-weight: 100;
+                    }
+                    span{
+                        font-size: 16px;
+                        color: #666;
+                    }
+                    button{
+                        padding:8px 20px;
+                        border-radius: 5px;
+                        border:1px solid @btnButton;
+                        background-color: @btnButton;
+                        cursor: pointer;
+                        margin-top:10px;
+                        transition: .3s;
+                        span{
+                            color: white;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        .bigText{
+            margin-top:20px;
+            width:100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background: url('https://www.template.themesdesign.in/larix/react/static/media/home-bg-2.80fcd1a22fef02b1ea49.jpg');
+            box-sizing: border-box;
+            background-attachment: fixed;
+            background-size: cover;
+            .containerBigText{
+                width:60%;
+                margin:auto;
+                text-align: center;
+                strong{
+                    color: @colorVar;
+                }
+                h1{
+                    font-size: 26px;
+                    font-weight: 100;
+                    margin:10px 0px;
+                    padding:0px;
+                    color: @bgDark;
+                }
+            }
+        }
+        .BgTwo{
+            margin-top:0px;
+            background-color: white;
+            background-image: none;
+            .containerBigText{
+                strong{
+                    color:@bgDark;
+                }
+                h1{
+                    font-size: 30px;
+                    color: @colorVar;
+                }
+            }
+        }
+        .two{
+            padding:100px 0px;
+            border-top: 1px solid #ccc;
+            width:90%;
+            margin:auto;
+            .containerTwo{
+                height:100%;
+                .title{
+                    width:100%;
+                    text-align: center;
+                    padding-bottom: 100px;
+                    
+                    h1{
+                        font-weight: 100;
+                        color: @colorVar;
+                    }
+                    span{
+                        color: @bgDark;
+                        font-weight: 100;
+                        font-size: 14px;
+                    }
+
+                }
+                .divide{
+                    height:100%;
+                    align-items: center;
+                    display: flex;
+                    min-height: 100vh;
+                    justify-content: space-between;
+                    width:90%;
+                    margin:auto;
+                    .left{
+                        width:45%;
+                        height:100vh;
+                       
+                        padding:2px;
+                        background: url('https://img.freepik.com/premium-photo/desk-with-chair-computer-it-room-with-wooden-wall-flooring-open-ceiling_961147-42003.jpg');
+                        border-radius: 10px;
+                        object-fit: cover;
+                        background-attachment: fixed;
+                    }
+                    .right{
+                        width:55%;
+
+                        .container{
+                            padding:10px 0px;
+                            box-sizing: border-box;
+                            strong{
+                                color: @btnButton;
+                                font-size: 16px;
+                            }
+                            h3{
+                                font-size: 20px;
+                                font-weight: 100;
+                                margin:20px 0px;
+                                padding:0px;
+                                color: @bgDark;
+                            }
+                            .ventaja{
+                                width:80%;
+                                margin: 50px 0px;
+                                margin-left:auto;
+
+                                .containerVentaja{
+                                    display: flex;
+                                    align-items:center;
+                                    justify-content: space-between;
+                                    .icon{
+                                        width:10%;
+                                        img{
+                                            width:100%;
+                                        }
+                                    }
+                                    .text{
+                                        width: 80%;
+                                        span{
+                                            font-size: 14px;
+                                            color: @bgDark;
+                                        }
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                .Reverse{
+                    flex-direction: row-reverse;
+                    .left{ 
+                        background: url('https://www.energymagazine.com.au/wp-content/uploads/2024/01/shutterstock_12158713.jpg');
+                        border-radius: 10px;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                    }
+                    .right{
+                        .container{
+                            .ventaja{
+                                margin-right: 20%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .finish{
+            width:100%;
+            margin:auto;
+            height:80vh;
+            display: flex;
+            background-color: @colorVar;
+            align-items: center;
+            .containerFinish{
+                width:100%;
+                text-align: center;
+                strong{
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+                h3{
+                    font-weight: 100;
+                    margin-top:30px;
+                    font-size: 44px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .oferta{
+        .containerOferta{
+            .parallaxOne{
+                .containerOne{
+                    .div{
+                        width:90%;
+
+                        h3{
+                            font-size: 26px;
+                        }
+                    }
+                }
+            }
+            .bigText{
+                box-sizing: border-box;
+                height:auto;
+                padding:60px 0px;
+                .containerBigText{
+                    width:80%;
+
+                    h1{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .two{
+                .containerTwo{
+                    .title{
+                        padding-bottom: 20px;
+                        h1{
+                            font-size: 26px;
+                        }
+                    }
+                    .divide{
+                        width:100%;
+                        display: block;
+                        .left{
+                            width:100%;
+                            height:100px;
+                        }
+                        .right{
+                            width: 100%;
+                        }
+                    }
+                    .Reverse{
+                        .left{
+                            background-position: top;
+                        }
+                        .right{
+                            width:100%;
+                            .container{
+                                .ventaja{
+                                    margin-left:20%;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .finish{
+                .containerFinish{
+                    h3{
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btnWhatsApp{
+    position:fixed;
+    bottom:0;
+    right:0;
+    margin:50px;
+    z-index:5;
+    button{
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        padding:15px;
+        justify-content: space-around;
+        border:none;
+        background-color: #008000;
+        border:2px solid #008000;
+        transition: .3s;
+        cursor: pointer;
+        .icon{
+            font-size: 32px;
+            color: white;
+        }
+    }
+    button:hover{
+        transform: scale(1.1);
+        background-color: white;
+        .icon{
+            color: #008000;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    // .otherCasilleros{
+    //     // display: none;
+    // }
+
+    .btnWhatsApp{
+        margin:20px;
+    }
+}
+
+.loading{
+    width:100%;
+    box-sizing: border-box;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .containerLoading{
+        width:50%;
+        text-align: center;
+        img{
+            width:30%;
+        }
+        h1{
+            color: @colorVar;
+            font-weight: 100;
+            font-size: 18px;
         }
     }
 }

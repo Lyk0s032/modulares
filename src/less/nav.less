@@ -1,10 +1,11 @@
 .navigation{
     margin:0px;
     padding:0px;
-    background-color: white;
+    background-color: transparent;
     position:fixed;
     width:100%;
     z-index:3;
+    transition: .3s;
     .containerNav{
         width:90%;
         margin:auto;
@@ -24,6 +25,22 @@
                     li{
                         display: inline-block;
                         cursor: pointer;
+
+                        input{
+                            width:100%;
+                            outline:0px;
+                            padding:8px 20px;
+                            box-sizing: border-box;
+                            border-radius: 20px;
+                            border:1px solid #ccc;
+                            text-align: right;
+                            font-size: 12px;
+                            transition: .3s;
+                        }
+                        input:focus{
+                            border:2px solid @colorVar;
+                            color: @colorVar;
+                        }
                         div{
                             padding:10px 20px;
                             span{
@@ -33,10 +50,72 @@
                         }
                     }
                 }
+                
+            }
+        }
+        .div{
+            display: none;
+            button{
+                background-color: transparent;
+                border:none;
+                padding:10px;
+                box-sizing: border-box;
+                cursor: pointer;
+                display: none;
+                .icon{
+                    font-size: 24px;
+                    color: @colorVar;
+                }
             }
         }
     }
 }
-.navigation.Active{
+.navigationActive{
     background-color: white;
+}
+
+@media screen and (max-width:700px){
+    .navigation{
+        .containerNav{
+            width:100%;
+            .logo{
+                width:30%;
+            }
+            .navigationOptions{
+                position: fixed;
+                transform: translateX(-100%);
+                transition: .3s;
+                width:70%;
+                left:0;
+                background-color: white;
+                bottom:0;
+                top:0;
+                nav{
+                    ul{
+                        li{
+                            padding:15px 20px;
+                            display: block;
+                        }
+                    }
+                    
+                }
+            }
+            .navigationsOptionsActive{
+                transform: translateX(0%);
+            }
+            .div{
+                display: block;
+                width:20%;
+                box-sizing: border-box;
+                margin-right: 40px;
+                text-align: right;
+                button{
+                    margin-left: auto;
+                    display: block;
+
+
+                }
+            }
+        }
+    }
 }
