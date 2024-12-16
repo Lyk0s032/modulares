@@ -4,6 +4,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import * as actions from './../store/actions/actions';
 import Loading from '../loading';
 import NotFound from '../notFound';
+import PanelSubCategory from '../subcategory/panelSub';
 
 export default function Lockers(){
     const navigate = useNavigate();
@@ -17,7 +18,9 @@ export default function Lockers(){
         })
     }
     useEffect(() => {
-        dispatch(actions.axiosGetCategory(true, cid))
+        if(!category || category == 404 || category == 'request' || category.id != cid){
+            dispatch(actions.axiosGetCategory(true, cid))
+        }
     }, [cid])
     return (
         !category || loading ?
@@ -46,99 +49,15 @@ export default function Lockers(){
                         </div>
                     </div>
                 </div>
-                <div className='twoParallax' id="two">
-                    <div className='containerTwo'>
-                        {
-                            category.products && category.products.length ?
-                                category.products.map((product, i) => {
-                                    return (
-                                        i+1 == 1 ? 
-                                            <div className='large' onClick={() => navigate(`/product/${product.id}`)}>
-                                                <div className='wallpaperLarge' style={{
-                                                    background: `url('${product.photo}')`,
-                                                    backgroundSize: 'cover',
-                                                    backgroundRepeat:'no-repeat'
-                                                }}>
-                                                    <div className="opacity"></div>
-                                                </div>
-                                                <div className="boxData Opacity">
-                                                    <div className="title">
-                                                        <h2>{product.name}</h2>
-                                                        <strong>{product.referencia}</strong><br /><br />
-                                                        <span>
-                                                            {product.description}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            :null
-
-                                    )
-                                })
-                            : <span>Sin productos</span>
-                        }
-
-                        <div className='divideLarge'>
-                            {
-                                category.products && category.products.length ?
-                                    category.products.map((product, i) => {
-                                        return (
-                                            i+1 > 1 && i+1 < 4 ? 
-                                            <div className='BoxDivide' style={{
-                                                background: `url('${product.photo}')`,
-                                                backgroundSize: 'contain',
-                                                backgroundRepeat:'no-repeat',
-                                                backgroundPosition: 'right'
-                                            }} onClick={() => navigate('/product/1/')}>
-                                                <div className='title'>
-                                                    <h2>{product.name}</h2>
-                                                    <span>{product.referencia}</span>
-                                                    <br /><br />
-                                                    <button>
-                                                        <span>Me interesa</span>
-                                                    </button>
-                                                </div>
-                                            </div>    
-                                            :null
-
-                                        )
-                                    })
-                                : <span>Sin productos</span>
-                            }
-
-                            
-                            
-                        </div>
-                    </div>
+                <div className="newDiv">
+                    {
+                        category.subcategories && category.subcategories.length ?
+                            <PanelSubCategory category={category} />
+                        :null
+                    }
                 </div>
-                <div className='otherCasilleros'>
-                    <div className="containerOther">
-                        <div className='titleLockers'>
-                            <h1>Otros productos</h1>
-                            <span>Alguno de nuestra linea de casilleros aquí</span>
-                        </div>
-                        <div className='lockers'>
-                        {
-                                category.products && category.products.length ?
-                                    category.products.map((product, i) => {
-                                        return (
-                                            i+1 > 3 ? 
-                                            <div className="locker" onClick={() => navigate(`/product/${product.id}`)}>
-                                                <div className="opacityDiv"></div>
-                                                <img src={product.photo} alt="" />
-                                                <div className="desc">
-                                                    <h3>{product.name}</h3>
-                                                    <span>{product.referencia} </span>
-                                                </div>
-                                            </div>
-                                            : null
-                                        )
-                                    })
-                                : <span>Sin productos</span>
-                            }
-                        </div>
-                    </div>
-                </div>
+ 
+
 
                 <div className='invitationToAction'>
                     <div className='bigText'>

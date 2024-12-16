@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Fotter(props){
     const categories = props.categories;
+    const navigate = useNavigate();
     return (
         <div className="fotter">
             <div className="fotterContainer">
@@ -10,11 +12,16 @@ export default function Fotter(props){
                         <img src="https://modularescosta.co/images/logo-whiteb.png" />
                     </div>
                     <div className='descAndNetwork'>
-                        <span>
-                            En Costa, diseñamos y fabricamos mobiliario especializado para oficina, áreas de trabajo colectivo,
-                            priorizando la funcionalidad, el confort y el diseño personalizado. Ofrecemos soluciones integrales que facilitan el orden
-                            y el almacenamiento eficiente, adaptadas a las necesidades especificas de cada cliente.
-                        </span>
+                        <strong style={{color: 'white'}}>Horarios de atención</strong><br /><br />
+                        <span style={{color: 'white'}}>
+                            Lunes a Viernes de 8am a 5:30pm <br />
+                            Sábado 8am a 12:30pm <br />
+                            (602) 373 9940 <br />
+                            (602) 373 9940 <br />
+                            320 686 4572 ( por definir)
+                        </span><br />
+
+
 
 
                     </div>
@@ -37,6 +44,9 @@ export default function Fotter(props){
                                         })
                                     :null
                                 }
+                                <li onClick={() => navigate('/legal/tratamientoDatos')}>
+                                    <span>Tratamiento de datos</span>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -52,8 +62,12 @@ export default function Fotter(props){
                                     <span>Facebook</span>
                                 </li>
                                 <li>
+                                    <span>Instagram</span>
+                                </li>
+                                <li>
                                     <span>X</span>
                                 </li>
+
                             </ul>
                         </nav>
                     </div>

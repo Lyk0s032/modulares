@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Form(){
     return (
-        <div className="form">
+        <div className="form" id="form">
             <div className="containerForm">
                 <div className="top">
                     <h1>Contactanos</h1>

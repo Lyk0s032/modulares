@@ -13,6 +13,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './store/actions/actions';
 import Loading from './loading';
 import Fotter from './fotter';
+import Tratamiento from './tratamientoDatos';
+import Us from './us';
+import Contacto from './contacto';
+import Proyects from './proyectos';
 
 
 export default function RoutesComponent(){
@@ -47,6 +51,13 @@ export default function RoutesComponent(){
 
 
                     <Route path='/product/:producto/*' element={<Product />} />
+                    <Route path='/legal/tratamientoDatos/*' element={<Tratamiento />} />
+                    <Route path='/nosotros/*' element={<Us />} />
+                    <Route path='/contacto/*' element={<Contacto />} />
+                    <Route path='/proyectos/*' element={<Proyects />} />
+
+
+
                 </Routes>
                 <Fotter categories={categories} />
                         

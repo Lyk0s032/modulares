@@ -71,7 +71,7 @@ export default function Product(){
                     <div className="containerOther">
                         <div className='titleLockers'>
                             <h1>Otros productos</h1>
-                            <span>Visita nuestra linea de Lockers </span>
+                            <span>Conoce más sobre nuestra linea de {product.category.title} </span>
                         </div>
                         <div className='lockers'>
                             {

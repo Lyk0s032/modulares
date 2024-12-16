@@ -35,7 +35,12 @@ export default function OfertaValor(){
                         <h1>
                             En costa, ofrecemos soluciones de almacenamiento a gran escala, diseñadas para máximizar el uso del espacio, asegurar la organización y garantizar la disponibilidad y seguridad en el manejo de productos y materias primas. <br /><br /> Somos fabricantes, brindamos asesoría completa en todas las fases del proyecto, desde el diseño hasta su materialización
                             
-                        </h1>
+                        </h1><br /><br />
+                        <button onClick={() => {
+                            window.open('https://metalicascosta.com.co', '_blank')
+                        }}>
+                            <span>Visitar</span>
+                        </button>
                     </div>
                 </div>
 

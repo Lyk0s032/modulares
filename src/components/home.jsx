@@ -7,6 +7,8 @@ import ccngo from './../assets/sillas/gerenciales/ccngo.webp';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './store/actions/actions';
 import Form from './contact';
+import { BsArrowRight } from 'react-icons/bs';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 export default function Home(props){
     const categories = props.categories;
@@ -40,10 +42,10 @@ export default function Home(props){
                     </div>
                 </div>
             </div>
-            <div className='ourServices' id="services">
+            <div className='ourServices' id="categories">
                 <div className='bigTitleOurServices'>
                     <div className='containerBigServices'>
-                        <h1>Nuestros servicios</h1>
+                        <h1>Nuestro catálogo</h1>
                         <span>Conoce nuestra variedad de productos y servicios</span>
                     </div>
                     <div className='box-services'>
@@ -63,7 +65,7 @@ export default function Home(props){
                                 categories && categories.length ?
                                     categories.map((category, i) => {
                                         return (
-                                            <div className={i+1 <= 4 && Number(i+1) % 2 === 0 ? 'servicio Big' : i+1 >= 5  ? 'servicio' : 'servicio'} ket={i+1} onClick={() => navigate(`services/${category.title}`)}>
+                                            <div className={i+1 <= 4 && Number(i+1) % 2 === 0 ? 'servicio Big' : i+1 >= 5  ? 'servicio' : 'servicio'} ket={i+1} onClick={() => navigate(`services/${category.id}`)}>
                                                 <div className="containerServicio">
                                                     <div className="wallpaper">
                                                         <img src={category.wallpaper} alt="" />
@@ -79,6 +81,65 @@ export default function Home(props){
                             }
                                 
                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="OurSev" id="sv">
+                    <div className="containerOurServices">
+
+                        <div className="containerServicesDivide">
+                            <div className="left">
+                                <div className="containerLeft">
+                                    <h1>
+                                        Nos apasiona poner a tu disposición, 
+                                        nuestra linea de servicios
+                                    </h1>
+                                    <span>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quia nesciunt odit obcaecati maiores tenetur sapiente dolor fuga velit, ipsam totam nostrum quas eos at reiciendis possimus laborum consectetur optio?
+
+                                    </span><br />
+
+                                    <button onClick={() => {
+                                        document.querySelector("#form").scrollIntoView({
+                                            behavior:'smooth'
+                                        })
+                                    }} >
+                                        <span>
+                                            Me interesa
+                                        </span>
+                                        <AiOutlineArrowRight />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div className="rightBox">
+                                <div className="containerRight">
+                                    <div className="boxSmall">
+                                        <div className="">
+                                            <h1>Consultoría</h1>
+                                            <span>+ 25 años</span>
+                                        </div>
+                                    </div>
+                                    <div className="boxSmall">
+                                        <div className="">
+                                            <h1>Proyectos</h1>
+                                            <span>Oficina y Mobilliario</span>
+                                        </div>
+                                    </div>
+                                    <div className="boxSmall">
+                                        <div className="">
+                                            <h1>Definir</h1>
+                                            <span>Definir</span>
+                                        </div>
+                                    </div>
+                                    <div className="boxSmall">
+                                        <div className="">
+                                            <h1>Definir </h1>
+                                            <span>Definir</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

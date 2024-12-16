@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import * as actions from '../../../store/actions/actions';
 import { useDispatch } from 'react-redux';
+import Cloudinary from './cloudinary';
 
 
 export default function NewProduct(props){
@@ -12,6 +13,13 @@ export default function NewProduct(props){
     const [wallpaper, setWallpaper] = useState(null);
     const [mistake, setMistake] = useState(null);
     const [loading, setLoading] = useState(false);
+
+    const [image, setImage] = useState(null);
+    const [loadingImg, setLoadingImg] = useState(false);
+    const [imageUrl, setImageUrl] = useState("");
+
+
+
     const [cat, setCat] = useState({
         name: null,
         referencia:null,
@@ -28,7 +36,8 @@ export default function NewProduct(props){
             referencia: cat.referencia,
             description: cat.description,
             photo: cat.photo,
-            categoryId: category.id
+            subcategoryId: category.id,
+            categoryId: category.categoryId
         }
 
         const send = await axios.post('/newProduct', body)
@@ -36,7 +45,7 @@ export default function NewProduct(props){
             console.log('creado')
             setMistake('Creado con éxito')
             setLoading(false)
-            dispatch(actions.axiosGetCategory(false, category.id));
+            dispatch(actions.axiosGetSubCategory(false, category.categoryId, category.id));
             params.delete('w');
             setParams(params);
            return true
@@ -48,12 +57,11 @@ export default function NewProduct(props){
         })
         console.log(body)
 
-        send ? setMistake('Creado con existo') : setMistake('No hemos podido crear esto.')
+        send ? setMistake('Creado con exito') : setMistake('No hemos podido crear esto.')
     }
     return ( 
         <div className="modal">
             <div className="hidden" onClick={() => {
-                console.log('cierra');
                 params.delete('w');
                 setParams(params);
             }}></div>
@@ -105,8 +113,11 @@ export default function NewProduct(props){
                                         photo:e.target.value
                                     })
                                 }} value={cat.photo} />
+
                             </div>
                             <div className="visualizarWallpaper Product">
+
+                                
                                 <img src={cat.photo ? cat.photo : ''} alt="" />
                             </div>
 

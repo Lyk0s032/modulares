@@ -234,6 +234,107 @@
                         }
                     }
                 }
+               
+            }
+            .OurSev{
+                width:100%;
+                margin:auto;
+                margin-top:50px;
+                box-sizing: border-box;
+                background-color: #F1F7FF;
+                .containerOurServices{
+                    box-sizing: border-box;
+
+                    .titleComponent{
+                        width:100%;
+                        text-align: center;
+
+                        h1{
+                            font-weight: 100;
+                            font-size: 14px;
+                            color:@colorVar;
+                        }
+                    }
+                    .containerServicesDivide{
+                       width:90%;
+                       height:100vh;
+                       align-items: center;
+                       margin:auto;
+                       display: flex;
+                       justify-content: space-between;
+                       .left{
+                            width:50%;
+                            .containerLeft{
+                                padding:20px;
+                                box-sizing: border-box;
+
+                                h1{
+                                    font-size: 42px;
+                                    font-weight: bold;
+                                    margin-bottom: 5px;
+                                }
+
+                                span{
+                                    font-size: 14px;
+                                    font-weight: 100;
+                                }
+                                button{
+                                    padding:15px 20px;
+                                    box-sizing: border-box;
+                                    cursor: pointer;
+                                    margin-top:30px;
+                                    background-color: @btnButton;
+                                    border:1px solid @btnButton;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    color:white;
+                                    display: flex;
+                                    align-items: center;
+
+                                    span{
+                                        margin-right: 10px;
+                                    }
+                                }
+                                
+                            }
+                            
+                       }
+                       .rightBox{
+                            width:40%;
+                            .containerRight{
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                .boxSmall{
+                                    width:45%;
+                                    height:150px;
+                                    margin-bottom: 20px;
+                                    border:1px solid black;
+                                    border-radius: 10px;
+                                    background-color: @btnButton;
+                                    border:1px solid @btnButton;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-around;
+                                    cursor: pointer;
+                                    transition: .3s;
+                                    h1{
+                                        font-weight: 100;
+                                        font-size: 26px;
+                                        color:white;
+                                        margin-bottom: 5px;
+                                    }
+                                    span{
+                                        color: white;
+                                    }
+                                }
+                                .boxSmall:hover{
+                                    background-color: @colorVar;
+                                }
+                            }
+                       }
+                    }
+                }
             }
         }
         .ourExperience{
@@ -677,6 +778,26 @@
                     padding:0px;
                     color: @bgDark;
                 }
+
+                button{
+                    background-color: @colorVar;
+                    border:1px solid @colorVar;
+                    padding:10px 50px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    transition: .3s;
+
+                    span{
+                        color: white;
+                        transition: .3s;
+                    }
+                }
+                button:hover{
+                    background-color: white;
+                    span{
+                        color: @colorVar;
+                    }
+                }
             }
         }
         .BgTwo{
@@ -975,6 +1096,167 @@
             span{
                 color: @colorVar;
             }
+        }
+    }
+}
+
+.tratamiento{
+    width:80%;
+    margin:auto;
+    padding-top:200px;
+
+    .div{
+        position:relative;
+        page-break-inside: avoid; 
+        h1{
+            color: @bgDark;
+            font-weight: 100;
+        }
+        span{
+            white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word;
+            color: @bgDark;
+        }
+    }
+}
+
+.us{
+    border:1px solid white;
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    .containerUs{
+        width:90%;
+        margin:auto;
+
+        .logo{
+            width:20%;
+            margin:auto;
+            img{
+                width:100%;
+            }
+        }
+        .info{
+            margin-top:20px;
+            .title{
+                h1{
+                    font-weight: 100;
+                    color: @colorVar;
+                    font-size: 42px;
+                }
+            }
+            .data{
+                width:80%;
+                margin-top:20px;
+                h3{
+                    font-weight: 100;
+                    color: @bgDark;
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+
+.contacto{
+    width:100%;
+    height:100vh;
+    border:1px solid white;
+    box-sizing: border-box;
+    .containerContacto{
+        width:90%;
+        margin:auto;
+        margin-top:10px;
+
+        .form{
+            width:100%;
+            height:100vh;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            .containerForm{
+
+                width:60%;
+                margin:auto;
+                .top{
+                    width:100%;
+                    text-align: center;
+                    padding:20px 0px;
+                    box-sizing: border-box;
+                    h1{
+                        font-weight: 100;
+                        color: @colorVar;
+                        margin-bottom: 10px;
+                    }
+                    span{
+                        font-size: 14px;
+                        color: @bgDark;
+
+                    }
+                }
+                .formData{
+                    width:70%;
+                    margin:30px auto;
+                    .inputDiv{
+                        width:100%;
+                        margin-bottom: 30px;
+                        label{
+                            font-size: 12px;
+                            color: @bgDark;
+                        }
+                        input{
+                            margin-top:10px;
+                            width:100%;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                            border:1px solid #ccc;
+                            padding:10px 10px;
+                        }
+                        button{
+                            padding:10px 20px;
+                            background-color: @colorVar;
+                            border:1px solid @colorVar;
+                            border-radius: 5px;
+                            width:100%;
+                            box-sizing: border-box;
+                            cursor: pointer;
+                            span{
+                                font-size: 14px;
+                                color: white;
+                            }
+                        }
+                    }
+                    span{
+                        text-align: center;
+                        font-size: 12px;
+                        color: @bgDark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.proyectos{
+    border:1px solid white;
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    .containerProyectos{
+        width:90%;
+        margin: auto;
+        h1{
+            font-size: 44px;
+            font-weight: 100;
+            color: @colorVar;
+        }
+        span{
+            font-size: 18px;
         }
     }
 }

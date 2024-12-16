@@ -26,7 +26,7 @@ export default function WelcomenAdmin(){
     // Abrir categoria
     const open = (data) => {
         dispatch(actions.GET_CATEGORY(data))
-        navigate(`category/${data.title}`)
+        navigate(`category/${data.id}`)
     }
 
     useEffect(() => {

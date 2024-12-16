@@ -118,6 +118,38 @@
                                 font-weight: 100;
                             }
                         }
+                        .subCate{
+                            margin-top:40px;
+                            nav{
+                                ul{
+                                    li{
+                                        display: inline-block;
+                                        cursor: pointer;
+                                        margin-right: 10px;
+                                        div{
+                                            padding:10px 40px;
+                                            border-radius: 20px;
+                                            border:1px solid @colorVar;
+                                            box-sizing: border-box; 
+                                            transition: .3s;
+                                            span{
+                                                font-size: 14px;
+                                                color: @colorVar;
+                                                transform: .3s;
+                                            }
+                                        }
+                                    }
+                                    li:hover{
+                                        div{
+                                            background-color: @colorVar;
+                                            span{
+                                                color: white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         .categories{
                             margin-top:50px;
                             width:100%;

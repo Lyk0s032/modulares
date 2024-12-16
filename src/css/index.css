@@ -122,6 +122,32 @@ body {
   color: #666;
   font-weight: 100;
 }
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate {
+  margin-top: 40px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate nav ul li {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate nav ul li div {
+  padding: 10px 40px;
+  border-radius: 20px;
+  border: 1px solid #046290;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate nav ul li div span {
+  font-size: 14px;
+  color: #046290;
+  transform: 0.3s;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate nav ul li:hover div {
+  background-color: #046290;
+}
+.panel .containerPanel .div .principal .welcomen .containerWelcomen .subCate nav ul li:hover div span {
+  color: white;
+}
 .panel .containerPanel .div .principal .welcomen .containerWelcomen .categories {
   margin-top: 50px;
   width: 100%;
@@ -445,10 +471,16 @@ body {
 .fotter .fotterContainer .boxNav .containerNav nav ul li {
   display: flex;
   margin: 10px 0px;
+  cursor: pointer;
 }
 .fotter .fotterContainer .boxNav .containerNav nav ul li span {
   font-size: 13px;
   color: #75818F;
+  transition: 0.3s;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul li:hover span {
+  color: white;
+  text-decoration: underline;
 }
 @media screen and (max-width: 800px) {
   .fotter .fotterContainer .business {
@@ -779,6 +811,98 @@ body {
 }
 .modulares .home .ourServices .containerParallax .serviceOption .Reverse .service .desc {
   margin: auto;
+}
+.modulares .home .ourServices .OurSev {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  box-sizing: border-box;
+  background-color: #F1F7FF;
+}
+.modulares .home .ourServices .OurSev .containerOurServices {
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .titleComponent {
+  width: 100%;
+  text-align: center;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .titleComponent h1 {
+  font-weight: 100;
+  font-size: 14px;
+  color: #046290;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide {
+  width: 90%;
+  height: 100vh;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left {
+  width: 50%;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft {
+  padding: 20px;
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft h1 {
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft span {
+  font-size: 14px;
+  font-weight: 100;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft button {
+  padding: 15px 20px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft button span {
+  margin-right: 10px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox {
+  width: 40%;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall {
+  width: 45%;
+  height: 150px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall h1 {
+  font-weight: 100;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 5px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall span {
+  color: white;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall:hover {
+  background-color: #046290;
 }
 .modulares .home .ourExperience {
   background-color: #ebebed;
@@ -1150,6 +1274,24 @@ body {
   padding: 0px;
   color: #343A40;
 }
+.oferta .containerOferta .bigText .containerBigText button {
+  background-color: #046290;
+  border: 1px solid #046290;
+  padding: 10px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.oferta .containerOferta .bigText .containerBigText button span {
+  color: white;
+  transition: 0.3s;
+}
+.oferta .containerOferta .bigText .containerBigText button:hover {
+  background-color: white;
+}
+.oferta .containerOferta .bigText .containerBigText button:hover span {
+  color: #046290;
+}
 .oferta .containerOferta .BgTwo {
   margin-top: 0px;
   background-color: white;
@@ -1404,6 +1546,157 @@ body {
 .loading .containerLoading button:hover span {
   color: #046290;
 }
+.tratamiento {
+  width: 80%;
+  margin: auto;
+  padding-top: 200px;
+}
+.tratamiento .div {
+  position: relative;
+  page-break-inside: avoid;
+}
+.tratamiento .div h1 {
+  color: #343A40;
+  font-weight: 100;
+}
+.tratamiento .div span {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  color: #343A40;
+}
+.us {
+  border: 1px solid white;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.us .containerUs {
+  width: 90%;
+  margin: auto;
+}
+.us .containerUs .logo {
+  width: 20%;
+  margin: auto;
+}
+.us .containerUs .logo img {
+  width: 100%;
+}
+.us .containerUs .info {
+  margin-top: 20px;
+}
+.us .containerUs .info .title h1 {
+  font-weight: 100;
+  color: #046290;
+  font-size: 42px;
+}
+.us .containerUs .info .data {
+  width: 80%;
+  margin-top: 20px;
+}
+.us .containerUs .info .data h3 {
+  font-weight: 100;
+  color: #343A40;
+  font-size: 22px;
+}
+.contacto {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.contacto .containerContacto {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+.contacto .containerContacto .form {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.contacto .containerContacto .form .containerForm {
+  width: 60%;
+  margin: auto;
+}
+.contacto .containerContacto .form .containerForm .top {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0px;
+  box-sizing: border-box;
+}
+.contacto .containerContacto .form .containerForm .top h1 {
+  font-weight: 100;
+  color: #046290;
+  margin-bottom: 10px;
+}
+.contacto .containerContacto .form .containerForm .top span {
+  font-size: 14px;
+  color: #343A40;
+}
+.contacto .containerContacto .form .containerForm .formData {
+  width: 70%;
+  margin: 30px auto;
+}
+.contacto .containerContacto .form .containerForm .formData .inputDiv {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.contacto .containerContacto .form .containerForm .formData .inputDiv label {
+  font-size: 12px;
+  color: #343A40;
+}
+.contacto .containerContacto .form .containerForm .formData .inputDiv input {
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 10px 10px;
+}
+.contacto .containerContacto .form .containerForm .formData .inputDiv button {
+  padding: 10px 20px;
+  background-color: #046290;
+  border: 1px solid #046290;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.contacto .containerContacto .form .containerForm .formData .inputDiv button span {
+  font-size: 14px;
+  color: white;
+}
+.contacto .containerContacto .form .containerForm .formData span {
+  text-align: center;
+  font-size: 12px;
+  color: #343A40;
+}
+.proyectos {
+  border: 1px solid white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+.proyectos .containerProyectos {
+  width: 90%;
+  margin: auto;
+}
+.proyectos .containerProyectos h1 {
+  font-size: 44px;
+  font-weight: 100;
+  color: #046290;
+}
+.proyectos .containerProyectos span {
+  font-size: 18px;
+}
 .product {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -1626,6 +1919,92 @@ body {
     width: 100%;
   }
 }
+.panelSub {
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+}
+.panelSub .containerPanelSub {
+  box-sizing: border-box;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li {
+  display: inline-block;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li {
+  padding: 30px 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li span {
+  font-weight: 100;
+  color: #525456;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li:hover {
+  border-bottom: 2px solid #343A40;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li:hover span {
+  color: #343A40;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li.Active {
+  border-bottom: 2px solid #046290;
+}
+.panelSub .containerPanelSub .navigationOnCategory nav ul li .li.Active span {
+  color: #046290;
+}
+.panelSub .containerPanelSub .listProducts {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts .productico {
+  width: 30%;
+  height: 250px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts .productico .hidden {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #046290;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts .productico .hidden h1 {
+  font-weight: 100;
+  color: white;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts .productico img {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.panelSub .containerPanelSub .listProducts .containerListsProducts .productico:hover .hidden {
+  opacity: 0.8;
+}
 .lockers {
   width: 100%;
   height: auto;
@@ -1699,6 +2078,17 @@ body {
 }
 .lockers .pageLockers .firstParallax .containerParallax .boxOne button:hover {
   transform: scale(1.1);
+}
+.lockers .pageLockers .newDiv .panelSub .containerPanelSub .listProducts .containerListsProducts .productito {
+  border: 1px solid red;
+}
+.lockers .pageLockers .newDiv .panelSub .containerPanelSub .listProducts .containerListsProducts .notProducts {
+  padding: 50px 0px;
+  box-sizing: border-box;
+}
+.lockers .pageLockers .newDiv .panelSub .containerPanelSub .listProducts .containerListsProducts .notProducts h1 {
+  font-weight: 100;
+  color: #046290;
 }
 .lockers .pageLockers .twoParallax .containerTwo {
   width: 90%;

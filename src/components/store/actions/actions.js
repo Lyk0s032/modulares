@@ -52,7 +52,26 @@ export function GETTING_CATEGORY(carga){
         payload: carga
     }
 }
-
+// export function axiosGetCategory(carga, id){
+//     return function(dispatch){
+//         dispatch(GETTING_CATEGORY(carga));
+//         axios.get(`/get/category/${id}`)
+//         .then((info) => info.data)
+//         .then(inf => {
+//             return dispatch(GET_CATEGORY(inf));
+//         })
+//         .catch(e => {
+//             console.log(e);
+//             if(e.response &&  e.response.status == 404){
+//                 return dispatch(GET_CATEGORY(404))
+//             }else if(e.request){
+//                 return dispatch(GET_CATEGORY('request'))
+//             }else{
+//                 return dispatch(GET_CATEGORY(404))
+//             }
+//         })
+//     }
+// }
 // Almacenar estado del proyecto
 export function getProject(project){
     return {
@@ -73,11 +92,49 @@ export function axiosGetCategory(carga, route){
         })
         .catch(err => {
             // Mostramos posible error por consola.
-            console.log(err);
-            if(err.responses && err.response.status == 404){
+            if(err.responses || err.response.status == 404){
                 return dispatch(GET_CATEGORY(404))
-            }else{
+            }else{  
                 return dispatch(GET_CATEGORY('request'))
+            }
+
+        })
+    }
+}
+export function getSub(data){
+    return {
+        type: 'GET_SUB',
+        payload: data
+    }
+}
+
+export function GettingSub(carga){
+    return {
+        type: 'GETTING_SUB',
+        payload: carga
+    }
+}
+
+// Petición HTTP para obtener toda la información del proyecto. Incluidas las imagenes.
+export function axiosGetSubCategory(carga, cat, sub){
+    console.log('llega acá')
+    return function(dispatch){
+        dispatch(GettingSub(carga));
+        axios.get(`get/subcat/${cat}/${sub}`)
+        .then((info) => {
+            console.log(info)
+            return info.data
+        })
+        .then((data) => {
+            console.log(data);
+            return dispatch(getSub(data));
+        })
+        .catch(err => {
+            // Mostramos posible error por consola.
+            if(err.responses || err.response.status == 404){
+                return dispatch(getSub(404))
+            }else{  
+                return dispatch(getSub('request'))
             }
 
         })

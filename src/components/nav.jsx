@@ -21,7 +21,10 @@ export default function Nav(){
         <div className='navigation' id="navigation">
             {console.log(pathname)}
             <div className='containerNav'>
-                <div className='logo' onClick={() => navigate('/')}>
+                <div className='logo' onClick={() => {
+                    navigate('/')                                
+                    openNav();
+                }}>
                     <img src="https://metalicascosta.com.co/assets/img/logo_metalicas_costa.png" alt="" />
                 </div>
                 <div className='navigationOptions' id="navi">
@@ -38,27 +41,57 @@ export default function Nav(){
                                     <span>Panel</span>
                                 </div>
                             </li>
-                            <li onClick={() => {
-                                navigate('/')                                
-                                openNav();
-                            }} >
-                                <div>
-                                    <span>Inicio</span>
-                                </div>
-                            </li>
                             {
                                 pathname == '/' ?
                                 <li onClick={() => {
-                                    document.querySelector("#services").scrollIntoView({
+                                    document.querySelector("#categories").scrollIntoView({
                                         behavior:'smooth'
                                     })
+                                    openNav();
+
                                 }}>
                                     <div>
-                                        <span>Categorías</span>
+                                        <span>Categorias</span>
                                     </div>
                                 </li>
-                                :null
+                                :
+                                <li onClick={() => {
+                                    navigate('/')
+                                    openNav();
+                                    
+                                }
+                                
+                                }>
+                                    <div>
+                                        <span>Categorias</span>
+                                    </div>
+                                </li>
                             }
+                            {
+                                pathname == '/' ?
+                                <li onClick={() => {
+                                    document.querySelector("#sv").scrollIntoView({
+                                        behavior:'smooth'
+                                    })
+                                    openNav();
+
+                                }}>
+                                    <div>
+                                        <span>Servicios</span>
+                                    </div>
+                                </li>
+                                :
+                                <li onClick={() => {
+                                    navigate('/')
+                                    openNav();
+                                    
+                                    }}>
+                                    <div>
+                                        <span>Servicios</span>
+                                    </div>
+                                </li>
+                            }
+
                             <li onClick={() => {
                                 navigate('/our');
                                 openNav()
@@ -67,6 +100,26 @@ export default function Nav(){
                                     <span>
                                         Oferta de valor
                                     </span>
+                                </div>
+                            </li>
+                            <li onClick={() => {
+                                navigate('/nosotros');
+                                openNav();
+
+                            }}>
+                                <div className="">
+                                    <span>
+                                        Nosotros
+                                    </span>
+                                </div>
+                            </li>
+                            <li onClick={() => {
+                                navigate('/proyectos/')
+                                openNav();
+                                
+                            }}>
+                                <div className="">
+                                    <span>Proyectos</span>
                                 </div>
                             </li>
 

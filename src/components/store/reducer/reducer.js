@@ -11,6 +11,9 @@ const initialState = {
     category:null,
     loadingCategory: false,
 
+    sub: null,
+    loadingSub: false,
+
     product:null,
     loadingProduct:null,
 
@@ -41,6 +44,18 @@ export default (state = initialState, action) => {
                 category: action.payload,
                 loadingCategory: false
             }
+        case 'GET_SUB':
+            return {
+                ...state,
+                sub: action.payload,
+                loadingSub: false
+            }
+        case 'GETTNG_SUB':
+            return {
+                ...state,
+                loadingSub: action.payload
+            }
+            
         case 'GET_PRODUCT':
                 return {
                     ...state,

@@ -40,7 +40,7 @@ export default function NewCategory(props){
             return null
         })
 
-        send ? setMistake('Creado con existo') : setMistake('No hemos podido crear esto.')
+        send ? setMistake('Creado con exito') : setMistake('No hemos podido crear esto.')
     }
 
     return ( 
