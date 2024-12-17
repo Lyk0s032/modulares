@@ -85,7 +85,7 @@ Si el consumidor decide ejercer el derecho de retracto, el vendedor tiene la obl
 9 – Peticiones, Quejas y Reclamaciones: Para nosotros es muy importante su satisfacción como cliente, por lo tanto, ponemos a su disposición nuestros canales de contacto para que en caso de presentar alguna novedad con su producto y/o servicio pueda tener una respuesta oportuna, completa, clara y de fondo. En el momento de la entrega, el cliente deberá examinar detenidamente la calidad y cantidad de los productos recibidos y en caso de presentar alguna novedad, deberá notificarla dentro de los 2 días siguientes a la recepción de estos. Una vez recibida su solicitud, la estaremos tramitando en el término de 5 días hábiles y le estaremos dando una respuesta que podrá ser favorable o desfavorable según el análisis realizado.
 
 
-10 - Tratamiento de datos personales: En MODULARES COSTA GOMEZ SAS somos cuidadosos de los datos de nuestros clientes, empleados, proveedores y comunidad en general y por esto que en cumplimiento de la Ley 1581 de 2012 y demás normas complementarias, contamos con una política de tratamiento de datos personales la cual lo invitamos a consultar en el siguiente enlace: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx (kevin por favor poner el enlace).
+10 - Tratamiento de datos personales: En MODULARES COSTA GOMEZ SAS somos cuidadosos de los datos de nuestros clientes, empleados, proveedores y comunidad en general y por esto que en cumplimiento de la Ley 1581 de 2012 y demás normas complementarias.
 `
     return (
         <div className="tratamiento">

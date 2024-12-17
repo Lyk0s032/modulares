@@ -325,7 +325,7 @@ body {
 }
 .panel .containerPanel .modal .containerModal .editar .form .inputDiv textarea {
   width: 100%;
-  resize: none;
+  height: 100px;
   outline: 0px;
   border: 1px solid #ccc;
   border-radius: 10px;
@@ -468,6 +468,21 @@ body {
   font-weight: 400;
   color: #fff;
 }
+.fotter .fotterContainer .boxNav .containerNav nav ul .social li {
+  margin-right: 10px;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul .social li .icon {
+  color: #d43089;
+  font-size: 26px;
+  transition: 0.3s;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul .social li .Fb {
+  color: #3b5998;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul .social li:hover .icon {
+  transform: scale(1.1);
+  color: white;
+}
 .fotter .fotterContainer .boxNav .containerNav nav ul li {
   display: flex;
   margin: 10px 0px;
@@ -477,6 +492,12 @@ body {
   font-size: 13px;
   color: #75818F;
   transition: 0.3s;
+}
+.fotter .fotterContainer .boxNav .containerNav nav ul li img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 .fotter .fotterContainer .boxNav .containerNav nav ul li:hover span {
   color: white;
@@ -1603,7 +1624,6 @@ body {
 }
 .contacto {
   width: 100%;
-  height: 100vh;
   border: 1px solid white;
   box-sizing: border-box;
 }
@@ -1612,45 +1632,45 @@ body {
   margin: auto;
   margin-top: 10px;
 }
-.contacto .containerContacto .form {
+.forma {
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 }
-.contacto .containerContacto .form .containerForm {
+.forma .containerForm {
   width: 60%;
   margin: auto;
 }
-.contacto .containerContacto .form .containerForm .top {
+.forma .containerForm .top {
   width: 100%;
   text-align: center;
   padding: 20px 0px;
   box-sizing: border-box;
 }
-.contacto .containerContacto .form .containerForm .top h1 {
+.forma .containerForm .top h1 {
   font-weight: 100;
   color: #046290;
   margin-bottom: 10px;
 }
-.contacto .containerContacto .form .containerForm .top span {
+.forma .containerForm .top span {
   font-size: 14px;
   color: #343A40;
 }
-.contacto .containerContacto .form .containerForm .formData {
+.forma .containerForm .formData {
   width: 70%;
   margin: 30px auto;
 }
-.contacto .containerContacto .form .containerForm .formData .inputDiv {
+.forma .containerForm .formData .inputDiv {
   width: 100%;
   margin-bottom: 30px;
 }
-.contacto .containerContacto .form .containerForm .formData .inputDiv label {
+.forma .containerForm .formData .inputDiv label {
   font-size: 12px;
   color: #343A40;
 }
-.contacto .containerContacto .form .containerForm .formData .inputDiv input {
+.forma .containerForm .formData .inputDiv input {
   margin-top: 10px;
   width: 100%;
   border-radius: 4px;
@@ -1658,7 +1678,7 @@ body {
   border: 1px solid #ccc;
   padding: 10px 10px;
 }
-.contacto .containerContacto .form .containerForm .formData .inputDiv button {
+.forma .containerForm .formData .inputDiv button {
   padding: 10px 20px;
   background-color: #046290;
   border: 1px solid #046290;
@@ -1667,11 +1687,11 @@ body {
   box-sizing: border-box;
   cursor: pointer;
 }
-.contacto .containerContacto .form .containerForm .formData .inputDiv button span {
+.forma .containerForm .formData .inputDiv button span {
   font-size: 14px;
   color: white;
 }
-.contacto .containerContacto .form .containerForm .formData span {
+.forma .containerForm .formData span {
   text-align: center;
   font-size: 12px;
   color: #343A40;
@@ -1696,6 +1716,299 @@ body {
 }
 .proyectos .containerProyectos span {
   font-size: 18px;
+}
+.proyects {
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+.proyects .containerProyects {
+  box-sizing: border-box;
+}
+.proyects .containerProyects .parallaxOneProyectos {
+  width: 100%;
+  height: 80vh;
+  background: url('https://clauem2.arrowtheme.com/media/wysiwyg/slider/md2-slider-01.jpeg');
+  display: flex;
+  align-items: center;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara {
+  width: 90%;
+  margin: auto;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara div {
+  width: 40%;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara div h1 {
+  font-size: 52px;
+  color: #343A40;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara div span {
+  font-size: 18px;
+  color: #343A40;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara div button {
+  background-color: #3864F3;
+  border: 1px solid #3864F3;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.proyects .containerProyects .parallaxOneProyectos .containerPara div button span {
+  font-size: 14px;
+  color: white;
+}
+.proyects .containerProyects .ourClients {
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .titleWelcomen {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .titleWelcomen .line {
+  border: 1px solid #ccc;
+  padding: 0px 1px;
+  width: auto;
+  width: 30%;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .titleWelcomen h3 {
+  font-size: 32px;
+  font-weight: 100;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups {
+  margin-top: 50px;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client {
+  width: 20%;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .photo {
+  width: 100%;
+  height: 250px;
+  background-color: #F6F6F6;
+  border-radius: 20px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .data {
+  padding: 10px 0px;
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .data span {
+  font-size: 14px;
+  color: #6c757d;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .data .stars {
+  margin-top: 5px;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .client .data .stars .icon {
+  color: #3864F3;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .containerClientsGroups .divGroups .Big {
+  width: 50%;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial {
+  margin-top: 20px;
+  box-sizing: border-box;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .titleTestimonial {
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .titleTestimonial .desc {
+  text-align: center;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .titleTestimonial .desc h1 {
+  font-weight: 100;
+  color: #046290;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .titleTestimonial .desc h3 {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 100;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .btns button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid #3864F3;
+  background-color: #3864F3;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .btns button .icon {
+  font-size: 18px;
+  color: white;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer {
+  width: 50%;
+  padding: 40px 0px;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider {
+  width: 100%;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider .testimonio {
+  width: 100%;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider .testimonio h3 {
+  font-weight: 100;
+  font-size: 18px;
+  color: #343A40;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider .testimonio .autor {
+  margin-top: 20px;
+  width: 100%;
+  text-align: right;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider .testimonio .autor strong {
+  font-weight: 600;
+  color: #046290;
+}
+.proyects .containerProyects .ourClients .listsProyects .containerListsProyectos .testimonial .containerThis .containerTestimonial .testimonioContainer .slider .testimonio .autor span {
+  font-size: 12px;
+  color: #6c757d;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal {
+  width: 90%;
+  margin: auto;
+  height: 90vh;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left {
+  width: 30%;
+  box-sizing: border-box;
+  border-right: 1px solid #3864F3;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft {
+  width: 90%;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  margin: auto;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft .wallpaper {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  background-color: #F6F6F6;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft .wallpaper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft .data {
+  margin-top: 20px;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft .data strong {
+  color: #3864F3;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .left .containerLeft .data span {
+  font-size: 12px;
+  color: #6c757d;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right {
+  box-sizing: border-box;
+  width: 70%;
+  border: 1px solid #ccc;
+  height: 100%;
+  border-radius: 20;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery {
+  width: 90%;
+  padding: 10px 0px;
+  margin: auto;
+  height: 100%;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .topSee {
+  height: 80%;
+  border-radius: 20px;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .topSee .box {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .topSee .box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose {
+  height: 15%;
+  box-sizing: border-box;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose .listsChoose {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose .listsChoose .box {
+  width: 10%;
+  height: 100%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose .listsChoose .box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose .listsChoose .box:hover {
+  transform: scale(1.1);
+}
+.proyects .containerProyects .ourClients .listsProyects .modal .containerModal .divideModal .right .containerGalery .bottomChoose .listsChoose .box.Active {
+  border: 2px solid #3864F3;
 }
 .product {
   padding-top: 100px;

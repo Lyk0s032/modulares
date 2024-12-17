@@ -55,6 +55,26 @@
             .containerNav{
                 nav{
                     ul{
+                        .social{
+                            li{
+                                margin-right: 10px;
+                                .icon{
+                                    color: rgb(212, 48, 137);
+                                    font-size: 26px;
+                                    transition: .3s;
+                                }
+                                .Fb{
+                                    color: #3b5998;
+                                }
+                            }
+                            li:hover{
+                                .icon{
+                                    transform: scale(1.1);
+                                    color: white;
+
+                                }
+                            }
+                        }
                         li{
                             display: flex;
                             margin:10px 0px;
@@ -63,6 +83,12 @@
                                 font-size: 13px;
                                 color: #75818F; 
                                 transition: .3s;
+                            }
+                            img{
+                                width:100%;
+                                height:100px;
+                                object-fit: cover;
+                                border-radius: 10px;
                             }
                         } 
                         li:hover{

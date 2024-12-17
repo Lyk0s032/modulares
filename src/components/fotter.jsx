@@ -1,6 +1,9 @@
 import React from 'react';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { FaSquareInstagram } from 'react-icons/fa6';
+import { MdFacebook } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-
+import Metalica from './../assets/1.png'
 export default function Fotter(props){
     const categories = props.categories;
     const navigate = useNavigate();
@@ -17,9 +20,9 @@ export default function Fotter(props){
                             Lunes a Viernes de 8am a 5:30pm <br />
                             Sábado 8am a 12:30pm <br />
                             (602) 373 9940 <br />
-                            (602) 373 9940 <br />
                             320 686 4572 ( por definir)
-                        </span><br />
+                        </span><br /><br />
+                        <span>Cali - Colombia</span>
 
 
 
@@ -28,7 +31,7 @@ export default function Fotter(props){
                 </div>
                 <div className='boxNav'>
                     <div className='title'>
-                        <h3>Nuestros servicios</h3>
+                        <h3>Nuestros sitios</h3>
                     </div>
                     <div className='containerNav'>
                         <nav>
@@ -37,7 +40,9 @@ export default function Fotter(props){
                                     categories && categories.length ?
                                         categories.map((category, i) => {
                                             return (
-                                                <li key={i+1}>
+                                                <li key={i+1} onClick={() => {
+                                                    navigate(`/services/${category.id}`)
+                                                }}>
                                                     <span>{category.title}</span>
                                                 </li>
                                             )
@@ -58,23 +63,27 @@ export default function Fotter(props){
                     <div className='containerNav'>
                         <nav>
                             <ul>
-                                <li>
-                                    <span>Facebook</span>
-                                </li>
-                                <li>
-                                    <span>Instagram</span>
-                                </li>
-                                <li>
-                                    <span>X</span>
-                                </li>
+                                <li className='social'>
+                                    <li>
+                                       <MdFacebook className='icon Fb' />
+                                    </li>
+                                    <li>
+                                       <FaSquareInstagram className='icon' />
+                                    </li>
 
+                                </li>
+                                <li onClick={() => {
+                                    window.open('https://metalicascosta.com.co', '_blank')
+                                }}>
+                                    <img src={Metalica} alt="" />
+                                </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </div>
             <div className='smallMessage'>
-                <span>Modulares Costa - Derechos reservados</span>
+                <span>Costa - Derechos reservados</span>
             </div>
         </div>
     )

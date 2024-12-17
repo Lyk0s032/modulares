@@ -11,15 +11,20 @@ export default function OfertaValor(){
                             <h3>Más de 25 años óptimizando espacios. Cumpliendo sueños.</h3>
                             <span>Contruyendo espacios, materializando sueños.</span>
                             <br /><br />
-                            <button>
+                            <button  onClick={() => {
+                                    document.querySelector("#big").scrollIntoView({
+                                        behavior:'smooth'
+                                    })
+                                    openNav();
+
+                                }}>
                                 <span>Conocer más</span>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div className="bigText">
+                <div className="bigText" id="big">
                     <div className="containerBigText">
-                        <strong>Nuestro enfoque</strong>
                         <h1>
                         En Costa, diseñamos y fabricamos mobiliario especializado para oficina y áreas de trabajo
                                         colectivo, priorizando la funcionalidad, el confort y el diseño personalizado
@@ -35,12 +40,7 @@ export default function OfertaValor(){
                         <h1>
                             En costa, ofrecemos soluciones de almacenamiento a gran escala, diseñadas para máximizar el uso del espacio, asegurar la organización y garantizar la disponibilidad y seguridad en el manejo de productos y materias primas. <br /><br /> Somos fabricantes, brindamos asesoría completa en todas las fases del proyecto, desde el diseño hasta su materialización
                             
-                        </h1><br /><br />
-                        <button onClick={() => {
-                            window.open('https://metalicascosta.com.co', '_blank')
-                        }}>
-                            <span>Visitar</span>
-                        </button>
+                        </h1>
                     </div>
                 </div>
 

@@ -17,6 +17,8 @@ import Tratamiento from './tratamientoDatos';
 import Us from './us';
 import Contacto from './contacto';
 import Proyects from './proyectos';
+import Form from './contact';
+import PanelProyects from './proyects/proyects';
 
 
 export default function RoutesComponent(){
@@ -54,11 +56,12 @@ export default function RoutesComponent(){
                     <Route path='/legal/tratamientoDatos/*' element={<Tratamiento />} />
                     <Route path='/nosotros/*' element={<Us />} />
                     <Route path='/contacto/*' element={<Contacto />} />
-                    <Route path='/proyectos/*' element={<Proyects />} />
+                    <Route path='/proyectos/*' element={<PanelProyects />} />
 
 
 
                 </Routes>
+                <Form />
                 <Fotter categories={categories} />
                         
             </div>
