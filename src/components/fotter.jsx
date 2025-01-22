@@ -64,10 +64,14 @@ export default function Fotter(props){
                         <nav>
                             <ul>
                                 <li className='social'>
-                                    <li>
+                                    <li onClick={() => {
+                                        window.open('https://www.facebook.com/Modularescosta.co/', '_target')
+                                    }}>
                                        <MdFacebook className='icon Fb' />
                                     </li>
-                                    <li>
+                                    <li onClick={() => {
+                                        window.open('https://www.instagram.com/costacenter/', '_target');
+                                    }}>
                                        <FaSquareInstagram className='icon' />
                                     </li>
 

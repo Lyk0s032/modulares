@@ -24,7 +24,7 @@ export default function ListsProyects(){
                     <div className="divGroups">
                         <div className="client">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>
@@ -40,7 +40,7 @@ export default function ListsProyects(){
 
                         <div className="client">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>
@@ -56,7 +56,7 @@ export default function ListsProyects(){
 
                         <div className="client Big">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>
@@ -72,7 +72,7 @@ export default function ListsProyects(){
 
                         <div className="client Big">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>
@@ -87,7 +87,7 @@ export default function ListsProyects(){
                         </div>
                         <div className="client">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>
@@ -103,7 +103,7 @@ export default function ListsProyects(){
 
                         <div className="client">
                             <div className="photo">
-                                <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-0.png" alt="" />
+                                <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
                                 <span>Coca cola</span>

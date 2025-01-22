@@ -17,7 +17,7 @@ export default function SubCategory(props){
         dispatch(actions.axiosGetSubCategory(true, category.id, params.get('sub')))
         console.log('entra')
     }, [params.get('sub')])
-    console.log(sub)
+
     return (
         loading || !sub ?
             <Loading />

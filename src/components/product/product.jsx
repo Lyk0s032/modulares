@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BsWhatsapp } from 'react-icons/bs';
 import * as actions from './..//store/actions/actions';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import Loading from '../loading';
 import NotFound from '../notFound';
+
+
 export default function Product(){
     const dispatch = useDispatch();
     const product = useSelector(store => store.product);
@@ -17,6 +19,13 @@ export default function Product(){
             dispatch(actions.axiosGetProduct(true, producto))
         }
     }, [producto])
+
+    const sendMessage = () => {
+        let numero = '573206864572'
+        const mensaje = encodeURIComponent("Hola, estoy interesado/a en conocer más");
+        const enlace = `https://wa.me/${numero}?text=${mensaje}`;
+        window.open(enlace, "_blank");
+    }
     return (
         !product || loading ?
             <Loading />
@@ -30,12 +39,11 @@ export default function Product(){
                 <div className='containerProductsCar'>
                     <div className='containerCars'>
 
-                        <div className='wallpaper'>
-                                <img src={product.photo} alt="" />
-                            </div>
+                        <Slider producto={product} /> 
                         <div className="car">
                             <div className="containerCar">
                                 <div className="header">
+                                    <span style={{fontSize:12, color: '#666'}}>Archivo rodante</span>
                                     <h1>{product.name}</h1>
                                     <h3>{product.referencia} <span>REF</span></h3>
                                 </div>
@@ -45,18 +53,23 @@ export default function Product(){
                                     </button><br />
                                     <strong>Descripción</strong><br /><br />
                                     <span>
-                                        {product.description}
+                                        {product.description.replace(/\\n/g, "\n")}
                                     </span>
                                     
                                 </div>
                                 <div className="buttonAction">
-                                    <button className='action'>
+                                    <button className='action' onClick={() => sendMessage()}
+                                        style={{cursor:'pointer'}}>
                                         <BsWhatsapp className='icon' />
                                         <span>
                                             Más información
                                         </span>
                                     </button>
-                                    <button className='others'>
+                                    <button className='others' onClick={() => {
+                                        document.querySelector("#other").scrollIntoView({
+                                            behavior:'smooth'
+                                        })
+                                    }} style={{cursor:'pointer'}}>
                                         <span>
                                             Productos similares
                                         </span>
@@ -67,7 +80,7 @@ export default function Product(){
                     </div>
                 </div>
 
-                <div className='otherCasilleros'>
+                <div className='otherCasilleros' id="other">
                     <div className="containerOther">
                         <div className='titleLockers'>
                             <h1>Otros productos</h1>
@@ -96,6 +109,42 @@ export default function Product(){
                 
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function Slider(props){
+    const product = props.producto;
+    const [photo, setPhoto] = useState(product.photo)
+
+    useEffect(() => {
+        setPhoto(product.photo)
+    }, [product])
+    return (
+        <div className='wallpaper'>
+            <div className="imgBig">
+                <img src={photo} alt="" />
+            </div>
+            <div className="sliderImages"> 
+                <div className="containerSlide">
+                    <img className={product.photo == photo ? 'Active' : null} src={product.photo} 
+                                    onClick={() => {
+                                        setPhoto(product.photo)
+                                    }}/>
+                    {
+                        product.media && product.media.length ? 
+                            product.media.map((m,i) => {
+                                return (
+                                    <img key={i+1} src={m.url} 
+                                    onClick={() => {
+                                        setPhoto(m.url)
+                                    }} className={m.url == photo ? 'Active' : null}/>
+                                )
+                            })
+                        : null
+                    }
                 </div>
             </div>
         </div>

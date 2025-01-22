@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 export default function BtnWhatsApp(){
     const navigate = useNavigate();
     const sendMessage = () => {
-        let numero = '573174700318'
+        let numero = '573206864572'
         const mensaje = encodeURIComponent("Hola, estoy interesado/a en conocer más");
         const enlace = `https://wa.me/${numero}?text=${mensaje}`;
         window.open(enlace, "_blank");

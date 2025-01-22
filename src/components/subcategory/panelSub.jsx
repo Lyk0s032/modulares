@@ -6,13 +6,13 @@ export default function PanelSubCategory(props){
     const category = props.category;
     const [params, setParams] = useSearchParams();
 
-
-    useEffect(() => {
-        if(!params.get('sub')){
-            params.set('sub', category.subcategories[0].id)
-            setParams(params)
-        }
-    }, [])
+    console.log(category)
+    // useEffect(() => {
+    //     if(!params.get('sub')){
+    //         params.set('sub', category.subcategories[0].id)
+    //         setParams(params)
+    //     }
+    // }, [params.get('sub')]) 
     return (
         <div className="panelSub">
             <div className="containerPanelSub">

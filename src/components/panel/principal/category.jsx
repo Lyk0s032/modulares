@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as actions from './../../store/actions/actions';
 import UpdatePhoto from './modales/uploadPhoto';
 import NewSub from './modales/newSub';
+import axios from 'axios';
 
 export default function Category(){
     const [params, setParams] = useSearchParams();
@@ -40,6 +41,16 @@ export default function Category(){
             dispatch(actions.axiosGetCategory(true, nameCat))
         }
     }, [nameCat])
+
+    const deleteCategory = async(req, res) => {
+        const del = axios.delete(`https://modularesapi-production.up.railway.app/delete/category/${category.id}`)
+        .then((res) => {
+             dispatch(actions.axiosGetCategories(true))
+             navigate('/panel')
+        })
+        .catch((err) => null)
+        return del
+    }
     return (
         loading || !category ? 
             <div className="loading">
@@ -67,6 +78,8 @@ export default function Category(){
                     <MdArrowBack className="icon" />
                     <span>Regresar</span>
                 </button><br /><br />
+
+                
                 <span className='pseudo'>Categoría {nameCat}</span><br /><br />
                 <div className="topMessage">
                     <h1>¡{category.title}!</h1>
@@ -101,8 +114,19 @@ export default function Category(){
                     </nav>
                 </div>
                 
-            </div>
-
+            </div><br /><br /><br /><br />
+            <button style={{
+                    background:'red',
+                    borderWidth:1,
+                    borderColor:'red',
+                    padding:10,
+                    borderRadius:5,
+                    cursor:'pointer'
+                }} onClick={() => {
+                    deleteCategory()
+                }}>
+                    <span style={{color: 'white'}}>Eliminar categoría</span>
+                </button><br /><br />
             
         </div>
 

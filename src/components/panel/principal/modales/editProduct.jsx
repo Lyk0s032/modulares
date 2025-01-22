@@ -51,10 +51,23 @@ export default function EditProduct(props){
 
         send ? setMistake('Creado con existo') : setMistake('No hemos logrado actualizar esto.')
     }
+
+    const deleteProduct = async(req, res) => {
+        const del = axios.delete(`https://modularesapi-production.up.railway.app/delete/product/${product.id}`)
+        .then((res) => {
+            setMistake('Actualizado')
+            setLoading(false)
+            dispatch(actions.axiosGetCategory(false, category.id));
+            params.delete('w');
+            setParams(params);
+           return true
+        })
+        .catch((err) => null)
+        return del
+    } 
     return ( 
         <div className="modal">
             {console.log(product)}
-
             <div className="hidden" onClick={() => {
                 console.log('cierra');
                 params.delete('w');
@@ -121,6 +134,16 @@ export default function EditProduct(props){
                                 </span>
                             </button>
                             <span>{mistake ? mistake : null}</span>
+                            <br /><br /><br /><br /><br />
+                            <button onClick={() => deleteProduct()} style={{
+                                background:'red',
+                                borderWidth:1,
+                                borderColor:'red',
+                            }} >
+                                <span>
+                                    Eliminar producto
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>

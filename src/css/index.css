@@ -2046,11 +2046,41 @@ body {
   border-radius: 10px;
   position: relative;
 }
-.product .containerProduct .containerProductsCar .containerCars .wallpaper img {
-  width: 60%;
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .imgBig {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .imgBig img {
+  width: 100%;
   height: 100%;
   object-fit: contain;
   position: relative;
+  border-radius: 10px;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .sliderImages {
+  width: 100%;
+  margin-top: 40px;
+  box-sizing: border-box;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .sliderImages .containerSlide {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .sliderImages .containerSlide img {
+  box-sizing: border-box;
+  height: 60px;
+  object-fit: cover;
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product .containerProduct .containerProductsCar .containerCars .wallpaper .sliderImages .containerSlide .Active {
+  border: 2px solid #046290;
+  border-radius: 5px;
 }
 .product .containerProduct .containerProductsCar .containerCars .car {
   width: 45%;

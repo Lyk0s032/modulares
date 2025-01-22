@@ -26,11 +26,13 @@ export default function Home(props){
                         <h3>Modulares costa</h3>
                         
                         <div className='caption'>
-                            <h1>Más de 25 años óptimizando espacios. Cumpliendo sueños.</h1>
-                            <span>Contruyendo espacios, materializando sueños.</span>
+                            <h1>Explora nuestro sitio web y descubre como podemos transformar tus espacios en lugares que reflejen 
+                                tu estilo y personalidad.
+                            </h1>
+                            <span>¡Visítanos y da el primer paso hacia el espacio que siempre has imaginado!</span>
                             <br />
                             <button style={{cursor:'pointer'}} onClick={() => {
-                                document.querySelector("#services").scrollIntoView({
+                                document.querySelector("#categories").scrollIntoView({
                                     behavior:'smooth'
                                 })
                             }}>
@@ -46,7 +48,7 @@ export default function Home(props){
                 <div className='bigTitleOurServices'>
                     <div className='containerBigServices'>
                         <h1>Nuestro catálogo</h1>
-                        <span>Conoce nuestra variedad de productos y servicios</span>
+                        <span>En COSTA, nos dedicamos a ofrecer productos de alta calidad para transpofrmar y optimizar tus espacios.</span>
                     </div>
                     <div className='box-services'>
                         <div className='containerBox'>
@@ -65,7 +67,14 @@ export default function Home(props){
                                 categories && categories.length ?
                                     categories.map((category, i) => {
                                         return (
-                                            <div className={i+1 <= 4 && Number(i+1) % 2 === 0 ? 'servicio Big' : i+1 >= 5  ? 'servicio' : 'servicio'} ket={i+1} onClick={() => navigate(`services/${category.id}`)}>
+                                            <div className={i+1 <= 4 && Number(i+1) % 2 === 0 ? 'servicio Big' : i+1 >= 5  ? 'servicio' : 'servicio'} ket={i+1} onClick={() => {
+                                                if(category.subcategories && category.subcategories.length){
+                                                    navigate(`services/${category.id}?sub=${category.subcategories[0].id}`)
+                                                }else{
+                                                    navigate(`services/${category.id}?`)
+
+                                                }
+                                            }}>
                                                 <div className="containerServicio">
                                                     <div className="wallpaper">
                                                         <img src={category.wallpaper} alt="" />
@@ -92,12 +101,13 @@ export default function Home(props){
                             <div className="left">
                                 <div className="containerLeft">
                                     <h1>
-                                        Nos apasiona poner a tu disposición, 
-                                        nuestra linea de servicios
+                                        Asesoría Personalizada y Sin Costo
                                     </h1>
                                     <span>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit quia nesciunt odit obcaecati maiores tenetur sapiente dolor fuga velit, ipsam totam nostrum quas eos at reiciendis possimus laborum consectetur optio?
-
+                                        Transforma tu espacio de trabajo con nuestra asesoría gratuita. <br />Nuestro equipo de expertos
+                                        te guiarán en ese nuevo proyecto o en la remodelación de tu espacio, alineado a cada
+                                        detalle con tus necesidades. Aprovecha esta oportunidad sin compromiso y creandoel espacio que 
+                                        siempre has soñado.
                                     </span><br />
 
                                     <button onClick={() => {
@@ -106,7 +116,7 @@ export default function Home(props){
                                         })
                                     }} >
                                         <span>
-                                            Me interesa
+                                            ¡Contactanos hoy!
                                         </span>
                                         <AiOutlineArrowRight />
                                     </button>

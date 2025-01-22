@@ -27,7 +27,6 @@ export function axiosGetCategories(carga){
             return dispatch(GET_CATEGORIES(inf));
         })
         .catch(e => {
-            console.log(e);
             if(e.response &&  e.response.status == 404){
                 return dispatch(GET_CATEGORIES(404))
             }else if(e.request){
@@ -87,7 +86,6 @@ export function axiosGetCategory(carga, route){
         axios.get('get/category/' + route)
         .then((info) => info.data)
         .then((data) => {
-            console.log(data);
             return dispatch(GET_CATEGORY(data));
         })
         .catch(err => {
@@ -122,11 +120,9 @@ export function axiosGetSubCategory(carga, cat, sub){
         dispatch(GettingSub(carga));
         axios.get(`get/subcat/${cat}/${sub}`)
         .then((info) => {
-            console.log(info)
             return info.data
         })
         .then((data) => {
-            console.log(data);
             return dispatch(getSub(data));
         })
         .catch(err => {
@@ -161,7 +157,6 @@ export function axiosGetProduct(carga, route){
         axios.get('get/product/' + route)
         .then((info) => info.data)
         .then((data) => {
-            console.log(data);
             return dispatch(getProduct(data));
         })
         .catch(err => {

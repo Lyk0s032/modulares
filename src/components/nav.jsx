@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { IoReorderThreeSharp } from 'react-icons/io5';
 import { MdReorder } from 'react-icons/md';
 import { useLocation, useNavigate } from 'react-router-dom';
-
+import Logo from './../assets/logoscosta-2.png';
 export default function Nav(){
     const navigate = useNavigate();
     const openNav = () => {
@@ -25,12 +25,12 @@ export default function Nav(){
                     navigate('/')                                
                     openNav();
                 }}>
-                    <img src="https://metalicascosta.com.co/assets/img/logo_metalicas_costa.png" alt="" />
+                    <img src={Logo} alt="" />
                 </div>
                 <div className='navigationOptions' id="navi">
                     <nav>
                         <ul>
-                            <li>
+                            {/* <li>
                                 <input type="text" placeholder="Buscar" />
                             </li>
                             <li onClick={() => {
@@ -40,7 +40,7 @@ export default function Nav(){
                                 <div>
                                     <span>Panel</span>
                                 </div>
-                            </li>
+                            </li> */}
                             {
                                 pathname == '/' ?
                                 <li onClick={() => {
@@ -51,7 +51,7 @@ export default function Nav(){
 
                                 }}>
                                     <div>
-                                        <span>Categorias</span>
+                                        <span>Productos</span>
                                     </div>
                                 </li>
                                 :
@@ -93,13 +93,12 @@ export default function Nav(){
                             }
 
                             <li onClick={() => {
-                                navigate('/our');
-                                openNav()
+                                navigate('/proyectos/')
+                                openNav();
+                                
                             }}>
                                 <div className="">
-                                    <span>
-                                        Oferta de valor
-                                    </span>
+                                    <span>Proyectos</span>
                                 </div>
                             </li>
                             <li onClick={() => {
@@ -113,16 +112,17 @@ export default function Nav(){
                                     </span>
                                 </div>
                             </li>
+                            
                             <li onClick={() => {
-                                navigate('/proyectos/')
-                                openNav();
-                                
+                                navigate('/our');
+                                openNav()
                             }}>
                                 <div className="">
-                                    <span>Proyectos</span>
+                                    <span>
+                                        Oferta de valor
+                                    </span>
                                 </div>
                             </li>
-
                         </ul>
                         
                     </nav>

@@ -41,7 +41,7 @@ export default function Lockers(){
                         <div className='boxOne'>
                             <h3>{category.title}</h3>
                             <h1>{category.bigTitle}</h1>
-                            <span className='txt'>{category.smallDescription}</span>
+                            <span className='txt'>{category.smallDescription.replace(/\\n/g, "\n")}</span>
                             <br />
                             <button onClick={()=>move()}>
                                 <span>¡Me interesa!</span>
