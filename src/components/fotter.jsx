@@ -3,6 +3,7 @@ import { FaInstagramSquare } from 'react-icons/fa';
 import { FaSquareInstagram } from 'react-icons/fa6';
 import { MdFacebook } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import Logo from './../assets/logoscosta-2.png';
 import Metalica from './../assets/1.png'
 export default function Fotter(props){
     const categories = props.categories;
@@ -12,7 +13,7 @@ export default function Fotter(props){
             <div className="fotterContainer">
                 <div className="business">
                     <div className='logo'>
-                        <img src="https://modularescosta.co/images/logo-whiteb.png" />
+                        <img src={Logo} />
                     </div>
                     <div className='descAndNetwork'>
                         <strong style={{color: 'white'}}>Horarios de atención</strong><br /><br />
