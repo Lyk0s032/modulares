@@ -16,7 +16,7 @@ export default function Fotter(props){
                         <img src={Logo} />
                     </div>
                     <div className='descAndNetwork'>
-                        <strong style={{color: 'white'}}>Horarios de atención</strong><br /><br />
+                        <strong style={{color: 'white', width:100}}>Horarios de atención</strong><br /><br />
                         <span style={{color: 'white'}}>
                             Lunes a Viernes de 8am a 5:30pm <br />
                             Sábado 8am a 12:30pm <br />
