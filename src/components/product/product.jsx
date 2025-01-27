@@ -43,14 +43,11 @@ export default function Product(){
                         <div className="car">
                             <div className="containerCar">
                                 <div className="header">
-                                    <span style={{fontSize:12, color: '#666'}}>Archivo rodante</span>
                                     <h1>{product.name}</h1>
                                     <h3>{product.referencia} <span>REF</span></h3>
                                 </div>
                                 <div className='desc'>
-                                    <button>
-                                        <span>Disponible</span>
-                                    </button><br />
+
                                     <strong>Descripción</strong><br /><br />
                                     <span>
                                         {product.description.replace(/\\n/g, "\n")}

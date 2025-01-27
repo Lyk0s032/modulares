@@ -62,9 +62,7 @@ export default function Lockers(){
                 <div className='invitationToAction'>
                     <div className='bigText'>
                         <h1>Obtén {category.title} de alta calidad, con los mejores precios del mercado</h1>
-                        <h3>
-                            {category.smallDescription}
-                        </h3>
+
                         <button onClick={() => move()}>
                             <span>¡Me interesa!</span>
                         </button>

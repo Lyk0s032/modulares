@@ -263,7 +263,7 @@
                        display: flex;
                        justify-content: space-between;
                        .left{
-                            width:50%;
+                            width:35%;
                             .containerLeft{
                                 padding:20px;
                                 box-sizing: border-box;
@@ -300,7 +300,8 @@
                             
                        }
                        .rightBox{
-                            width:40%;
+                            width:50%;
+                            height:80%;
                             .containerRight{
                                 display: flex;
                                 justify-content: space-between;
@@ -331,6 +332,16 @@
                                 .boxSmall:hover{
                                     background-color: @colorVar;
                                 }
+                            }
+                            .containerRigthImg{
+                                width:100%;
+                                box-sizing: border-box;
+                                background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+                                height:100%;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-attachment: fixed;
+                                border-radius: 5px;
                             }
                        }
                     }
@@ -1122,14 +1133,22 @@
 .us{
     border:1px solid white;
     width:100%;
-    height:100vh;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     .containerUs{
         width:90%;
         margin:auto;
-
+        .wallpaper{
+            margin-top:150px;
+            margin-bottom: 50px;
+            width:100%;
+            height:400px;
+            background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+            background-size: contain;
+            background-attachment: fixed;
+            border-radius: 5px;
+        }
         .logo{
             width:20%;
             margin:auto;
@@ -1138,7 +1157,7 @@
             }
         }
         .info{
-            margin-top:20px;
+            padding:100px 0px;            
             .title{
                 h1{
                     font-weight: 100;
@@ -1182,6 +1201,21 @@
 
         width:60%;
         margin:auto;
+
+        .message{
+            width:100%;
+            text-align: center;
+            h1{
+                font-weight: 400;
+                font-size: 42px;
+                color: @colorVar;
+                margin-bottom: 10px;
+            }
+            span{
+                font-size: 16px;
+                color: @textColor;
+            }
+        }
         .top{
             width:100%;
             text-align: center;
@@ -1280,7 +1314,7 @@
                 div{
                     width:40%;
                     h1{
-                        font-size: 52px;
+                        font-size: 42px;
                         color: @bgDark;
                     }
                     span{
@@ -1577,4 +1611,5 @@
         }
     }
 }
+
 

@@ -23,7 +23,6 @@ export default function Home(props){
             <div className='parallaxOne'>
                 <div className="containerParallax">
                     <div className='boxWelcomen'>
-                        <h3>Modulares costa</h3>
                         
                         <div className='caption'>
                             <h1>Explora nuestro sitio web y descubre como podemos transformar tus espacios en lugares que reflejen 
@@ -48,7 +47,7 @@ export default function Home(props){
                 <div className='bigTitleOurServices'>
                     <div className='containerBigServices'>
                         <h1>Nuestro catálogo</h1>
-                        <span>En COSTA, nos dedicamos a ofrecer productos de alta calidad para transpofrmar y optimizar tus espacios.</span>
+                        <span>En COSTA, nos dedicamos a ofrecer productos de alta calidad para transformar y optimizar tus espacios.</span>
                     </div>
                     <div className='box-services'>
                         <div className='containerBox'>
@@ -101,12 +100,12 @@ export default function Home(props){
                             <div className="left">
                                 <div className="containerLeft">
                                     <h1>
-                                        Asesoría Personalizada y Sin Costo
+                                        Asesoría Personalizada 
                                     </h1>
                                     <span>
-                                        Transforma tu espacio de trabajo con nuestra asesoría gratuita. <br />Nuestro equipo de expertos
+                                        Transforma tu espacio de trabajo con nuestra asesoría. <br />Nuestro equipo de expertos
                                         te guiarán en ese nuevo proyecto o en la remodelación de tu espacio, alineado a cada
-                                        detalle con tus necesidades. Aprovecha esta oportunidad sin compromiso y creandoel espacio que 
+                                        detalle con tus necesidades. Aprovecha esta oportunidad sin compromiso y creando el espacio que 
                                         siempre has soñado.
                                     </span><br />
 
@@ -124,31 +123,7 @@ export default function Home(props){
                             </div>
 
                             <div className="rightBox">
-                                <div className="containerRight">
-                                    <div className="boxSmall">
-                                        <div className="">
-                                            <h1>Consultoría</h1>
-                                            <span>+ 25 años</span>
-                                        </div>
-                                    </div>
-                                    <div className="boxSmall">
-                                        <div className="">
-                                            <h1>Proyectos</h1>
-                                            <span>Oficina y Mobilliario</span>
-                                        </div>
-                                    </div>
-                                    <div className="boxSmall">
-                                        <div className="">
-                                            <h1>Definir</h1>
-                                            <span>Definir</span>
-                                        </div>
-                                    </div>
-                                    <div className="boxSmall">
-                                        <div className="">
-                                            <h1>Definir </h1>
-                                            <span>Definir</span>
-                                        </div>
-                                    </div>
+                                <div className="containerRigthImg">
                                 </div>
                             </div>
                         </div>

@@ -861,7 +861,7 @@ body {
   justify-content: space-between;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left {
-  width: 50%;
+  width: 35%;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft {
   padding: 20px;
@@ -892,7 +892,8 @@ body {
   margin-right: 10px;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox {
-  width: 40%;
+  width: 50%;
+  height: 80%;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight {
   display: flex;
@@ -924,6 +925,16 @@ body {
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall:hover {
   background-color: #046290;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg {
+  width: 100%;
+  box-sizing: border-box;
+  background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 5px;
 }
 .modulares .home .ourExperience {
   background-color: #ebebed;
@@ -1589,7 +1600,6 @@ body {
 .us {
   border: 1px solid white;
   width: 100%;
-  height: 100vh;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -1597,6 +1607,16 @@ body {
 .us .containerUs {
   width: 90%;
   margin: auto;
+}
+.us .containerUs .wallpaper {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 400px;
+  background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+  background-size: contain;
+  background-attachment: fixed;
+  border-radius: 5px;
 }
 .us .containerUs .logo {
   width: 20%;
@@ -1606,7 +1626,7 @@ body {
   width: 100%;
 }
 .us .containerUs .info {
-  margin-top: 20px;
+  padding: 100px 0px;
 }
 .us .containerUs .info .title h1 {
   font-weight: 100;
@@ -1642,6 +1662,20 @@ body {
 .forma .containerForm {
   width: 60%;
   margin: auto;
+}
+.forma .containerForm .message {
+  width: 100%;
+  text-align: center;
+}
+.forma .containerForm .message h1 {
+  font-weight: 400;
+  font-size: 42px;
+  color: #046290;
+  margin-bottom: 10px;
+}
+.forma .containerForm .message span {
+  font-size: 16px;
+  color: #6c757d;
 }
 .forma .containerForm .top {
   width: 100%;
@@ -1739,7 +1773,7 @@ body {
   width: 40%;
 }
 .proyects .containerProyects .parallaxOneProyectos .containerPara div h1 {
-  font-size: 52px;
+  font-size: 42px;
   color: #343A40;
 }
 .proyects .containerProyects .parallaxOneProyectos .containerPara div span {

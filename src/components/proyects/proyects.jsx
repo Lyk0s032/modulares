@@ -8,10 +8,14 @@ export default function PanelProyects(){
                 <div className="parallaxOneProyectos">
                     <div className="containerPara">
                         <div className="">
-                            <h1>Ayudando a otros a ser felices</h1>
+                            <h1>Casos de éxito asesorando empresas de todos los sectores económicos.</h1>
                             <span>Conoce lo que dicen nuestros clientes</span>
                             <br /><br />
-                            <button>
+                            <button onClick={() => {
+                                document.querySelector("#projects").scrollIntoView({
+                                    behavior:'smooth'
+                                })
+                            }}>
                                 <span>¡Tengo curiosidad!</span>
                             </button>
                         </div>

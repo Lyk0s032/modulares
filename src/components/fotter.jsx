@@ -4,6 +4,7 @@ import { FaSquareInstagram } from 'react-icons/fa6';
 import { MdFacebook } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import Metalica from './../assets/1.png'
+import Logo from './../assets/logoscosta-2.png';
 export default function Fotter(props){
     const categories = props.categories;
     const navigate = useNavigate();
@@ -12,17 +13,21 @@ export default function Fotter(props){
             <div className="fotterContainer">
                 <div className="business">
                     <div className='logo'>
-                        <img src="https://modularescosta.co/images/logo-whiteb.png" />
+                        <img src={Logo} style={{width:200}} /> 
                     </div>
                     <div className='descAndNetwork'>
                         <strong style={{color: 'white'}}>Horarios de atención</strong><br /><br />
                         <span style={{color: 'white'}}>
-                            Lunes a Viernes de 8am a 5:30pm <br />
-                            Sábado 8am a 12:30pm <br />
-                            (602) 373 9940 <br />
-                            320 686 4572 ( por definir)
+                            Lunes a Viernes de 8:00 am a 5:30pm <br />
+                            Sábado 8:00am a 12:30pm <br /><br />
+                            Sala de exhibición: Calle 11 # 13 - 15 San Pascual <br /><br />
+                            Tel: (602) 373 9940 <br />
+                            Cel: 320 686 4572 
                         </span><br /><br />
-                        <span>Cali - Colombia</span>
+                        <span style={{color: 'white'}}>Santiado de Cali</span><br />
+                        <span style={{color: 'white'}} >Valle del Cauca</span><br /><br />
+
+                        <span style={{color: 'white'}}>Colombia</span>
 
 
 
@@ -58,7 +63,7 @@ export default function Fotter(props){
                 </div>
                 <div className='boxNav'>
                     <div className='title'>
-                        <h3>Visitanos</h3>
+                        <h3>Visítanos</h3>
                     </div>
                     <div className='containerNav'>
                         <nav>

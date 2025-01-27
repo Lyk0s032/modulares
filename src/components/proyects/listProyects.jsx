@@ -8,7 +8,7 @@ export default function ListsProyects(){
     const [params, setParams] = useSearchParams();
 
     return (
-        <div className="listsProyects">
+        <div className="listsProyects" id="projects">
             {
                 params.get('m') == 'watch' ?
                     <ModalProjects />
@@ -27,7 +27,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -43,7 +43,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -59,7 +59,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -75,7 +75,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -90,7 +90,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -106,7 +106,7 @@ export default function ListsProyects(){
                                 <img src="https://modularescosta.co/images/logo-whiteb.png" alt="" />
                             </div>
                             <div className="data">
-                                <span>Coca cola</span>
+                                <span>Modulares cota</span>
                                 <div className="stars">
                                     <MdOutlineStar className="icon" />
                                     <MdOutlineStar className="icon" />
@@ -118,7 +118,7 @@ export default function ListsProyects(){
                         </div>
                     </div>
                 </div>
-                <div className="testimonial">
+                {/* <div className="testimonial">
                     <div className="containerThis">
                         <div className="titleTestimonial">
                             <div className="desc">
@@ -154,7 +154,7 @@ export default function ListsProyects(){
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
