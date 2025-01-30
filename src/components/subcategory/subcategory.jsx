@@ -15,7 +15,7 @@ export default function SubCategory(props){
 
     const searchByOrder = category.subcategories;
     useEffect(() => {
-        dispatch(actions.axiosGetSubCategory(true, searchByOrder[0], params.get('sub')))
+        dispatch(actions.axiosGetSubCategory(true, searchByOrder[0].id, params.get('sub')))
         console.log('entra')
     }, [params.get('sub')])
 
