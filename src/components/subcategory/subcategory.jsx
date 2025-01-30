@@ -13,8 +13,9 @@ export default function SubCategory(props){
     const sub = useSelector(store => store.sub);
     const loading = useSelector(store => store.loadingSub);
 
+    const searchByOrder = category.subcategories;
     useEffect(() => {
-        dispatch(actions.axiosGetSubCategory(true, category.id, params.get('sub')))
+        dispatch(actions.axiosGetSubCategory(true, searchByOrder[0], params.get('sub')))
         console.log('entra')
     }, [params.get('sub')])
 
