@@ -242,9 +242,17 @@
                 margin-top:50px;
                 box-sizing: border-box;
                 background-color: #F1F7FF;
+
+                background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: bottom;
+
                 .containerOurServices{
                     box-sizing: border-box;
-
+                    background-color: rgba(0,0,0, 0.3);
+                    
                     .titleComponent{
                         width:100%;
                         text-align: center;
@@ -261,9 +269,11 @@
                        align-items: center;
                        margin:auto;
                        display: flex;
+                       flex-direction:column-reverse;
                        justify-content: space-between;
+                       flex-wrap: nowrap;
                        .left{
-                            width:35%;
+                            width:100%;
                             .containerLeft{
                                 padding:20px;
                                 box-sizing: border-box;
@@ -278,70 +288,57 @@
                                     font-size: 14px;
                                     font-weight: 100;
                                 }
-                                button{
-                                    padding:15px 20px;
-                                    box-sizing: border-box;
-                                    cursor: pointer;
-                                    margin-top:30px;
-                                    background-color: @btnButton;
-                                    border:1px solid @btnButton;
-                                    border-radius: 5px;
-                                    cursor: pointer;
-                                    color:white;
-                                    display: flex;
-                                    align-items: center;
-
-                                    span{
-                                        margin-right: 10px;
-                                    }
-                                }
+                                
                                 
                             }
                             
                        }
                        .rightBox{
-                            width:50%;
+                            width:100%;
                             height:80%;
-                            .containerRight{
-                                display: flex;
-                                justify-content: space-between;
-                                flex-wrap: wrap;
-                                .boxSmall{
-                                    width:45%;
-                                    height:150px;
-                                    margin-bottom: 20px;
-                                    border:1px solid black;
-                                    border-radius: 10px;
-                                    background-color: @btnButton;
-                                    border:1px solid @btnButton;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: space-around;
-                                    cursor: pointer;
-                                    transition: .3s;
-                                    h1{
-                                        font-weight: 100;
-                                        font-size: 26px;
-                                        color:white;
-                                        margin-bottom: 5px;
-                                    }
-                                    span{
-                                        color: white;
-                                    }
-                                }
-                                .boxSmall:hover{
-                                    background-color: @colorVar;
-                                }
-                            }
+    
                             .containerRigthImg{
                                 width:100%;
                                 box-sizing: border-box;
-                                background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
-                                height:100%;
-                                background-size: contain;
-                                background-repeat: no-repeat;
-                                background-attachment: fixed;
-                                border-radius: 5px;
+                                .dark{
+                                    position:absolute;
+                                    height:100%;
+                                    .textDesing{
+                                        width:90%;
+                                        margin:auto;
+                                        margin-top:100px;
+                                        h1{
+                                            color: white;
+                                            font-size: 52px;
+                                            font-weight: 500;
+                                            margin-bottom: 10px;
+                                        }
+                                        .textLong{
+                                            width:60%;
+                                            span{
+                                                color: white;
+                                                font-size: 16px;
+                                            }
+                                        }
+                                        button{
+                                            padding:15px 20px;
+                                            box-sizing: border-box;
+                                            cursor: pointer;
+                                            margin-top:30px;
+                                            background-color: @btnButton;
+                                            border:1px solid @btnButton;
+                                            border-radius: 5px;
+                                            cursor: pointer;
+                                            color:white;
+                                            display: flex;
+                                            align-items: center;
+        
+                                            span{
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                }
                             }
                        }
                     }
@@ -894,8 +891,9 @@
                                     justify-content: space-between;
                                     .icon{
                                         width:10%;
-                                        img{
-                                            width:100%;
+                                        .iconito{
+                                            font-size: 28px;
+                                            color: @colorVar;
                                         }
                                     }
                                     .text{
@@ -1038,7 +1036,7 @@
         border-radius: 100%;
         display: flex;
         align-items: center;
-        padding:15px;
+        padding:10px;
         justify-content: space-around;
         border:none;
         background-color: #008000;
@@ -1046,15 +1044,26 @@
         transition: .3s;
         cursor: pointer;
         .icon{
-            font-size: 32px;
+            font-size: 22px;
             color: white;
         }
     }
+    .messgeBtn{
+        background-color: @colorVar;
+        border:1px solid @colorVar;
+    }
+    
     button:hover{
         transform: scale(1.1);
         background-color: white;
         .icon{
             color: #008000;
+        }
+    }
+    .messgeBtn:hover{
+        background-color: white;
+        .icon{
+            color: @colorVar;
         }
     }
 }

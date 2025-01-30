@@ -1,4 +1,5 @@
 import React from 'react';
+import { IoMdCheckmarkCircleOutline } from 'react-icons/io';
 
 export default function OfertaValor(){
     return (
@@ -27,10 +28,10 @@ export default function OfertaValor(){
                     <div className="containerBigText">
                         <h1>
                         En Costa, diseñamos y fabricamos mobiliario especializado para oficina y áreas de trabajo
-                                        colectivo, priorizando la funcionalidad, el confort y el diseño personalizado
+                        colectivo, priorizando la funcionalidad, el confort y el diseño personalizado
                                     
-                                        Ofrecemos  soluciones integrales que facilitan el orden y el almacenamiento eficiente, adaptadas 
-                                        a las necesidades especificas de cada cliente.
+                        Ofrecemos  soluciones integrales que facilitan el orden y el almacenamiento eficiente, adaptadas 
+                        a las necesidades especificas de cada cliente.
                         </h1>
                     </div>
                 </div>
@@ -59,8 +60,7 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                                <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
-                                            </div>
+                                                <IoMdCheckmarkCircleOutline className="iconito" />                                             </div>
                                             <div className="text">
                                                 <span>
                                                     Contamos con un equipo de asesores que, con el apoyo de herramientas tecnológicas, respondemos de manera efectiva a cada requerimiento.                                                
@@ -71,8 +71,7 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                                <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
-                                            </div>
+                                                <IoMdCheckmarkCircleOutline className="iconito" />                                             </div>
                                             <div className="text">
                                                 <span>
                                                     Contamos con un equipo de asesores que, con el apoyo de herramientas tecnológicas, respondemos de manera efectiva a cada requerimiento.
@@ -83,7 +82,7 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                            <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
+                                                <IoMdCheckmarkCircleOutline className="iconito" /> 
                                             </div>
                                             <div className="text">
                                                 <span>
@@ -95,7 +94,7 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                            <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
+                                            <IoMdCheckmarkCircleOutline className="iconito" /> 
                                             </div>
                                             <div className="text">
                                                 <span>
@@ -125,8 +124,7 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                                <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
-                                            </div>
+                                                <IoMdCheckmarkCircleOutline className="iconito" />                                             </div>
                                             <div className="text">
                                                 <span>
                                                     Nuestro proceso de atención es ágil y eficiente, respaldado por un sistema de gestión de calidad que garantiza, entregas puntuales y una experiencia de servicio que genera confianza y satisfacción.
@@ -137,7 +135,8 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                            <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
+                                                <IoMdCheckmarkCircleOutline className="iconito" /> 
+
                                             </div>
                                             <div className="text">
                                                 <span>
@@ -149,7 +148,8 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                            <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
+                                                <IoMdCheckmarkCircleOutline className="iconito" /> 
+
                                             </div>
                                             <div className="text">
                                                 <span>
@@ -161,7 +161,8 @@ export default function OfertaValor(){
                                     <div className="ventaja">
                                         <div className="containerVentaja">
                                             <div className="icon">
-                                            <img src="https://th.bing.com/th/id/OIP.a7X1LevkTz-Eo0X4eefb_gHaHa?rs=1&pid=ImgDetMain" alt="" />
+                                                <IoMdCheckmarkCircleOutline className="iconito" /> 
+
                                             </div>
                                             <div className="text">
                                                 <span>

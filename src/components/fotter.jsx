@@ -13,7 +13,7 @@ export default function Fotter(props){
             <div className="fotterContainer">
                 <div className="business">
                     <div className='logo'>
-                        <img src={Logo} style={{width:200}} /> 
+                        {/* <img src={Logo} style={{width:200}} /> */}
                     </div>
                     <div className='descAndNetwork'>
                         <strong style={{color: 'white'}}>Horarios de atención</strong><br /><br />

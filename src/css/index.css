@@ -839,9 +839,15 @@ body {
   margin-top: 50px;
   box-sizing: border-box;
   background-color: #F1F7FF;
+  background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
 }
 .modulares .home .ourServices .OurSev .containerOurServices {
   box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .modulares .home .ourServices .OurSev .containerOurServices .titleComponent {
   width: 100%;
@@ -858,10 +864,12 @@ body {
   align-items: center;
   margin: auto;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
+  flex-wrap: nowrap;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left {
-  width: 35%;
+  width: 100%;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft {
   padding: 20px;
@@ -876,7 +884,37 @@ body {
   font-size: 14px;
   font-weight: 100;
 }
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft button {
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox {
+  width: 100%;
+  height: 80%;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg {
+  width: 100%;
+  box-sizing: border-box;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark {
+  position: absolute;
+  height: 100%;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing {
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing h1 {
+  color: white;
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing .textLong {
+  width: 60%;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing .textLong span {
+  color: white;
+  font-size: 16px;
+}
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing button {
   padding: 15px 20px;
   box-sizing: border-box;
   margin-top: 30px;
@@ -888,53 +926,8 @@ body {
   display: flex;
   align-items: center;
 }
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .left .containerLeft button span {
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing button span {
   margin-right: 10px;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox {
-  width: 50%;
-  height: 80%;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall {
-  width: 45%;
-  height: 150px;
-  margin-bottom: 20px;
-  border: 1px solid black;
-  border-radius: 10px;
-  background-color: #3864F3;
-  border: 1px solid #3864F3;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall h1 {
-  font-weight: 100;
-  font-size: 26px;
-  color: white;
-  margin-bottom: 5px;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall span {
-  color: white;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRight .boxSmall:hover {
-  background-color: #046290;
-}
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg {
-  width: 100%;
-  box-sizing: border-box;
-  background: url('https://metalicascosta.com.co/assets/img/empresa-2.webp');
-  height: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  border-radius: 5px;
 }
 .modulares .home .ourExperience {
   background-color: #ebebed;
@@ -1408,8 +1401,9 @@ body {
 .oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .icon {
   width: 10%;
 }
-.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .icon img {
-  width: 100%;
+.oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .icon .iconito {
+  font-size: 28px;
+  color: #046290;
 }
 .oferta .containerOferta .two .containerTwo .divide .right .container .ventaja .containerVentaja .text {
   width: 80%;
@@ -1514,7 +1508,7 @@ body {
   border-radius: 100%;
   display: flex;
   align-items: center;
-  padding: 15px;
+  padding: 10px;
   justify-content: space-around;
   border: none;
   background-color: #008000;
@@ -1523,8 +1517,12 @@ body {
   cursor: pointer;
 }
 .btnWhatsApp button .icon {
-  font-size: 32px;
+  font-size: 22px;
   color: white;
+}
+.btnWhatsApp .messgeBtn {
+  background-color: #046290;
+  border: 1px solid #046290;
 }
 .btnWhatsApp button:hover {
   transform: scale(1.1);
@@ -1532,6 +1530,12 @@ body {
 }
 .btnWhatsApp button:hover .icon {
   color: #008000;
+}
+.btnWhatsApp .messgeBtn:hover {
+  background-color: white;
+}
+.btnWhatsApp .messgeBtn:hover .icon {
+  color: #046290;
 }
 @media screen and (max-width: 700px) {
   .btnWhatsApp {

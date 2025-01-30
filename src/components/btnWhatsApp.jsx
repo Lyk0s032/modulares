@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { MdPhone, MdWhatsapp } from 'react-icons/md';
+import { TbMessageChatbot } from 'react-icons/tb';
 import { useNavigate } from 'react-router-dom';
 
 export default function BtnWhatsApp(){
@@ -39,8 +40,8 @@ export default function BtnWhatsApp(){
     }
     return (
         <div className="btnWhatsApp">
-            <button style={{backgroundColor: 'blue', borderColor:'blue'}} onClick={()=> ToContact()}>
-                <MdPhone className='icon' />
+            <button className="messgeBtn" onClick={()=> ToContact()}>
+                <TbMessageChatbot className='icon' />
             </button><br />
             <button onClick={()=> addClicWhastApp()}>
                 <MdWhatsapp className='icon' />

@@ -44,7 +44,7 @@ export default function Product(){
                             <div className="containerCar">
                                 <div className="header">
                                     <h1>{product.name}</h1>
-                                    <h3>{product.referencia} <span>REF</span></h3>
+                                    <h3>{product.referencia} </h3>
                                 </div>
                                 <div className='desc'>
 
@@ -80,8 +80,8 @@ export default function Product(){
                 <div className='otherCasilleros' id="other">
                     <div className="containerOther">
                         <div className='titleLockers'>
-                            <h1>Otros productos</h1>
-                            <span>Conoce más sobre nuestra linea de {product.category.title} </span>
+                            <h1>Otros productos</h1> 
+                            <span>Conoce más sobre nuestra línea de {product.category.title} </span>
                         </div>
                         <div className='lockers'>
                             {

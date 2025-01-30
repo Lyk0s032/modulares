@@ -97,33 +97,39 @@ export default function Home(props){
                     <div className="containerOurServices">
 
                         <div className="containerServicesDivide">
-                            <div className="left">
-                                <div className="containerLeft">
-                                    <h1>
-                                        Asesoría Personalizada 
-                                    </h1>
-                                    <span>
-                                        Transforma tu espacio de trabajo con nuestra asesoría. <br />Nuestro equipo de expertos
-                                        te guiarán en ese nuevo proyecto o en la remodelación de tu espacio, alineado a cada
-                                        detalle con tus necesidades. Aprovecha esta oportunidad sin compromiso y creando el espacio que 
-                                        siempre has soñado.
-                                    </span><br />
-
-                                    <button onClick={() => {
-                                        document.querySelector("#form").scrollIntoView({
-                                            behavior:'smooth'
-                                        })
-                                    }} >
-                                        <span>
-                                            ¡Contactanos hoy!
-                                        </span>
-                                        <AiOutlineArrowRight />
-                                    </button>
-                                </div>
-                            </div>
+    
 
                             <div className="rightBox">
                                 <div className="containerRigthImg">
+                                    <div className="dark">
+                                        <div className="textDesing">
+                                            <h1>
+                                                Asesoría Personalizada 
+                                            </h1>
+                                        
+                                            <div className="textLong">
+                                                <span>
+                                                    Transforma tu espacio de trabajo con nuestra asesoría
+                                                    personalizada. Te ayudamos a crear un entorno que se
+                                                    ajuste a tus necesidades y estilo, optimizando el espacio y
+                                                    los materiales según tu presupuesto. Ofrecemos un diseño
+                                                    moderno y eficiente, con un proceso que incluye consulta,
+                                                    propuesta, producción y montaje. Contáctanos y haz
+                                                    realidad tu espacio ideal. 
+                                                    </span><br />
+                                            </div>
+                                            <button onClick={() => {
+                                                document.querySelector("#form").scrollIntoView({
+                                                    behavior:'smooth'
+                                                })
+                                            }} >
+                                                <span>
+                                                    ¡Contactanos hoy!
+                                                </span>
+                                                <AiOutlineArrowRight />
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

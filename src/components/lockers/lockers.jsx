@@ -39,7 +39,7 @@ export default function Lockers(){
                     </div>
                     <div className='containerParallax'>
                         <div className='boxOne'>
-                            <h3>{category.title}</h3>
+                            {/* <h3>{category.title}</h3> */}
                             <h1>{category.bigTitle}</h1>
                             <span className='txt'>{category.smallDescription.replace(/\\n/g, "\n")}</span>
                             <br />
