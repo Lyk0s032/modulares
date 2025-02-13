@@ -14,11 +14,12 @@ export default function SubCategory(props){
     const loading = useSelector(store => store.loadingSub);
 
     const searchByOrder = category.subcategories;
+    console.log(searchByOrder)
     useEffect(() => {
-        dispatch(actions.axiosGetSubCategory(true, searchByOrder[0].id, params.get('sub')))
-        console.log('entra')
+        dispatch(actions.axiosGetSubCategory(true, category.id, params.get('sub')))
     }, [params.get('sub')])
 
+    console.log(sub)
     return (
         loading || !sub ?
             <Loading />
