@@ -29,7 +29,7 @@ export default function BtnWhatsApp(){
         return sendCreate;
     }
     const sendMessage = () => {
-        let numero = '573206864572'
+        let numero = '573108795173'
         const mensaje = encodeURIComponent("Hola, estoy interesado/a en conocer más");
         const enlace = `https://wa.me/${numero}?text=${mensaje}`;
         window.open(enlace, "_blank");
