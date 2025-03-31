@@ -9,6 +9,7 @@ import * as actions from './store/actions/actions';
 import Form from './contact';
 import { BsArrowRight } from 'react-icons/bs';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home(props){
     const categories = props.categories;
@@ -20,15 +21,26 @@ export default function Home(props){
     return (
 
         <div className='home'>
+            <Helmet>
+                <title>Modulares Costa - Centro mobiliario y más</title>
+                <meta name="description" content="Descubre nuestra selección de muebles de oficina. Calidad, ergonomía y diseño para tu espacio de trabajo." />
+                <meta property="og:title" content="Mobiliario de Oficina | Sillas, Escritorios y Más" />
+                <meta property="og:description" content="Encuentra sillas ergonómicas, escritorios modernos y más para tu oficina ideal." />
+                <meta property="og:image" content="https://www.modularescosta.co/assets/logoscosta-2-BDwFa4ZH.png" />
+                <meta property="og:url" content="https://www.modularescosta.co/" />
+            </Helmet>
             <div className='parallaxOne'>
                 <div className="containerParallax">
                     <div className='boxWelcomen'>
                         
                         <div className='caption'>
-                            <h1>Explora nuestro sitio web y descubre como podemos transformar tus espacios en lugares que reflejen 
-                                tu estilo y personalidad.
+                            <h1>
+                                Mobiliario de oficina que combina estilo y comodidad
                             </h1>
-                            <span>¡Visítanos y da el primer paso hacia el espacio que siempre has imaginado!</span>
+                            <h2>Diseñado para tu productividad y bienestar</h2>
+                            <span>
+                            Transforma tu oficina con muebles ergonómicos y funcionales que se adaptan a tu espacio y necesidades. Encuentra escritorios, sillas y accesorios diseñados para brindar comodidad, eficiencia y un estilo profesional. ¡Optimiza tu entorno de trabajo con calidad y diseño!
+                            </span>
                             <br />
                             <button style={{cursor:'pointer'}} onClick={() => {
                                 document.querySelector("#categories").scrollIntoView({
@@ -46,8 +58,8 @@ export default function Home(props){
             <div className='ourServices' id="categories">
                 <div className='bigTitleOurServices'>
                     <div className='containerBigServices'>
-                        <h1>Nuestro catálogo</h1>
-                        <span>En COSTA, nos dedicamos a ofrecer productos de alta calidad para transformar y optimizar tus espacios.</span>
+                        <h2>Nuestro catálogo</h2>
+                        <p>En COSTA, nos dedicamos a ofrecer productos de alta calidad para transformar y optimizar tus espacios.</p>
                     </div>
                     <div className='box-services'>
                         <div className='containerBox'>
@@ -68,9 +80,9 @@ export default function Home(props){
                                         return (
                                             <div className={i+1 <= 4 && Number(i+1) % 2 === 0 ? 'servicio Big' : i+1 >= 5  ? 'servicio' : 'servicio'} ket={i+1} onClick={() => {
                                                 if(category.subcategories && category.subcategories.length){
-                                                    navigate(`services/${category.id}?sub=${category.subcategories[0].id}`)
+                                                    navigate(`services/${category.title}?sub=${category.subcategories[0].title}`)
                                                 }else{
-                                                    navigate(`services/${category.id}?`)
+                                                    navigate(`services/${category.title}?`)
 
                                                 }
                                             }}>
@@ -103,12 +115,12 @@ export default function Home(props){
                                 <div className="containerRigthImg">
                                     <div className="dark">
                                         <div className="textDesing">
-                                            <h1>
+                                            <h2>
                                                 Asesoría Personalizada 
-                                            </h1>
+                                            </h2>
                                         
                                             <div className="textLong">
-                                                <span>
+                                                <span> 
                                                     Transforma tu espacio de trabajo con nuestra asesoría
                                                     personalizada. Te ayudamos a crear un entorno que se
                                                     ajuste a tus necesidades y estilo, optimizando el espacio y

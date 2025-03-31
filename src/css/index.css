@@ -650,17 +650,26 @@ body {
 }
 .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption {
   margin-top: 20px;
-  width: 50%;
+  width: 60%;
 }
 .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption h1 {
-  font-size: 42px;
+  font-size: 44px;
   font-weight: bold;
   margin: 10px 0px;
+  width: 90%;
   padding: 0px;
+  color: #046290;
+  font-weight: 400;
+}
+.modulares .home .parallaxOne .containerParallax .boxWelcomen .caption h2 {
   color: #343A40;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption span {
   font-size: 14px;
+  color: #343A40;
 }
 .modulares .home .parallaxOne .containerParallax .boxWelcomen .caption button {
   margin-top: 40px;
@@ -685,14 +694,16 @@ body {
 .modulares .home .ourServices .bigTitleOurServices .containerBigServices {
   width: 100%;
   text-align: center;
+  padding: 20px 0px;
+  box-sizing: border-box;
 }
-.modulares .home .ourServices .bigTitleOurServices .containerBigServices h1 {
-  font-weight: 600;
-  font-size: 24px;
+.modulares .home .ourServices .bigTitleOurServices .containerBigServices h2 {
+  font-weight: 400;
+  font-size: 28px;
   margin: 10px 0px;
-  color: #525456;
+  color: #046290;
 }
-.modulares .home .ourServices .bigTitleOurServices .containerBigServices span {
+.modulares .home .ourServices .bigTitleOurServices .containerBigServices p {
   color: #6c757d;
 }
 .modulares .home .ourServices .containerParallax .serviceOption .contenedorDeServicios {
@@ -901,7 +912,7 @@ body {
   margin: auto;
   margin-top: 100px;
 }
-.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing h1 {
+.modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing h2 {
   color: white;
   font-size: 52px;
   font-weight: 500;
@@ -2135,14 +2146,15 @@ body {
 .product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h1 {
   font-weight: 100;
   font-size: 52px;
-  color: #343A40;
+  color: #046290;
 }
-.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h3 {
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h2 {
   margin-top: 10px;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 24px;
+  color: #343A40;
 }
-.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h3 span {
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .header h2 span {
   font-size: 18px;
 }
 .product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc {
@@ -2152,9 +2164,9 @@ body {
   font-style: italic;
   color: #343A40;
 }
-.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc span {
+.product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc p {
   font-size: 16px;
-  color: #6c757d;
+  color: #343A40;
 }
 .product .containerProduct .containerProductsCar .containerCars .car .containerCar .desc button {
   margin-bottom: 30px;
@@ -2461,6 +2473,40 @@ body {
 }
 .lockers .pageLockers .firstParallax .containerParallax .boxOne button:hover {
   transform: scale(1.1);
+}
+.lockers .pageLockers .txtCategory {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 0px;
+}
+.lockers .pageLockers .txtCategory .containerTxt {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0px;
+  box-sizing: border-box;
+}
+.lockers .pageLockers .txtCategory .containerTxt .title {
+  text-align: center;
+}
+.lockers .pageLockers .txtCategory .containerTxt .title h1 {
+  font-weight: 400;
+  color: #046290;
+}
+.lockers .pageLockers .txtCategory .containerTxt .title h2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #343A40;
+}
+.lockers .pageLockers .txtCategory .containerTxt .estructura {
+  box-sizing: border-box;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+.lockers .pageLockers .txtCategory .containerTxt .estructura p {
+  color: #343A40;
+  font-size: 14px;
 }
 .lockers .pageLockers .newDiv .panelSub .containerPanelSub .listProducts .containerListsProducts .productito {
   border: 1px solid red;

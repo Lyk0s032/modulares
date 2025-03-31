@@ -16,11 +16,18 @@ export default function SubCategory(props){
     const searchByOrder = category.subcategories;
     console.log(searchByOrder)
     useEffect(() => {
-        dispatch(actions.axiosGetSubCategory(true, category.id, params.get('sub')))
+        if(params.get('sub')){
+            dispatch(actions.axiosGetSubCategory(true, category.id, params.get('sub')))
+        }else{
+            console.log(category)
+            category && category.subcategories && category.subcategories.length ? params.set('sub', category.subcategories[0].title) : null
+            setParams(params);
+        }
+
     }, [params.get('sub')])
 
     console.log(sub)
-    return (
+    return ( 
         loading || !sub ?
             <Loading />
         :
@@ -30,12 +37,12 @@ export default function SubCategory(props){
             sub.products && sub.products.length ?
                 sub.products.map((productito, i) => {
                     return (
-                        <div className="productico" key={i+1} onClick={() => navigate(`/product/${productito.id}`)}>
+                        <article className="productico" key={i+1} onClick={() => navigate(`/product/${productito.id}`)}>
                             <div className="hidden">
                                 <h1>{productito.name}</h1>
                             </div>
                             <img src={productito.photo} alt="" />
-                        </div>
+                        </article>
                     )
                 })
             :

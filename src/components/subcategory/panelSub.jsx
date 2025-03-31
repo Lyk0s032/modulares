@@ -23,10 +23,10 @@ export default function PanelSubCategory(props){
                                     category.subcategories.map((m, i) => {
                                         return (
                                             <li onClick={() => {
-                                                params.set('sub', `${m.id}`);
+                                                params.set('sub', `${m.title}`);
                                                 setParams(params)
                                             }}>
-                                                <div className={params.get('sub') == m.id ? 'li Active' : 'li'}>
+                                                <div className={params.get('sub') == m.title ? 'li Active' : 'li'}>
                                                     <span>{m.title}</span>
                                                 </div>
                                             </li>

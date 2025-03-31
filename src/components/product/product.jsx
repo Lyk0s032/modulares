@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import Loading from '../loading';
 import NotFound from '../notFound';
+import { Helmet } from 'react-helmet-async';
 
 
 export default function Product(){
@@ -34,7 +35,14 @@ export default function Product(){
             <NotFound />
         :
         <div className='product'>
-
+            <Helmet>
+                <title>{product.name} - Modulares Costa</title>
+                <meta name="description" content={product.description}/>
+                <meta property="og:title" content={producto.name} />
+                <meta property="og:description" content={producto.description} />
+                <meta property="og:image" content={producto.photo} />
+                <meta property="og:url" content={`https://www.modularescosta.co/product/${producto.id}`} />
+            </Helmet>
             <div className='containerProduct'>
                 <div className='containerProductsCar'>
                     <div className='containerCars'>
@@ -44,14 +52,14 @@ export default function Product(){
                             <div className="containerCar">
                                 <div className="header">
                                     <h1>{product.name}</h1>
-                                    <h3>{product.referencia} </h3>
-                                </div>
+                                    <h2>{product.referencia} </h2>
+                                </div> 
                                 <div className='desc'>
 
                                     <strong>Descripción</strong><br /><br />
-                                    <span>
+                                    <p>
                                         {product.description.replace(/\\n/g, "\n")}
-                                    </span>
+                                    </p>
                                     
                                 </div>
                                 <div className="buttonAction">

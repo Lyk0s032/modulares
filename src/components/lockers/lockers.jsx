@@ -5,6 +5,7 @@ import * as actions from './../store/actions/actions';
 import Loading from '../loading';
 import NotFound from '../notFound';
 import PanelSubCategory from '../subcategory/panelSub';
+import { Helmet } from 'react-helmet-async';
 
 export default function Lockers(){
     const navigate = useNavigate();
@@ -30,13 +31,21 @@ export default function Lockers(){
             <NotFound />
         :
         <div className="lockers">
+            <Helmet>
+                <title>{category.title} - Modulares Costa</title>
+                <meta name="description" content={category.smallDescription}/>
+                <meta property="og:title" content={category.title} />
+                <meta property="og:description" content={category.smallDescription} />
+                <meta property="og:image" content={category.wallpaper} />
+                <meta property="og:url" content={`https://www.modularescosta.co/services/${category.title}`} />
+            </Helmet>
             <div className="pageLockers">
                 <div className='firstParallax'>
                     <div className='wallpaper' style={{
                         background: `url('${category.wallpaper}')`
                     }}>
                         <div className='opacity'></div>
-                    </div>
+                    </div> 
                     <div className='containerParallax'>
                         <div className='boxOne'>
                             {/* <h3>{category.title}</h3> */}
@@ -46,6 +55,17 @@ export default function Lockers(){
                             <button onClick={()=>move()}>
                                 <span>¡Me interesa!</span>
                             </button>
+                        </div>
+                    </div>
+                </div>
+                <div className="txtCategory">
+                    <div className="containerTxt">
+                        <div className="title">
+                            <h1>{category.title}</h1>
+                            <h2>{category.bigTitle}</h2>
+                        </div>
+                        <div className="estructura">
+                            <p>{category.bigDescription}</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +83,7 @@ export default function Lockers(){
                     <div className='bigText'>
                         <h1>Obtén {category.title} de alta calidad, con los mejores precios del mercado</h1>
 
-                        <button onClick={() => move()}>
+                        <button onClick={() => navigate('/contacto')}>
                             <span>¡Me interesa!</span>
                         </button>
                     </div>
