@@ -66,7 +66,7 @@ export default function Form(){
                                 ...form,
                                 nombre: e.target.value
                             })
-                        }}  value={form.nombre} />
+                        }}  value={form.nombre} required />
                     </div>
                     <div className="inputDiv">
                         <label htmlFor="">
@@ -77,7 +77,17 @@ export default function Form(){
                                 ...form,
                                 phone: e.target.value
                             })
-                        }}  value={form.phone}/>
+                        }}  value={form.phone} required/>
+                    </div>
+
+                    <div className="inputDiv">
+                        <label htmlFor="">
+                            <input type="checkbox"  required/>
+                            Al enviar formulario, acepta nuestras
+                            <span style={{marginLeft:2, cursor:'pointer', textDecoration:'underline'}}
+                            onClick={() => navigate('/legal/tratamientoDatos')} > Políticas, Términos y Condiciones.</span>.
+                        </label><br />
+
                     </div>
                     <div className="inputDiv">
                         <span>{mistake ? mistake : null}</span>
@@ -88,11 +98,11 @@ export default function Form(){
                         </button>
                     </div>
 
-                    <span >
+                    {/* <span >
                         Al enviar formulario, 
                         <span style={{marginLeft:2, cursor:'pointer', textDecoration:'underline'}}
                         onClick={() => navigate('/legal/tratamientoDatos')} >aceptas los términos y condiciones</span>.
-                    </span>
+                    </span> */}
                 </div>
             </div>
         }
