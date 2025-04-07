@@ -82,7 +82,7 @@ export default function Form(){
 
                     <div className="inputDiv">
                         <label htmlFor="">
-                            <input type="checkbox"  required style={{width:10, height:10, display:'inline-block'}}/>
+                            <input type="checkbox"  required style={{width:18, height:18, display:'inline-block', marginRight:10}}/>
                             Al enviar formulario, acepta nuestras
                             <span style={{marginLeft:2, cursor:'pointer', textDecoration:'underline'}}
                             onClick={() => navigate('/legal/tratamientoDatos')} > Políticas, Términos y Condiciones.</span>.
