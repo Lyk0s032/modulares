@@ -92,7 +92,7 @@ export default function Nav(){
                                 </li>
                             }
 
-                            <li onClick={() => {
+                            {/* <li onClick={() => {
                                 navigate('/proyectos/')
                                 openNav();
                                 
@@ -100,7 +100,7 @@ export default function Nav(){
                                 <div className="">
                                     <span>Proyectos</span>
                                 </div>
-                            </li>
+                            </li> */}
                             <li onClick={() => {
                                 navigate('/nosotros');
                                 openNav();

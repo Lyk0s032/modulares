@@ -21,10 +21,9 @@ export default function Fotter(props){
                             Lunes a Viernes de 8:00 am a 5:30pm <br />
                             Sábado 8:00am a 12:30pm <br /><br />
                             Sala de exhibición: Calle 11 # 13 - 15 San Pascual <br /><br />
-                            Tel: (602) 373 9940 <br />
                             Cel: 320 686 4572 
                         </span><br /><br />
-                        <span style={{color: 'white'}}>Santiado de Cali</span><br />
+                        <span style={{color: 'white'}}>Santiago de Cali</span><br />
                         <span style={{color: 'white'}} >Valle del Cauca</span><br /><br />
 
                         <span style={{color: 'white'}}>Colombia</span>
@@ -46,7 +45,7 @@ export default function Fotter(props){
                                         categories.map((category, i) => {
                                             return (
                                                 <li key={i+1} onClick={() => {
-                                                    navigate(`/services/${category.id}`)
+                                                    navigate(`/services/${category.title}`)
                                                 }}>
                                                     <span>{category.title}</span>
                                                 </li>
