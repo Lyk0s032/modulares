@@ -58,6 +58,27 @@ export default function Lockers(){
                         </div>
                     </div>
                 </div>
+                
+                <div className="newDiv">
+                    {
+                        category.subcategories && category.subcategories.length ?
+                            <PanelSubCategory category={category} />
+                        :null
+                    }
+                </div>
+ 
+
+                
+                <div className='invitationToAction'>
+                    <div className='bigText'>
+                        <h1>Obtén {category.title} de alta calidad, con los mejores precios del mercado</h1>
+
+                        <button onClick={() => navigate('/contacto')}>
+                            <span>¡Me interesa!</span>
+                        </button>
+                    </div>
+                </div>
+
                 <div className="txtCategory">
                     <div className="containerTxt">
                         <div className="title">
@@ -69,25 +90,7 @@ export default function Lockers(){
                         </div>
                     </div>
                 </div>
-                <div className="newDiv">
-                    {
-                        category.subcategories && category.subcategories.length ?
-                            <PanelSubCategory category={category} />
-                        :null
-                    }
-                </div>
- 
 
-
-                <div className='invitationToAction'>
-                    <div className='bigText'>
-                        <h1>Obtén {category.title} de alta calidad, con los mejores precios del mercado</h1>
-
-                        <button onClick={() => navigate('/contacto')}>
-                            <span>¡Me interesa!</span>
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
     )

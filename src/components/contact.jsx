@@ -7,21 +7,25 @@ export default function Form(){
 
     const [form, setForm] = useState({
         nombre: null,
-        phone: null
+        phone: null,
+        email: null
     })
     const [loading, setLoading] = useState(false);
     const [mistake, setMistake] = useState(null);
     const [positive, setPositive] = useState(null);
-
+    const [isChecked, setIsChecked] = useState(false);
 
     const addProspecto = async () => {
         if(loading) return null;
         if(!form.nombre || !form.phone) return setMistake('Por favor, llena los campos');
+        if(!isChecked) return setMistake('Debes aceptar nuestras políticas, términos y condiciones. ');
+
         // Caso contrario
         setLoading(true)
         let body = {
             namePersona: form.nombre,
             phone: form.phone,
+            email: form.email,
             type: 'digital',
             fuenteId: 10
         }
@@ -40,6 +44,10 @@ export default function Form(){
 
         return sendCreate;
     }
+
+    const handleCheckboxChange = (event) => {
+        setIsChecked(event.target.checked);
+    };
     return (
         <div className="forma" id="form">
         {
@@ -79,10 +87,25 @@ export default function Form(){
                             })
                         }}  value={form.phone} required/>
                     </div>
+                    <div className="inputDiv">
+                        <label htmlFor="">
+                            Correo:
+                        </label><br />
+                        <input type="text" placeholder='Ingresa tu teléfono' onChange={(e) => {
+                            setForm({
+                                ...form,
+                                email: e.target.value
+                            })
+                        }}  value={form.email}/>
+                    </div>
 
                     <div className="inputDiv">
                         <label htmlFor="">
-                            <input type="checkbox"  required style={{width:18, height:18, display:'inline-block', marginRight:10}}/>
+                            <input type="checkbox"  required style={{width:18, height:18, display:'inline-block', marginRight:10}}
+                            checked={isChecked}
+                            onChange={
+                                handleCheckboxChange
+                            }/>
                             Al enviar formulario, acepta nuestras
                             <span style={{marginLeft:2, cursor:'pointer', textDecoration:'underline'}}
                             onClick={() => navigate('/legal/tratamientoDatos')} > Políticas, Términos y Condiciones.</span>.
