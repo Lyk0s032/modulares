@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import Product from './product/product';
-import Archivo from './archivos/archivos';
-import Sillas from './sillas/siilas';
-import Mesas from './mesas/mesas';
 import Lockers from './lockers/lockers';
 import Home from './home';
 import { Route, Routes, useLocation, useNavigate} from 'react-router-dom';
@@ -16,7 +13,6 @@ import Fotter from './fotter';
 import Tratamiento from './tratamientoDatos';
 import Us from './us';
 import Contacto from './contacto';
-import Proyects from './proyectos';
 import Form from './contact';
 import PanelProyects from './proyects/proyects';
 
@@ -37,7 +33,7 @@ export default function RoutesComponent(){
     }, [pathname])
 
     return (
-        load || !categories ?
+        load || !categories ? 
             <Loading />
         :
             <div className="">

@@ -1,25 +1,14 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ergohuman from './../assets/sillas/presidencial/ergohuman/ergohuman.webp';
-import delphi from './../assets/sillas/gerenciales/delphi.webp';
-import canada from './../assets/sillas/gerenciales/canada.webp';
-import ccngo from './../assets/sillas/gerenciales/ccngo.webp';
 import { useDispatch, useSelector } from 'react-redux';
-import * as actions from './store/actions/actions';
-import Form from './contact';
-import { BsArrowRight } from 'react-icons/bs';
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { Helmet } from 'react-helmet-async';
 
 export default function Home(props){
-    const categories = props.categories;
+    const categories = props.categories; 
     const navigate = useNavigate();
-    const dispatch = useDispatch();
-    useEffect(() => {
-        // dispatch(actions.axiosGetCategories(true));
-    }, [])
-    return (
 
+    return (
         <div className='home'>
             <Helmet>
                 <title>Modulares Costa - Centro mobiliario y más</title>
