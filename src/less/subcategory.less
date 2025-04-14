@@ -85,7 +85,7 @@
                         width:100%;
                         height:100%;
                         position:relative;
-                        object-fit: contain;
+                        object-fit: cover;
                         border-radius: 10px;
                     }
                 }
@@ -97,4 +97,108 @@
             }
         }
     }
+}
+
+@media screen and(max-width:700px){
+    .panelSub{
+        box-sizing: border-box;
+        width:90%;
+        margin:auto;
+        .containerPanelSub{
+            box-sizing: border-box;
+    
+            .navigationOnCategory{
+    
+                nav{
+                    ul{
+                        li{
+                            display: inline-block;
+                            .li{
+                                padding:15px 15px;
+                                box-sizing: border-box;
+                                cursor: pointer;
+                                border-bottom: 2px solid white;
+                                transition: .3s;
+                                span{
+                                    font-weight: 100;
+                                    color: @titleBig;
+                                    font-size: 18px;
+                                    transition: .3s;
+                                }
+                            }
+                            .li:hover{
+                                border-bottom: 2px solid @bgDark;
+                                span{
+                                    color: @bgDark;
+                                }
+                            }
+                            .li.Active{
+                                border-bottom: 2px solid @colorVar;
+    
+                                span{
+                                    color: @colorVar;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .listProducts{
+                width:100%;
+                box-sizing: border-box;
+                margin-top:10px;
+                .containerListsProducts{
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    margin-top:40px;
+                    .productico{
+                        width:49%;
+                        height:250px;
+                        box-sizing: border-box;
+                        margin-bottom: 30px;
+                        position:relative;
+                        border-radius: 10px;
+                        cursor: pointer;
+                        .hidden{
+                            position:absolute;
+                            z-index:2;
+                            width:100%;
+                            height:20px;
+                            box-sizing: border-box;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-evenly;
+                            background-color: @colorVar;
+                            opacity: 1;
+                            transition: .3s;
+                            border-radius: 0px 0px 10px 10px;
+                            padding:20px; 
+                            box-sizing: border-box;
+                            bottom:0;
+                            h1{
+                                font-weight: 100;
+                                color: white;
+                                font-size: 14px;
+                            }
+                        }
+                        img{
+                            margin:0px;
+                            width:100%;
+                            height:100%;
+                            position:relative;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                    .productico:hover{
+                        .hidden{
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+    }   
 }

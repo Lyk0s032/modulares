@@ -2432,11 +2432,102 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 10px;
 }
 .panelSub .containerPanelSub .listProducts .containerListsProducts .productico:hover .hidden {
   opacity: 0.8;
+}
+@media screen and (max-width: 700px) {
+  .panelSub {
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+  }
+  .panelSub .containerPanelSub {
+    box-sizing: border-box;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li {
+    display: inline-block;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li {
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    transition: 0.3s;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li span {
+    font-weight: 100;
+    color: #525456;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li:hover {
+    border-bottom: 2px solid #343A40;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li:hover span {
+    color: #343A40;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li.Active {
+    border-bottom: 2px solid #046290;
+  }
+  .panelSub .containerPanelSub .navigationOnCategory nav ul li .li.Active span {
+    color: #046290;
+  }
+  .panelSub .containerPanelSub .listProducts {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts .productico {
+    width: 49%;
+    height: 250px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts .productico .hidden {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #046290;
+    opacity: 1;
+    transition: 0.3s;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    bottom: 0;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts .productico .hidden h1 {
+    font-weight: 100;
+    color: white;
+    font-size: 14px;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts .productico img {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .panelSub .containerPanelSub .listProducts .containerListsProducts .productico:hover .hidden {
+    opacity: 0.8;
+  }
 }
 .lockers {
   width: 100%;
@@ -2896,11 +2987,21 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  .lockers .pageLockers .firstParallax {
+    height: 50vh;
+    box-sizing: border-box;
+  }
   .lockers .pageLockers .firstParallax .containerParallax .boxOne {
     width: 90%;
   }
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne .txt {
+    display: none;
+  }
   .lockers .pageLockers .firstParallax .containerParallax .boxOne h1 {
     font-size: 32px;
+  }
+  .lockers .pageLockers .firstParallax .containerParallax .boxOne button {
+    margin: 0px;
   }
   .lockers .pageLockers .twoParallax .containerTwo {
     flex-wrap: wrap;
@@ -2917,6 +3018,7 @@ body {
   }
   .lockers .pageLockers .otherCasilleros {
     box-sizing: border-box;
+    border: 1px solid red;
   }
   .lockers .pageLockers .otherCasilleros .containerOther .lockers {
     flex-wrap: wrap;
