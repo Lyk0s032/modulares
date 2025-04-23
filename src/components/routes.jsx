@@ -54,7 +54,7 @@ export default function RoutesComponent(){
                     <Route path='/nosotros/*' element={<Us />} />
                     <Route path='/contacto/*' element={<Contacto />} />
                     <Route path='/proyectos/*' element={<PanelProyects />} />
-                    <Route path='/panel/*' element={<PanelAdmin />} />
+                    {/* <Route path='/panel/*' element={<PanelAdmin />} /> */}
                      
 
 

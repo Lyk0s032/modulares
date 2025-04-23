@@ -23,7 +23,6 @@ export default function Nav(){
             <div className='containerNav'>
                 <div className='logo' onClick={() => {
                     navigate('/')                                
-                    openNav();
                 }}>
                     <img src={Logo} alt="" />
                 </div>
