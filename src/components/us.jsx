@@ -1,10 +1,12 @@
 import React from 'react';
-
+import UsImg from '../assets/site/team.png'
 export default function Us(){
     return (
         <div className="us">
             <div className="containerUs">
-                <div className="wallpaper"></div>
+                <div className="wallpaper">
+                    <img src={UsImg} alt="" />
+                </div>
                 <div className="info">
                     <div className="title">
                         <h1>
@@ -15,7 +17,7 @@ export default function Us(){
                     <div className="data">
                         <h3>
                             Somos una empresa con más de 25 años de experiencia en el mercado,
-                            brindando a nuestros clientes nuebles de alta calidad, funcionales
+                            brindando a nuestros clientes muebles de alta calidad, funcionales
                             y confortables a un precio altamente competitivo.
                         </h3>
                     </div>

@@ -73,8 +73,12 @@ export default function Lockers(){
                     <div className='bigText'>
                         <h1>Obtén {category.title} de alta calidad, con los mejores precios del mercado</h1>
 
-                        <button onClick={() => navigate('/contacto')}>
-                            <span>¡Me interesa!</span>
+                        <button onClick={() => {
+                            document.querySelector("#form").scrollIntoView({
+                                behavior:'smooth'
+                            })
+                        }}>
+                            <span>¡Deseo cotizar!</span>
                         </button>
                     </div>
                 </div>

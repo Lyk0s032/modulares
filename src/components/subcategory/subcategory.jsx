@@ -39,7 +39,12 @@ export default function SubCategory(props){
                     return (
                         <article className="productico" key={i+1} onClick={() => navigate(`/product/${productito.id}`)}>
                             <div className="hidden">
-                                <h1>{productito.name}</h1>
+                                <button>
+                                    <span>Cotizar ahora</span>
+                                </button>
+                                <div className="bottom">
+                                    <h1>{productito.name}</h1>
+                                </div>
                             </div>
                             <img src={productito.photo} alt="" />
                         </article>

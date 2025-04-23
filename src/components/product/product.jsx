@@ -23,12 +23,12 @@ export default function Product(){
 
     const sendMessage = () => {
         let numero = '573206864572'
-        const mensaje = encodeURIComponent("Hola, estoy interesado/a en conocer más");
+        const mensaje = encodeURIComponent(`Hola, estoy interesado/a en cotizar ${product.name}`);
         const enlace = `https://wa.me/${numero}?text=${mensaje}`;
         window.open(enlace, "_blank");
     }
     return (
-        !product || loading ?
+        !product || loading ? 
             <Loading />
         :
         product == 404 || product == 'request' ?
@@ -38,10 +38,10 @@ export default function Product(){
             <Helmet>
                 <title>{product.name} - Modulares Costa</title>
                 <meta name="description" content={product.description}/>
-                <meta property="og:title" content={producto.name} />
-                <meta property="og:description" content={producto.description} />
-                <meta property="og:image" content={producto.photo} />
-                <meta property="og:url" content={`https://www.modularescosta.co/product/${producto.id}`} />
+                <meta property="og:title" content={product.name} />
+                <meta property="og:description" content={product.description} />
+                <meta property="og:image" content={product.phot} />
+                <meta property="og:url" content={`https://www.modularescosta.co/product/${product.id}`} />
             </Helmet>
             <div className='containerProduct'>
                 <div className='containerProductsCar'>
@@ -67,7 +67,7 @@ export default function Product(){
                                         style={{cursor:'pointer'}}>
                                         <BsWhatsapp className='icon' />
                                         <span>
-                                            Más información
+                                            Deseo cotizar
                                         </span>
                                     </button>
                                     <button className='others' onClick={() => {

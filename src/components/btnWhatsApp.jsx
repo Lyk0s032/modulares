@@ -40,10 +40,12 @@ export default function BtnWhatsApp(){
     }
     return (
         <div className="btnWhatsApp">
-            <button className="messgeBtn" onClick={()=> ToContact()}>
+            <button className="messgeBtn"
+            title="Contáctanos" onClick={()=> ToContact()}>
                 <TbMessageChatbot className='icon' />
             </button><br />
-            <button onClick={()=> sendMessage()}>
+            <button onClick={()=> sendMessage()}
+                title="¡Hablemos por WhastApp!">
                 <MdWhatsapp className='icon' />
             </button>
         </div>

@@ -17,7 +17,7 @@ export default function Form(){
 
     const addProspecto = async () => {
         if(loading) return null;
-        if(!form.nombre || !form.phone) return setMistake('Por favor, llena los campos');
+        if(!form.nombre || !form.phone || !form.email) return setMistake('Por favor, llena los campos');
         if(!isChecked) return setMistake('Debes aceptar nuestras políticas, términos y condiciones. ');
 
         // Caso contrario
@@ -67,7 +67,7 @@ export default function Form(){
                 <div className="formData">
                     <div className="inputDiv">
                         <label htmlFor="">
-                            Nombre:
+                            Nombre *:
                         </label><br />
                         <input type="text" placeholder='Ingresa tu nombre' onChange={(e) => {
                             setForm({
@@ -78,7 +78,7 @@ export default function Form(){
                     </div>
                     <div className="inputDiv">
                         <label htmlFor="">
-                            Teléfono:
+                            Teléfono *:
                         </label><br />
                         <input type="text" placeholder='Ingresa tu teléfono' onChange={(e) => {
                             setForm({
@@ -89,14 +89,14 @@ export default function Form(){
                     </div>
                     <div className="inputDiv">
                         <label htmlFor="">
-                            Correo:
+                            Correo *:
                         </label><br />
                         <input type="text" placeholder='Ingresa tu teléfono' onChange={(e) => {
                             setForm({
                                 ...form,
                                 email: e.target.value
                             })
-                        }}  value={form.email}/>
+                        }}  value={form.email} required/>
                     </div>
 
                     <div className="inputDiv">

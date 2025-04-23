@@ -15,6 +15,7 @@ import Us from './us';
 import Contacto from './contacto';
 import Form from './contact';
 import PanelProyects from './proyects/proyects';
+import PanelAdmin from './panel/panel';
 
 
 export default function RoutesComponent(){
@@ -36,7 +37,7 @@ export default function RoutesComponent(){
         load || !categories ? 
             <Loading />
         :
-            <div className="">
+            <div className=""> 
                 <Nav />
                 <BtnWhatsApp />
                 <Routes>
@@ -53,7 +54,8 @@ export default function RoutesComponent(){
                     <Route path='/nosotros/*' element={<Us />} />
                     <Route path='/contacto/*' element={<Contacto />} />
                     <Route path='/proyectos/*' element={<PanelProyects />} />
-
+                    <Route path='/panel/*' element={<PanelAdmin />} />
+                     
 
 
                 </Routes>
