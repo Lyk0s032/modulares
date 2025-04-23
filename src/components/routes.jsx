@@ -55,7 +55,7 @@ export default function RoutesComponent(){
                     <Route path='/contacto/*' element={<Contacto />} />
                     <Route path='/proyectos/*' element={<PanelProyects />} />
                     {/* <Route path='/panel/*' element={<PanelAdmin />} /> */}
-                     
+                      
 
 
                 </Routes>

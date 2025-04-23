@@ -914,12 +914,12 @@ body {
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing h2 {
   color: white;
-  font-size: 52px;
+  font-size: 46px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing .textLong {
-  width: 60%;
+  width: 100%;
 }
 .modulares .home .ourServices .OurSev .containerOurServices .containerServicesDivide .rightBox .containerRigthImg .dark .textDesing .textLong span {
   color: white;
@@ -1756,6 +1756,12 @@ body {
   }
   .forma .containerForm .formData {
     width: 100%;
+  }
+  .forma .containerForm .formData .inputDiv label {
+    font-size: 16px;
+  }
+  .forma .containerForm .formData .inputDiv input {
+    font-size: 16px;
   }
 }
 .proyectos {
