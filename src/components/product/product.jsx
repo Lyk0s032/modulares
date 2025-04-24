@@ -14,6 +14,7 @@ export default function Product(){
     const loading = useSelector(store => store.loadingProduct);
     const { producto } = useParams();
     const navigate = useNavigate();
+
     useEffect(() => {
         window.scrollTo(0,0)
         if(!product || product && product.id != producto){
@@ -21,11 +22,22 @@ export default function Product(){
         }
     }, [producto])
 
+    const dispatchThat = () => {
+        const event = new CustomEvent('gtm_event', {
+            detail: {
+                event: 'whatsapp_click'
+            }
+        });
+        window.dispatchEvent(event); 
+    }
+
     const sendMessage = () => {
         let numero = '573206864572'
         const mensaje = encodeURIComponent(`Hola, estoy interesado/a en cotizar ${product.name}`);
         const enlace = `https://wa.me/${numero}?text=${mensaje}`;
         window.open(enlace, "_blank");
+
+        return dispatchThat()
     }
     return (
         !product || loading ? 

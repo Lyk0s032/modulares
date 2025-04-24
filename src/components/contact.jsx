@@ -34,6 +34,13 @@ export default function Form(){
             console.log(res);
             setLoading(false);
             setPositive(true);
+
+            const event = new CustomEvent('gtm_event', {
+                detail: {
+                    event: 'form_submission'
+                }
+            });
+            window.dispatchEvent(event); 
             return true
         })
         .catch(err => {

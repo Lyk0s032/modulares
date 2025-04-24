@@ -28,13 +28,25 @@ export default function BtnWhatsApp(){
 
     //     return sendCreate;
     // }
+    const dispatchThat = () => {
+        const event = new CustomEvent('gtm_event', {
+            detail: {
+                event: 'whatsapp_click'
+            }
+        });
+        window.dispatchEvent(event); 
+    }
+
     const sendMessage = () => {
         let numero = '573206864572'
         const mensaje = encodeURIComponent("Hola, estoy interesado/a en conocer más");
         const enlace = `https://wa.me/${numero}?text=${mensaje}`;
         window.open(enlace, "_blank");
+
+        return dispatchThat();
     }
 
+    
     const ToContact = () => {
         navigate('/contacto')
     }
