@@ -98,7 +98,7 @@ export default function Form(){
                         <label htmlFor="">
                             Correo *:
                         </label><br />
-                        <input type="text" placeholder='Ingresa tu teléfono' onChange={(e) => {
+                        <input type="text" placeholder='Ingresa tu correo' onChange={(e) => {
                             setForm({
                                 ...form,
                                 email: e.target.value
