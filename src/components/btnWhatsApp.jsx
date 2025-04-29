@@ -35,6 +35,11 @@ export default function BtnWhatsApp(){
             }
         });
         window.dispatchEvent(event); 
+    
+        window.dataLayer = window.dataLayer || []; // Asegura que dataLayer existe
+        window.dataLayer.push({
+            event: 'whatsapp_click' // Este es el nombre del evento que GTM detectará
+        });
     }
 
     const sendMessage = () => {
